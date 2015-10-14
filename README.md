@@ -5,7 +5,8 @@ Satisfiability code bricks for JavaScript.
 
 ```js
 sat.decide( instance ) ; // true
-for ( let certificate of sat.solve( instance ) ) sat.verify( instance , certificate ) ; // true
+sat.verify( instance , sat.solve( instance ).next( ).value ) ; // true
+for ( let certificate of sat.solve( instance ) ) ... ;
 ```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-sat.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sat/master/LICENSE)
