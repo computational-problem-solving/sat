@@ -13,6 +13,6 @@
 			"sat.js"
 		]
 	},
-	"babel": true,
+	"babel": { "stage" : 0 },
 	"out": "js/dist/"
 }
