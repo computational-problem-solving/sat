@@ -1,7 +1,11 @@
 [js-sat](http://aureooms.github.io/js-sat)
 ==
 
-Satisfiability code bricks for JavaScript
+Satisfiability code bricks for JavaScript.
+
+```js
+for ( let solution of sat.solve( instance ) ) ... ;
+```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-sat.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sat/master/LICENSE)
 [![NPM version](http://img.shields.io/npm/v/aureooms-js-sat.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-sat)
@@ -93,3 +97,7 @@ Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/
 ```js
 require( [ "aureooms-js-sat" ] , function ( sat ) { ... } ) ;
 ```
+
+## Reference
+
+  - [Simple solver in Python](http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html)
