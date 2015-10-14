@@ -17,6 +17,6 @@
 	"name": "aureooms-js-sat",
 	"description": "Satisfiability code bricks for JavaScript",
 	"license": "AGPL-3.0",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"homepage": "http://aureooms.github.io/js-sat/"
 }

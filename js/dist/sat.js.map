@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/dist/sat.js"],"names":["definition","exports","undefined","define","amd","window","document","console","error"],"mappings":"AAAA,cAEA,WAIC,GAAIA,GAAa,SAAoBC,EAASC,GAI7C,MAAOD,GAEe,iBAAZA,SACVD,EAAWC,SACiB,kBAAXE,SAAyBA,OAAOC,IACjDD,OAAO,qBAAuB,WAC7B,MAAOH,SAEoB,gBAAXK,SAAkD,gBAApBA,QAAOC,SACtDN,EAAWK,OAAY,QACjBE,QAAQC,MAAM","file":"js/dist/sat.js.map"}

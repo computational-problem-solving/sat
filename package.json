@@ -10,7 +10,7 @@
 		"doc": "./node_modules/.bin/groc"
 	},
 	"author": "aureooms",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"homepage": "http://aureooms.github.io/js-sat/",
 	"bugs": {
 		"url": "https://github.com/aureooms/js-sat/issues"
