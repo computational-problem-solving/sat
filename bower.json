@@ -1,0 +1,22 @@
+{
+	"main": "js/dist/sat.js",
+	"ignore": [
+		"js/index.js",
+		"js/src",
+		"test",
+		"pkg.json",
+		"package.json",
+		"inch.json",
+		".groc.json",
+		".travis.yml",
+		".codeclimate.yml",
+		".jshintrc",
+		".gitignore",
+		"README.md"
+	],
+	"name": "aureooms-js-sat",
+	"description": "Satisfiability code bricks for JavaScript",
+	"license": "AGPL-3.0",
+	"version": "0.0.0",
+	"homepage": "http://aureooms.github.io/js-sat/"
+}

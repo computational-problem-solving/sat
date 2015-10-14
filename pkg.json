@@ -1,0 +1,18 @@
+{
+	"src": "js/src/",
+	"debug": false,
+	"name": "sat",
+	"code": {
+		"test": [
+			"test",
+			"js"
+		],
+		"main": [
+			"js",
+			"dist",
+			"sat.js"
+		]
+	},
+	"babel": true,
+	"out": "js/dist/"
+}

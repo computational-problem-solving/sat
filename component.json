@@ -1,0 +1,11 @@
+{
+	"main": "js/dist/sat.js",
+	"name": "aureooms-js-sat",
+	"description": "Satisfiability code bricks for JavaScript",
+	"license": "AGPL-3.0",
+	"version": "0.0.0",
+	"scripts": [
+		"js/dist/sat.js"
+	],
+	"repo": "aureooms/js-sat"
+}
