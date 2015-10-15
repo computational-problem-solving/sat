@@ -1,41 +1,41 @@
 {
-  "dependencies": {},
-  "repository": {
-    "url": "https://github.com/aureooms/js-sat.git",
-    "type": "git"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/aureooms-node-package-test",
-    "build": "./node_modules/.bin/aureooms-node-package-build",
-    "doc": "./node_modules/.bin/groc"
-  },
-  "author": "aureooms",
-  "version": "0.0.1",
-  "homepage": "http://aureooms.github.io/js-sat/",
-  "bugs": {
-    "url": "https://github.com/aureooms/js-sat/issues"
-  },
-  "main": "js/dist/sat.js",
-  "spm": {
-    "main": "js/dist/sat.js"
-  },
-  "devDependencies": {
-    "aureooms-js-compare": "^1.4.5",
-    "aureooms-js-itertools": "^1.3.0",
-    "aureooms-node-package": "^5.0.2"
-  },
-  "keywords": [
-    "NP",
-    "SAT",
-    "bricks",
-    "complete",
-    "complexity",
-    "ender",
-    "javascript",
-    "js",
-    "satisfiability"
-  ],
-  "name": "aureooms-js-sat",
-  "description": "Satisfiability code bricks for JavaScript",
-  "license": "AGPL-3.0"
+	"dependencies": {},
+	"repository": {
+		"url": "https://github.com/aureooms/js-sat.git",
+		"type": "git"
+	},
+	"scripts": {
+		"test": "./node_modules/.bin/aureooms-node-package-test",
+		"build": "./node_modules/.bin/aureooms-node-package-build",
+		"doc": "./node_modules/.bin/groc"
+	},
+	"author": "aureooms",
+	"version": "1.0.0",
+	"homepage": "http://aureooms.github.io/js-sat/",
+	"bugs": {
+		"url": "https://github.com/aureooms/js-sat/issues"
+	},
+	"main": "js/dist/sat.js",
+	"spm": {
+		"main": "js/dist/sat.js"
+	},
+	"devDependencies": {
+		"aureooms-js-compare": "^1.4.5",
+		"aureooms-js-itertools": "^1.3.0",
+		"aureooms-node-package": "^5.0.2"
+	},
+	"keywords": [
+		"NP",
+		"SAT",
+		"bricks",
+		"complete",
+		"complexity",
+		"ender",
+		"javascript",
+		"js",
+		"satisfiability"
+	],
+	"name": "aureooms-js-sat",
+	"description": "Satisfiability code bricks for JavaScript",
+	"license": "AGPL-3.0"
 }
