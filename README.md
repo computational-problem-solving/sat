@@ -4,9 +4,19 @@
 Satisfiability code bricks for JavaScript.
 
 ```js
+let formula = sat.from.integers( [ [ -1 , 2 , 3 ] , [ -2 , -4 , 5 ] , [ 1 , -5 ] ] ) ;
+// or
+// let formula = sat.from.keys(
+// [
+//   [ [ false , '1' ] , [ true , '2' ] , [ true , '3' ] ] ,
+//   [ [ false , '2' ] , [ false , '4' ] , [ true , '5' ] ] ,
+//   [ [ true , '1' ] , [ false , '5' ] ]
+// ]
+// ) ;
+let { instance } = formula ;
 sat.decide( instance ) ; // true
 sat.verify( instance , sat.solve( instance ).next( ).value ) ; // true
-for ( let certificate of sat.solve( instance ) ) ... ;
+for ( let certificate of sat.solve( instance ) ) console.log( formula.assignment( certificate ) ) ;
 ```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-sat.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sat/master/LICENSE)
