@@ -7,7 +7,7 @@ class ParitiesInstance {
 	}
 
 	assignment ( certificate ) {
-		return certificate ;
+		return certificate.slice( ) ;
 	}
 
 }

@@ -7,7 +7,7 @@ class SignsInstance {
 	}
 
 	assignment ( certificate ) {
-		return certificate ;
+		return [ 0 ].concat( certificate ) ;
 	}
 
 }

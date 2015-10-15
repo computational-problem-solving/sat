@@ -379,7 +379,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 			_createClass(ParitiesInstance, [{
 				key: "assignment",
 				value: function assignment(certificate) {
-					return certificate;
+					return certificate.slice();
 				}
 			}]);
 
@@ -399,7 +399,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 			_createClass(SignsInstance, [{
 				key: "assignment",
 				value: function assignment(certificate) {
-					return certificate;
+					return [0].concat(certificate);
 				}
 			}]);
 
