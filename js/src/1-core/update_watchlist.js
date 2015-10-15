@@ -1,4 +1,4 @@
-function update_watchlist ( instance , watchlist , false_literal , assignment ) {
+function update_watchlist ( watchlist , false_literal , assignment ) {
 
     /**
      * Updates the watch list after literal 'false_literal' was just assigned

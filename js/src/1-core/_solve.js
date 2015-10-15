@@ -1,11 +1,11 @@
-function* _solve ( instance , watchlist , assignment , d ) {
+function* _solve ( n , clauses , watchlist , assignment , d ) {
 
     /**
      * Recursively solve SAT by assigning to variables d, d+1, ..., n-1. Assumes
      * variables 0, ..., d-1 are assigned so far. A generator for all the
      * satisfying assignments is returned.
 	 */
-    if ( d === instance.variables.length ) {
+    if ( d === n ) {
         yield assignment ;
         return ;
 	}
@@ -14,8 +14,8 @@ function* _solve ( instance , watchlist , assignment , d ) {
 
         assignment[d] = a ;
 
-        if ( update_watchlist( instance , watchlist , (d << 1) | a , assignment ) ) {
-            yield* _solve( instance , watchlist , assignment , d + 1 ) ;
+        if ( update_watchlist( watchlist , (d << 1) | a , assignment ) ) {
+            yield* _solve( n , clauses , watchlist , assignment , d + 1 ) ;
 		}
 
 	}
