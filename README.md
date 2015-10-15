@@ -15,7 +15,9 @@ let instance = sat.from.signs( [ [ -1 , 2 , 3 ] , [ -2 , -4 , 5 ] , [ 1 , -5 ] ]
 // ) ;
 sat.decide( instance ) ; // true
 sat.verify( instance , sat.solve( instance ).next( ).value ) ; // true
-for ( let certificate of sat.solve( instance ) ) console.log( instance.assignment( certificate ) ) ;
+for ( let certificate of sat.solve( instance ) ) {
+    console.log( instance.assignment( certificate ) ) ;
+}
 ```
 
 [![NPM license](http://img.shields.io/npm/l/aureooms-js-sat.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sat/master/LICENSE)
