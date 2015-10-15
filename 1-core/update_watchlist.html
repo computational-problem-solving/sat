@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head><title>1-core/update_watchlist</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="1-core/update_watchlist"><meta name="groc-project-path" content="js/src/1-core/update_watchlist.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-sat"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-sat/blob/master/js/src/1-core/update_watchlist.js">js/src/1-core/update_watchlist.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">update_watchlist</span> (<span class="hljs-params"> watchlist , false_literal , assignment </span>) </span>{</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>Updates the watch list after literal &#39;false_literal&#39; was just assigned
+False, by making any clause watching false_literal watch something else.
+Returns False it is impossible to do so, meaning a clause is contradicted
+by the current assignment.</p></div></div><div class="code"><div class="wrapper">    <span class="hljs-keyword">while</span> ( watchlist[false_literal].length ) {
+
+        <span class="hljs-keyword">let</span> clause = watchlist[false_literal][watchlist[false_literal].length - <span class="hljs-number">1</span>] ;
+        <span class="hljs-keyword">let</span> found_alternative = <span class="hljs-literal">false</span> ;
+
+        <span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> alternative <span class="hljs-keyword">of</span> clause ) {
+
+            <span class="hljs-keyword">let</span> v = alternative &gt;&gt;&gt; <span class="hljs-number">1</span> ;
+            <span class="hljs-keyword">let</span> a = alternative &amp; <span class="hljs-number">1</span> ;
+
+            <span class="hljs-keyword">if</span> ( assignment[v] === -<span class="hljs-number">1</span> || assignment[v] === a ^ <span class="hljs-number">1</span> ) {
+                found_alternative = <span class="hljs-literal">true</span> ;
+                watchlist[false_literal].pop( ) ;
+                watchlist[alternative].push( clause ) ;
+                <span class="hljs-keyword">break</span> ;
+			}
+
+		}
+
+        <span class="hljs-keyword">if</span> ( !found_alternative ) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span> ;
+
+	}
+
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span> ;
+
+}
+
+exports.update_watchlist = update_watchlist ;</div></div></div></div></body></html>

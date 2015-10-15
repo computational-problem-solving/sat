@@ -147,28 +147,486 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
               "depth": 3
             }
           ]
+        }, {
+          "type": "heading",
+          "data": {
+            "level": 2,
+            "title": "Reference",
+            "slug": "reference"
+          },
+          "depth": 2
         }
       ]
     }, {
-      "type": "file",
+      "type": "folder",
       "data": {
-        "language": {
-          "nameMatchers": [".js"],
-          "pygmentsLexer": "javascript",
-          "multiLineComment": ["/*", "*", "*/"],
-          "singleLineComment": ["//"],
-          "ignorePrefix": "}",
-          "foldPrefix": "^",
-          "name": "JavaScript"
-        },
-        "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/dummy.js",
-        "projectPath": "js/src/dummy.js",
-        "targetPath": "dummy",
-        "pageTitle": "dummy",
-        "title": "dummy"
+        "path": "0-lib",
+        "title": "0-lib"
       },
       "depth": 1,
-      "outline": []
+      "children": [
+        {
+          "type": "folder",
+          "data": {
+            "path": "0-lib/itertools",
+            "title": "itertools"
+          },
+          "depth": 2,
+          "children": [
+            {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/0-lib/itertools/map.js",
+                "projectPath": "js/src/0-lib/itertools/map.js",
+                "targetPath": "0-lib/itertools/map",
+                "pageTitle": "0-lib/itertools/map",
+                "title": "map"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/0-lib/itertools/next.js",
+                "projectPath": "js/src/0-lib/itertools/next.js",
+                "targetPath": "0-lib/itertools/next",
+                "pageTitle": "0-lib/itertools/next",
+                "title": "next"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/0-lib/itertools/zip.js",
+                "projectPath": "js/src/0-lib/itertools/zip.js",
+                "targetPath": "0-lib/itertools/zip",
+                "pageTitle": "0-lib/itertools/zip",
+                "title": "zip"
+              },
+              "depth": 3,
+              "outline": []
+            }
+          ]
+        }
+      ]
+    }, {
+      "type": "folder",
+      "data": {
+        "path": "1-core",
+        "title": "1-core"
+      },
+      "depth": 1,
+      "children": [
+        {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/_solve.js",
+            "projectPath": "js/src/1-core/_solve.js",
+            "targetPath": "1-core/_solve",
+            "pageTitle": "1-core/_solve",
+            "title": "_solve"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/_verify.js",
+            "projectPath": "js/src/1-core/_verify.js",
+            "targetPath": "1-core/_verify",
+            "pageTitle": "1-core/_verify",
+            "title": "_verify"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "folder",
+          "data": {
+            "path": "1-core/convert",
+            "title": "convert"
+          },
+          "depth": 2,
+          "children": [
+            {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/convert/KeysInstance.js",
+                "projectPath": "js/src/1-core/convert/KeysInstance.js",
+                "targetPath": "1-core/convert/KeysInstance",
+                "pageTitle": "1-core/convert/KeysInstance",
+                "title": "KeysInstance"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/convert/ParitiesInstance.js",
+                "projectPath": "js/src/1-core/convert/ParitiesInstance.js",
+                "targetPath": "1-core/convert/ParitiesInstance",
+                "pageTitle": "1-core/convert/ParitiesInstance",
+                "title": "ParitiesInstance"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/convert/SignsInstance.js",
+                "projectPath": "js/src/1-core/convert/SignsInstance.js",
+                "targetPath": "1-core/convert/SignsInstance",
+                "pageTitle": "1-core/convert/SignsInstance",
+                "title": "SignsInstance"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/convert/_certificate_to_keys.js",
+                "projectPath": "js/src/1-core/convert/_certificate_to_keys.js",
+                "targetPath": "1-core/convert/_certificate_to_keys",
+                "pageTitle": "1-core/convert/_certificate_to_keys",
+                "title": "_certificate_to_keys"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/convert/_count.js",
+                "projectPath": "js/src/1-core/convert/_count.js",
+                "targetPath": "1-core/convert/_count",
+                "pageTitle": "1-core/convert/_count",
+                "title": "_count"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/convert/_keys_to_parity.js",
+                "projectPath": "js/src/1-core/convert/_keys_to_parity.js",
+                "targetPath": "1-core/convert/_keys_to_parity",
+                "pageTitle": "1-core/convert/_keys_to_parity",
+                "title": "_keys_to_parity"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/convert/_parity_to_keys.js",
+                "projectPath": "js/src/1-core/convert/_parity_to_keys.js",
+                "targetPath": "1-core/convert/_parity_to_keys",
+                "pageTitle": "1-core/convert/_parity_to_keys",
+                "title": "_parity_to_keys"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/convert/_parity_to_sign.js",
+                "projectPath": "js/src/1-core/convert/_parity_to_sign.js",
+                "targetPath": "1-core/convert/_parity_to_sign",
+                "pageTitle": "1-core/convert/_parity_to_sign",
+                "title": "_parity_to_sign"
+              },
+              "depth": 3,
+              "outline": []
+            }, {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/convert/_sign_to_parity.js",
+                "projectPath": "js/src/1-core/convert/_sign_to_parity.js",
+                "targetPath": "1-core/convert/_sign_to_parity",
+                "pageTitle": "1-core/convert/_sign_to_parity",
+                "title": "_sign_to_parity"
+              },
+              "depth": 3,
+              "outline": []
+            }
+          ]
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/makeassignment.js",
+            "projectPath": "js/src/1-core/makeassignment.js",
+            "targetPath": "1-core/makeassignment",
+            "pageTitle": "1-core/makeassignment",
+            "title": "makeassignment"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/setup_watchlist.js",
+            "projectPath": "js/src/1-core/setup_watchlist.js",
+            "targetPath": "1-core/setup_watchlist",
+            "pageTitle": "1-core/setup_watchlist",
+            "title": "setup_watchlist"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/update_watchlist.js",
+            "projectPath": "js/src/1-core/update_watchlist.js",
+            "targetPath": "1-core/update_watchlist",
+            "pageTitle": "1-core/update_watchlist",
+            "title": "update_watchlist"
+          },
+          "depth": 2,
+          "outline": []
+        }
+      ]
+    }, {
+      "type": "folder",
+      "data": {
+        "path": "2-api",
+        "title": "2-api"
+      },
+      "depth": 1,
+      "children": [
+        {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/2-api/decide.js",
+            "projectPath": "js/src/2-api/decide.js",
+            "targetPath": "2-api/decide",
+            "pageTitle": "2-api/decide",
+            "title": "decide"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/2-api/from.js",
+            "projectPath": "js/src/2-api/from.js",
+            "targetPath": "2-api/from",
+            "pageTitle": "2-api/from",
+            "title": "from"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/2-api/solve.js",
+            "projectPath": "js/src/2-api/solve.js",
+            "targetPath": "2-api/solve",
+            "pageTitle": "2-api/solve",
+            "title": "solve"
+          },
+          "depth": 2,
+          "outline": []
+        }, {
+          "type": "file",
+          "data": {
+            "language": {
+              "nameMatchers": [".js"],
+              "pygmentsLexer": "javascript",
+              "multiLineComment": ["/*", "*", "*/"],
+              "singleLineComment": ["//"],
+              "ignorePrefix": "}",
+              "foldPrefix": "^",
+              "name": "JavaScript"
+            },
+            "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/2-api/verify.js",
+            "projectPath": "js/src/2-api/verify.js",
+            "targetPath": "2-api/verify",
+            "pageTitle": "2-api/verify",
+            "title": "verify"
+          },
+          "depth": 2,
+          "outline": []
+        }
+      ]
     }
   ];
 

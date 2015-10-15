@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"><head><title>1-core/_solve</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="1-core/_solve"><meta name="groc-project-path" content="js/src/1-core/_solve.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-sat"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-sat/blob/master/js/src/1-core/_solve.js">js/src/1-core/_solve.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-function"><span class="hljs-keyword">function</span>* <span class="hljs-title">_solve</span> (<span class="hljs-params"> n , clauses , watchlist , assignment , d </span>) </span>{</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>Recursively solve SAT by assigning to variables d, d+1, ..., n-1. Assumes
+variables 0, ..., d-1 are assigned so far. A generator for all the
+satisfying assignments is returned.</p></div></div><div class="code"><div class="wrapper">    <span class="hljs-keyword">if</span> ( d === n ) {
+        <span class="hljs-keyword">yield</span> assignment ;
+        <span class="hljs-keyword">return</span> ;
+	}
+
+    <span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> a <span class="hljs-keyword">of</span> [ <span class="hljs-number">0</span> , <span class="hljs-number">1</span> ] ) {
+
+        assignment[d] = a ;
+
+        <span class="hljs-keyword">if</span> ( update_watchlist( watchlist , (d &lt;&lt; <span class="hljs-number">1</span>) | a , assignment ) ) {
+            <span class="hljs-keyword">yield</span>* _solve( n , clauses , watchlist , assignment , d + <span class="hljs-number">1</span> ) ;
+		}
+
+	}
+
+	assignment[d] = -<span class="hljs-number">1</span> ;
+
+}</div></div></div></div></body></html>
