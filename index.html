@@ -11,7 +11,9 @@
 <span class="hljs-comment">// ) ;</span>
 sat.decide( instance ) ; <span class="hljs-comment">// true</span>
 sat.verify( instance , sat.solve( instance ).next( ).value ) ; <span class="hljs-comment">// true</span>
-<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> certificate <span class="hljs-keyword">of</span> sat.solve( instance ) ) <span class="hljs-built_in">console</span>.log( instance.assignment( certificate ) ) ;</code></pre>
+<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">let</span> certificate <span class="hljs-keyword">of</span> sat.solve( instance ) ) {
+    <span class="hljs-built_in">console</span>.log( instance.assignment( certificate ) ) ;
+}</code></pre>
 <p><a href="https://raw.githubusercontent.com/aureooms/js-sat/master/LICENSE"><img src="http://img.shields.io/npm/l/aureooms-js-sat.svg?style=flat" alt="NPM license"></a>
 <a href="https://www.npmjs.org/package/aureooms-js-sat"><img src="http://img.shields.io/npm/v/aureooms-js-sat.svg?style=flat" alt="NPM version"></a>
 <a href="http://bower.io/search/?q=aureooms-js-sat"><img src="http://img.shields.io/bower/v/aureooms-js-sat.svg?style=flat" alt="Bower version"></a>
