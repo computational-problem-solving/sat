@@ -10,6 +10,9 @@ const _skip_blanks = function ( iterator ) {
 			case '\t' :
 			case '\n' :
 				continue ;
+			// HANDLE CUSTOM DELIMITER OF SATLIB
+			case '%' :
+				return [ true , null ] ;
 		}
 
 		return [ false , current.value ] ;

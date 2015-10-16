@@ -12,6 +12,9 @@ test( 'DIMACS 1' , function ( assert ) {
 		"c jdkljsqmljdmsqljf jds kljd mlsqkjdl " ,
 		"c jdkljsqmljdmsqljf\tjds kljd mlsqkjdl " ,
 		"p cnf 3 4" ,
+		"%",
+		"djshhfkdsjhkf hkjsdfh kjsdhf k"
+
 	] ) ) ;
 
 	assert.equal( instance.n , 0 ) ;
@@ -31,7 +34,9 @@ test( 'DIMACS 2' , function ( assert ) {
 		"1 0 1 2 3" ,
 		"0" ,
 		"-1 -2",
-		"-3 0 1 -2 3"
+		"-3 0 1 -2 3",
+		"%",
+		"djshhfkdsjhkf hkjsdfh kjsdhf k"
 	] ) ) ;
 
 	assert.equal( instance.n , 3 ) ;
@@ -51,7 +56,9 @@ test( 'DIMACS 3' , function ( assert ) {
 		"10 0 10 20 30" ,
 		"0" ,
 		"-10 -20",
-		"-30 0 10 -20 30"
+		"-30 0 10 -20 30",
+		"%",
+		"djshhfkdsjhkf hkjsdfh kjsdhf k"
 	] ) ) ;
 
 	assert.equal( instance.n , 30 ) ;
