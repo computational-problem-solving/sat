@@ -1,12 +1,12 @@
-"use strict";
+'use strict';
 
-var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; })();
+var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }; })();
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i]; return arr2; } else { return Array.from(arr); } }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
 (function () {
 
@@ -51,7 +51,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 					case 14:
 						context$3$0.prev = 14;
-						context$3$0.t0 = context$3$0["catch"](3);
+						context$3$0.t0 = context$3$0['catch'](3);
 						_didIteratorError = true;
 						_iteratorError = context$3$0.t0;
 
@@ -59,8 +59,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 						context$3$0.prev = 18;
 						context$3$0.prev = 19;
 
-						if (!_iteratorNormalCompletion && _iterator["return"]) {
-							_iterator["return"]();
+						if (!_iteratorNormalCompletion && _iterator['return']) {
+							_iterator['return']();
 						}
 
 					case 21:
@@ -80,7 +80,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 						return context$3$0.finish(18);
 
 					case 26:
-					case "end":
+					case 'end':
 						return context$3$0.stop();
 				}
 			}, marked2$0[0], this, [[3, 14, 18, 26], [19,, 21, 25]]);
@@ -122,8 +122,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 								_iteratorError2 = err;
 							} finally {
 								try {
-									if (!_iteratorNormalCompletion2 && _iterator2["return"]) {
-										_iterator2["return"]();
+									if (!_iteratorNormalCompletion2 && _iterator2['return']) {
+										_iterator2['return']();
 									}
 								} finally {
 									if (_didIteratorError2) {
@@ -140,7 +140,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 							break;
 						}
 
-						return context$3$0.abrupt("return");
+						return context$3$0.abrupt('return');
 
 					case 3:
 						if (!true) {
@@ -168,7 +168,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 							break;
 						}
 
-						return context$3$0.abrupt("return");
+						return context$3$0.abrupt('return');
 
 					case 14:
 
@@ -185,7 +185,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 					case 20:
 						context$3$0.prev = 20;
-						context$3$0.t0 = context$3$0["catch"](8);
+						context$3$0.t0 = context$3$0['catch'](8);
 						_didIteratorError3 = true;
 						_iteratorError3 = context$3$0.t0;
 
@@ -193,8 +193,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 						context$3$0.prev = 24;
 						context$3$0.prev = 25;
 
-						if (!_iteratorNormalCompletion3 && _iterator3["return"]) {
-							_iterator3["return"]();
+						if (!_iteratorNormalCompletion3 && _iterator3['return']) {
+							_iterator3['return']();
 						}
 
 					case 27:
@@ -222,7 +222,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 						break;
 
 					case 36:
-					case "end":
+					case 'end':
 						return context$3$0.stop();
 				}
 			}, marked2$0[1], this, [[8, 20, 24, 32], [25,, 27, 31]]);
@@ -247,7 +247,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 						return assignment;
 
 					case 3:
-						return context$3$0.abrupt("return");
+						return context$3$0.abrupt('return');
 
 					case 4:
 						_arr = [0, 1];
@@ -268,7 +268,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 							break;
 						}
 
-						return context$3$0.delegateYield(_solve(n, clauses, watchlist, assignment, d + 1), "t0", 11);
+						return context$3$0.delegateYield(_solve(n, clauses, watchlist, assignment, d + 1), 't0', 11);
 
 					case 11:
 						_i++;
@@ -280,7 +280,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 						assignment[d] = -1;
 
 					case 15:
-					case "end":
+					case 'end':
 						return context$3$0.stop();
 				}
 			}, marked2$0[2], this);
@@ -312,8 +312,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 						_iteratorError5 = err;
 					} finally {
 						try {
-							if (!_iteratorNormalCompletion5 && _iterator5["return"]) {
-								_iterator5["return"]();
+							if (!_iteratorNormalCompletion5 && _iterator5['return']) {
+								_iterator5['return']();
 							}
 						} finally {
 							if (_didIteratorError5) {
@@ -329,8 +329,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 				_iteratorError4 = err;
 			} finally {
 				try {
-					if (!_iteratorNormalCompletion4 && _iterator4["return"]) {
-						_iterator4["return"]();
+					if (!_iteratorNormalCompletion4 && _iterator4['return']) {
+						_iterator4['return']();
 					}
 				} finally {
 					if (_didIteratorError4) {
@@ -357,7 +357,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 			/* js/src/1-core/convert/ParitiesInstance.js */
 
 			_createClass(KeysInstance, [{
-				key: "assignment",
+				key: 'assignment',
 				value: function assignment(certificate) {
 					return _certificate_to_keys(this.variables, certificate);
 				}
@@ -377,7 +377,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 			/* js/src/1-core/convert/SignsInstance.js */
 
 			_createClass(ParitiesInstance, [{
-				key: "assignment",
+				key: 'assignment',
 				value: function assignment(certificate) {
 					return certificate.slice();
 				}
@@ -397,7 +397,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 			/* js/src/1-core/convert/_certificate_to_keys.js */
 
 			_createClass(SignsInstance, [{
-				key: "assignment",
+				key: 'assignment',
 				value: function assignment(certificate) {
 					return [0].concat(certificate);
 				}
@@ -439,8 +439,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 						_iteratorError7 = err;
 					} finally {
 						try {
-							if (!_iteratorNormalCompletion7 && _iterator7["return"]) {
-								_iterator7["return"]();
+							if (!_iteratorNormalCompletion7 && _iterator7['return']) {
+								_iterator7['return']();
 							}
 						} finally {
 							if (_didIteratorError7) {
@@ -454,8 +454,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 				_iteratorError6 = err;
 			} finally {
 				try {
-					if (!_iteratorNormalCompletion6 && _iterator6["return"]) {
-						_iterator6["return"]();
+					if (!_iteratorNormalCompletion6 && _iterator6['return']) {
+						_iterator6['return']();
 					}
 				} finally {
 					if (_didIteratorError6) {
@@ -512,8 +512,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 						_iteratorError9 = err;
 					} finally {
 						try {
-							if (!_iteratorNormalCompletion9 && _iterator9["return"]) {
-								_iterator9["return"]();
+							if (!_iteratorNormalCompletion9 && _iterator9['return']) {
+								_iterator9['return']();
 							}
 						} finally {
 							if (_didIteratorError9) {
@@ -529,8 +529,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 				_iteratorError8 = err;
 			} finally {
 				try {
-					if (!_iteratorNormalCompletion8 && _iterator8["return"]) {
-						_iterator8["return"]();
+					if (!_iteratorNormalCompletion8 && _iterator8['return']) {
+						_iterator8['return']();
 					}
 				} finally {
 					if (_didIteratorError8) {
@@ -573,8 +573,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 								_iteratorError11 = err;
 							} finally {
 								try {
-									if (!_iteratorNormalCompletion11 && _iterator11["return"]) {
-										_iterator11["return"]();
+									if (!_iteratorNormalCompletion11 && _iterator11['return']) {
+										_iterator11['return']();
 									}
 								} finally {
 									if (_didIteratorError11) {
@@ -595,8 +595,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 					_iteratorError10 = err;
 				} finally {
 					try {
-						if (!_iteratorNormalCompletion10 && _iterator10["return"]) {
-							_iterator10["return"]();
+						if (!_iteratorNormalCompletion10 && _iterator10['return']) {
+							_iterator10['return']();
 						}
 					} finally {
 						if (_didIteratorError10) {
@@ -640,8 +640,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 								_iteratorError13 = err;
 							} finally {
 								try {
-									if (!_iteratorNormalCompletion13 && _iterator13["return"]) {
-										_iterator13["return"]();
+									if (!_iteratorNormalCompletion13 && _iterator13['return']) {
+										_iterator13['return']();
 									}
 								} finally {
 									if (_didIteratorError13) {
@@ -662,8 +662,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 					_iteratorError12 = err;
 				} finally {
 					try {
-						if (!_iteratorNormalCompletion12 && _iterator12["return"]) {
-							_iterator12["return"]();
+						if (!_iteratorNormalCompletion12 && _iterator12['return']) {
+							_iterator12['return']();
 						}
 					} finally {
 						if (_didIteratorError12) {
@@ -707,8 +707,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 								_iteratorError15 = err;
 							} finally {
 								try {
-									if (!_iteratorNormalCompletion15 && _iterator15["return"]) {
-										_iterator15["return"]();
+									if (!_iteratorNormalCompletion15 && _iterator15['return']) {
+										_iterator15['return']();
 									}
 								} finally {
 									if (_didIteratorError15) {
@@ -729,8 +729,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 					_iteratorError14 = err;
 				} finally {
 					try {
-						if (!_iteratorNormalCompletion14 && _iterator14["return"]) {
-							_iterator14["return"]();
+						if (!_iteratorNormalCompletion14 && _iterator14['return']) {
+							_iterator14['return']();
 						}
 					} finally {
 						if (_didIteratorError14) {
@@ -752,6 +752,132 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 				assignment[i] = -1;
 			}return assignment;
 		}
+
+		/* js/src/1-core/parse */
+		/* js/src/1-core/parse/_parse_DIMACS_CNF.js */
+
+		var _skip_blanks = function _skip_blanks(iterator) {
+
+			while (true) {
+				var current = iterator.next();
+				if (current.done) return [true, null];
+
+				switch (current.value) {
+					case ' ':
+					case '\t':
+					case '\n':
+						continue;
+				}
+
+				return [false, current.value];
+			}
+		};
+
+		var _parse_int = function _parse_int(first_symbol, iterator) {
+
+			var i = 0;
+			var s = 1;
+
+			if (first_symbol === '-') s = -1;else i = +first_symbol;
+
+			while (true) {
+
+				var current = iterator.next();
+				if (current.done) return [true, s * i];
+
+				var c = current.value;
+
+				if (c < '0' || c > '9') return [false, s * i];
+
+				i *= 10;
+				i += +c;
+			}
+		};
+
+		var _parse_DIMACS_CNF = function _parse_DIMACS_CNF(iterable) {
+
+			var iterator = iterable[Symbol.iterator]();
+
+			var clauses = [];
+
+			// skip comments
+			while (true) {
+
+				var current = iterator.next();
+
+				if (current.done) return clauses;
+
+				var c = current.value;
+
+				// go to problem description
+				if (c === 'p') break;
+
+				// skip comment
+				while (true) {
+
+					var _current = iterator.next();
+
+					if (_current.done) return clauses;
+
+					// end of comment
+					if (_current.value === '\n') break;
+				}
+			}
+
+			// parse problem description
+			// ( we do not actually need to parse it if we suppose it is correct )
+
+			while (true) {
+
+				var current = iterator.next();
+
+				if (current.done) return clauses;
+
+				// end of description
+				if (current.value === '\n') break;
+			}
+
+			// parse problem
+
+			loop: while (true) {
+
+				var clause = [];
+
+				while (true) {
+					var _skip_blanks2 = _skip_blanks(iterator);
+
+					var _skip_blanks22 = _slicedToArray(_skip_blanks2, 2);
+
+					var done1 = _skip_blanks22[0];
+					var symbol = _skip_blanks22[1];
+
+					if (done1) {
+						if (clause.length > 0) clauses.push(clause);
+						return clauses;
+					}
+
+					var _parse_int2 = _parse_int(symbol, iterator);
+
+					var _parse_int22 = _slicedToArray(_parse_int2, 2);
+
+					var done2 = _parse_int22[0];
+					var i = _parse_int22[1];
+
+					if (i === 0) {
+						if (done2) return clauses;
+						clauses.push(clause);
+						continue loop;
+					}
+
+					clause.push(i > 0 ? i - 1 << 1 : -i - 1 << 1 | 1);
+
+					if (done2) {
+						clauses.push(clause);
+						return clauses;
+					}
+				}
+			}
+		};
 
 		/* js/src/1-core/setup_watchlist.js */
 		function setup_watchlist(n, clauses) {
@@ -776,8 +902,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 				_iteratorError16 = err;
 			} finally {
 				try {
-					if (!_iteratorNormalCompletion16 && _iterator16["return"]) {
-						_iterator16["return"]();
+					if (!_iteratorNormalCompletion16 && _iterator16['return']) {
+						_iterator16['return']();
 					}
 				} finally {
 					if (_didIteratorError16) {
@@ -828,8 +954,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 					_iteratorError17 = err;
 				} finally {
 					try {
-						if (!_iteratorNormalCompletion17 && _iterator17["return"]) {
-							_iterator17["return"]();
+						if (!_iteratorNormalCompletion17 && _iterator17['return']) {
+							_iterator17['return']();
 						}
 					} finally {
 						if (_didIteratorError17) {
@@ -863,7 +989,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 				return new ParitiesInstance(clauses);
 			},
 			signs: _sign_to_parity,
-			keys: _keys_to_parity
+			keys: _keys_to_parity,
+			dcnf: function dcnf(stream) {
+				return new ParitiesInstance(_parse_DIMACS_CNF(stream));
+			}
 		};
 
 		/* js/src/2-api/solve.js */
@@ -873,10 +1002,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 			return regeneratorRuntime.wrap(function solve$(context$3$0) {
 				while (1) switch (context$3$0.prev = context$3$0.next) {
 					case 0:
-						return context$3$0.delegateYield(_solve(n, clauses, setup_watchlist(n, clauses), makeassignment(n), 0), "t0", 1);
+						return context$3$0.delegateYield(_solve(n, clauses, setup_watchlist(n, clauses), makeassignment(n), 0), 't0', 1);
 
 					case 1:
-					case "end":
+					case 'end':
 						return context$3$0.stop();
 				}
 			}, solve, this);

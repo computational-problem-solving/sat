@@ -114,3 +114,4 @@ require( [ "aureooms-js-sat" ] , function ( sat ) { ... } ) ;
 ## Reference
 
   - [Simple solver in Python](http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html)
+  - [SATLIB](http://www.cs.ubc.ca/~hoos/SATLIB/benchm.html)
