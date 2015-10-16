@@ -3,7 +3,7 @@
 	"name": "aureooms-js-sat",
 	"description": "Satisfiability code bricks for JavaScript",
 	"license": "AGPL-3.0",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"scripts": [
 		"js/dist/sat.js"
 	],
