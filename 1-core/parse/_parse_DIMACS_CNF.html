@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><title>1-core/parse/_parse_DIMACS_CNF</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../../"><meta name="groc-document-path" content="1-core/parse/_parse_DIMACS_CNF"><meta name="groc-project-path" content="js/src/1-core/parse/_parse_DIMACS_CNF.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-sat"><link rel="stylesheet" type="text/css" media="all" href="../../assets/style.css"><script type="text/javascript" src="../../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-sat/blob/master/js/src/1-core/parse/_parse_DIMACS_CNF.js">js/src/1-core/parse/_parse_DIMACS_CNF.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper"><span class="hljs-keyword">const</span> _skip_blanks = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> iterator </span>) </span>{
+
+	<span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
+		<span class="hljs-keyword">const</span> current = iterator.next( ) ;
+		<span class="hljs-keyword">if</span> ( current.done ) <span class="hljs-keyword">return</span> [ <span class="hljs-literal">true</span> , <span class="hljs-literal">null</span> ] ;
+
+		<span class="hljs-keyword">switch</span> ( current.value ) {
+			<span class="hljs-keyword">case</span> <span class="hljs-string">' '</span> :
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'\t'</span> :
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'\n'</span> :
+				<span class="hljs-keyword">continue</span> ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>HANDLE CUSTOM DELIMITER OF SATLIB</p></div></div><div class="code"><div class="wrapper">			<span class="hljs-keyword">case</span> <span class="hljs-string">'%'</span> :
+				<span class="hljs-keyword">return</span> [ <span class="hljs-literal">true</span> , <span class="hljs-literal">null</span> ] ;
+		}
+
+		<span class="hljs-keyword">return</span> [ <span class="hljs-literal">false</span> , current.value ] ;
+	}
+
+} ;
+
+<span class="hljs-keyword">const</span> _parse_int = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> first_symbol , iterator </span>) </span>{
+
+	<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span> ;
+	<span class="hljs-keyword">let</span> s = <span class="hljs-number">1</span> ;
+
+	<span class="hljs-keyword">if</span> ( first_symbol === <span class="hljs-string">'-'</span> ) s = -<span class="hljs-number">1</span> ;
+	<span class="hljs-keyword">else</span> i = +first_symbol ;
+
+	<span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
+
+		<span class="hljs-keyword">const</span> current = iterator.next( ) ;
+		<span class="hljs-keyword">if</span> ( current.done ) <span class="hljs-keyword">return</span> [ <span class="hljs-literal">true</span> , s * i ] ;
+
+		<span class="hljs-keyword">const</span> c = current.value ;
+
+		<span class="hljs-keyword">if</span> ( c &lt; <span class="hljs-string">'0'</span> || c &gt; <span class="hljs-string">'9'</span> ) <span class="hljs-keyword">return</span> [ <span class="hljs-literal">false</span> , s * i ] ;
+
+		i *= <span class="hljs-number">10</span> ;
+		i += +c ;
+
+	}
+
+} ;
+
+<span class="hljs-keyword">const</span> _parse_DIMACS_CNF = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"> iterable </span>) </span>{
+
+	<span class="hljs-keyword">const</span> iterator = iterable[<span class="hljs-built_in">Symbol</span>.iterator]( ) ;
+
+	<span class="hljs-keyword">const</span> clauses = [ ] ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>skip comments</p></div></div><div class="code"><div class="wrapper">	<span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
+
+		<span class="hljs-keyword">const</span> current = iterator.next( ) ;
+
+		<span class="hljs-keyword">if</span> ( current.done ) <span class="hljs-keyword">return</span> clauses ;
+
+		<span class="hljs-keyword">const</span> c = current.value ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>go to problem description</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">if</span> ( c === <span class="hljs-string">'p'</span> ) <span class="hljs-keyword">break</span> ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>skip comment</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
+
+			<span class="hljs-keyword">const</span> current = iterator.next( ) ;
+
+			<span class="hljs-keyword">if</span> ( current.done ) <span class="hljs-keyword">return</span> clauses ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>end of comment</p></div></div><div class="code"><div class="wrapper">			<span class="hljs-keyword">if</span> ( current.value === <span class="hljs-string">'\n'</span> ) <span class="hljs-keyword">break</span> ;
+
+		}
+
+	}</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>parse problem description
+( we do not actually need to parse it if we suppose it is correct )</p></div></div><div class="code"><div class="wrapper">	<span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
+
+		<span class="hljs-keyword">const</span> current = iterator.next( ) ;
+
+		<span class="hljs-keyword">if</span> ( current.done ) <span class="hljs-keyword">return</span> clauses ;</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>end of description</p></div></div><div class="code"><div class="wrapper">		<span class="hljs-keyword">if</span> ( current.value === <span class="hljs-string">'\n'</span> ) <span class="hljs-keyword">break</span> ;
+
+	}</div></div></div><div class="segment"><div class="comments "><div class="wrapper"><p>parse problem</p></div></div><div class="code"><div class="wrapper">	loop : <span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
+
+		<span class="hljs-keyword">const</span> clause = [ ] ;
+
+		<span class="hljs-keyword">while</span> ( <span class="hljs-literal">true</span> ) {
+
+			<span class="hljs-keyword">const</span> [ done1 , symbol ] = _skip_blanks( iterator ) ;
+			<span class="hljs-keyword">if</span> ( done1 ) {
+				<span class="hljs-keyword">if</span> ( clause.length &gt; <span class="hljs-number">0</span> ) clauses.push( clause ) ;
+				<span class="hljs-keyword">return</span> clauses ;
+			}
+
+			<span class="hljs-keyword">const</span> [ done2 , i ] = _parse_int( symbol , iterator ) ;
+			<span class="hljs-keyword">if</span> ( i === <span class="hljs-number">0</span> ) {
+				<span class="hljs-keyword">if</span> ( done2 ) <span class="hljs-keyword">return</span> clauses ;
+				clauses.push( clause ) ;
+				<span class="hljs-keyword">continue</span> loop ;
+			}
+
+			clause.push( i &gt; <span class="hljs-number">0</span> ? ( i - <span class="hljs-number">1</span> ) &lt;&lt; <span class="hljs-number">1</span> : ( -i - <span class="hljs-number">1</span> ) &lt;&lt; <span class="hljs-number">1</span> | <span class="hljs-number">1</span> ) ;
+
+			<span class="hljs-keyword">if</span> ( done2 ) {
+				clauses.push( clause ) ;
+				<span class="hljs-keyword">return</span> clauses ;
+			}
+
+		}
+
+	}
+
+} ;</div></div></div></div></body></html>

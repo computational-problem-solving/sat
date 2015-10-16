@@ -1,5 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><title>2-api/from</title></head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"><meta name="groc-relative-root" content="../"><meta name="groc-document-path" content="2-api/from"><meta name="groc-project-path" content="js/src/2-api/from.js"><meta name="groc-github-url" content="https://github.com/aureooms/js-sat"><link rel="stylesheet" type="text/css" media="all" href="../assets/style.css"><script type="text/javascript" src="../assets/behavior.js"></script><body><div id="meta"><div class="file-path"><a href="https://github.com/aureooms/js-sat/blob/master/js/src/2-api/from.js">js/src/2-api/from.js</a></div></div><div id="document"><div class="segment"><div class="code"><div class="wrapper">exports.from = {
 	parities : ( clauses ) =&gt; <span class="hljs-keyword">new</span> ParitiesInstance( clauses ) ,
 	signs : _sign_to_parity ,
-	keys : _keys_to_parity
+	keys : _keys_to_parity ,
+	dcnf : ( stream ) =&gt; <span class="hljs-keyword">new</span> ParitiesInstance( _parse_DIMACS_CNF( stream ) )
 } ;</div></div></div></div></body></html>

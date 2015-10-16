@@ -496,6 +496,36 @@ f.event={add:function(a,c,d,e,g){var h,i,j,k,l,m,n,o,p,q,r,s;if(!(a.nodeType===3
           "depth": 2,
           "outline": []
         }, {
+          "type": "folder",
+          "data": {
+            "path": "1-core/parse",
+            "title": "parse"
+          },
+          "depth": 2,
+          "children": [
+            {
+              "type": "file",
+              "data": {
+                "language": {
+                  "nameMatchers": [".js"],
+                  "pygmentsLexer": "javascript",
+                  "multiLineComment": ["/*", "*", "*/"],
+                  "singleLineComment": ["//"],
+                  "ignorePrefix": "}",
+                  "foldPrefix": "^",
+                  "name": "JavaScript"
+                },
+                "sourcePath": "/home/aureooms/dev/js/js-sat/js/src/1-core/parse/_parse_DIMACS_CNF.js",
+                "projectPath": "js/src/1-core/parse/_parse_DIMACS_CNF.js",
+                "targetPath": "1-core/parse/_parse_DIMACS_CNF",
+                "pageTitle": "1-core/parse/_parse_DIMACS_CNF",
+                "title": "_parse_DIMACS_CNF"
+              },
+              "depth": 3,
+              "outline": []
+            }
+          ]
+        }, {
           "type": "file",
           "data": {
             "language": {
