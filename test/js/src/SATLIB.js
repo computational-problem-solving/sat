@@ -12,41 +12,20 @@ function T ( name , satisfiable ) {
 		var fs = require( 'fs' ) ;
 
 		var filename = './test/js/data/' + name + '.cnf' ;
-		var stream = fs.createReadStream( filename , { encoding : 'utf8' } ) ;
+		var iterable = fs.readFileSync( filename , { encoding : 'utf8' } ) ;
 
-		var iterable = {
-			[Symbol.iterator] : function ( ) {
-				return {
-					next : function ( ) {
-						var buf = stream.read( 1 ) ;
-						if ( buf === null ) return { done : true } ;
-						return { done : false , value : buf } ;
-					}
-				} ;
-			}
-		} ;
+		var instance = sat.from.dcnf( iterable ) ;
 
-		expect( satisfiable ? 2 : 1 ) ;
-		stop( ) ;
+		if ( !satisfiable ) {
+			assert.ok( !sat.decide( instance ) ) ;
+		}
 
-		stream.once( 'readable' , function ( ) {
-
-			var instance = sat.from.dcnf( iterable ) ;
-
-			if ( !satisfiable ) {
-				assert.ok( !sat.decide( instance ) ) ;
-			}
-
-			else {
-				assert.ok( sat.decide( instance ) ) ;
-				var certificate = sat.solve( instance ).next( ).value ;
-				if ( !certificate ) assert.ok( false , 'missing certificate' ) ;
-				else assert.ok( sat.verify( instance , certificate ) ) ;
-			}
-
-			start( ) ;
-
-		} ) ;
+		else {
+			assert.ok( sat.decide( instance ) ) ;
+			var certificate = sat.solve( instance ).next( ).value ;
+			if ( !certificate ) assert.ok( false , 'missing certificate' ) ;
+			else assert.ok( sat.verify( instance , certificate ) ) ;
+		}
 
 	} ) ;
 }
