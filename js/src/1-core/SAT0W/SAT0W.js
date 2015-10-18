@@ -1,4 +1,4 @@
-function* _solve ( n , clauses , watchlist , assignment , d ) {
+function* SAT0W ( n , clauses , watchlist , assignment , d ) {
 
     /**
      * Recursively solve SAT by assigning to variables d, d+1, ..., n-1. Assumes
@@ -15,7 +15,7 @@ function* _solve ( n , clauses , watchlist , assignment , d ) {
         assignment[d] = a ;
 
         if ( update_watchlist( watchlist , (d << 1) | a , assignment ) ) {
-            yield* _solve( n , clauses , watchlist , assignment , d + 1 ) ;
+            yield* SAT0W( n , clauses , watchlist , assignment , d + 1 ) ;
 		}
 
 	}

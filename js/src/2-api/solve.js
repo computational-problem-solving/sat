@@ -1,6 +1,6 @@
 const solve = function* ( { clauses , n } ) {
 
-	yield* _solve( n , clauses , setup_watchlist( n , clauses ) , makeassignment( n ) , 0 ) ;
+	yield* SAT0W( n , clauses , setup_watchlist( n , clauses ) , setup_assignment( n ) , 0 ) ;
 
 } ;
 

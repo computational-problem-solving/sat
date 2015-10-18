@@ -1,4 +1,4 @@
-function makeassignment ( n ) {
+function setup_assignment ( n ) {
 
 	const assignment = new Array( n ) ;
 
