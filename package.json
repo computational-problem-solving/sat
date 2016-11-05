@@ -22,7 +22,7 @@
 	"devDependencies": {
 		"aureooms-js-compare": "^1.4.5",
 		"aureooms-js-itertools": "^3.0.0",
-		"aureooms-node-package": "^6.0.1"
+		"aureooms-node-package": "^7.0.0"
 	},
 	"keywords": [
 		"NP",
