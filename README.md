@@ -20,15 +20,15 @@ for ( let certificate of sat.solve( instance ) ) {
 }
 ```
 
-[![NPM license](http://img.shields.io/npm/l/aureooms-js-sat.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sat/master/LICENSE)
-[![NPM version](http://img.shields.io/npm/v/aureooms-js-sat.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-sat)
-[![Bower version](http://img.shields.io/bower/v/aureooms-js-sat.svg?style=flat)](http://bower.io/search/?q=aureooms-js-sat)
+[![NPM license](http://img.shields.io/npm/l/@aureooms/js-sat.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sat/master/LICENSE)
+[![NPM version](http://img.shields.io/npm/v/@aureooms/js-sat.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-sat)
+[![Bower version](http://img.shields.io/bower/v/@aureooms/js-sat.svg?style=flat)](http://bower.io/search/?q=@aureooms/js-sat)
 [![Build Status](http://img.shields.io/travis/aureooms/js-sat.svg?style=flat)](https://travis-ci.org/aureooms/js-sat)
 [![Coverage Status](http://img.shields.io/coveralls/aureooms/js-sat.svg?style=flat)](https://coveralls.io/r/aureooms/js-sat)
 [![Dependencies Status](http://img.shields.io/david/aureooms/js-sat.svg?style=flat)](https://david-dm.org/aureooms/js-sat#info=dependencies)
 [![devDependencies Status](http://img.shields.io/david/dev/aureooms/js-sat.svg?style=flat)](https://david-dm.org/aureooms/js-sat#info=devDependencies)
 [![Code Climate](http://img.shields.io/codeclimate/github/aureooms/js-sat.svg?style=flat)](https://codeclimate.com/github/aureooms/js-sat)
-[![NPM downloads per month](http://img.shields.io/npm/dm/aureooms-js-sat.svg?style=flat)](https://www.npmjs.org/package/aureooms-js-sat)
+[![NPM downloads per month](http://img.shields.io/npm/dm/@aureooms/js-sat.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-sat)
 [![GitHub issues](http://img.shields.io/github/issues/aureooms/js-sat.svg?style=flat)](https://github.com/aureooms/js-sat/issues)
 [![Inline docs](http://inch-ci.org/github/aureooms/js-sat.svg?branch=master&style=shields)](http://inch-ci.org/github/aureooms/js-sat)
 
@@ -47,7 +47,7 @@ and [npm](https://github.com/npm/npm).
 ```terminal
 jspm install github:aureooms/js-sat
 # or
-jspm install npm:aureooms-js-sat
+jspm install npm:@aureooms/js-sat
 ```
 ### duo
 No install step needed for duo!
@@ -59,27 +59,27 @@ component install aureooms/js-sat
 
 ### bower
 ```terminal
-bower install aureooms-js-sat
+bower install @aureooms/js-sat
 ```
 
 ### ender
 ```terminal
-ender add aureooms-js-sat
+ender add @aureooms/js-sat
 ```
 
 ### jam
 ```terminal
-jam install aureooms-js-sat
+jam install @aureooms/js-sat
 ```
 
 ### spm
 ```terminal
-spm install aureooms-js-sat --save
+spm install @aureooms/js-sat --save
 ```
 
 ### npm
 ```terminal
-npm install aureooms-js-sat --save
+npm install @aureooms/js-sat --save
 ```
 
 ## Require
@@ -87,7 +87,7 @@ npm install aureooms-js-sat --save
 ```js
 let sat = require( "github:aureooms/js-sat" ) ;
 // or
-import sat from 'aureooms-js-sat' ;
+import sat from '@aureooms/js-sat' ;
 ```
 ### duo
 ```js
@@ -96,19 +96,19 @@ let sat = require( "aureooms/js-sat" ) ;
 
 ### component, ender, spm, npm
 ```js
-let sat = require( "aureooms-js-sat" ) ;
+let sat = require( "@aureooms/js-sat" ) ;
 ```
 
 ### bower
 The script tag exposes the global variable `sat`.
 ```html
-<script src="bower_components/aureooms-js-sat/js/dist/sat.min.js"></script>
+<script src="bower_components/@aureooms/js-sat/js/dist/sat.min.js"></script>
 ```
 Alternatively, you can use any tool mentioned [here](http://bower.io/docs/tools/).
 
 ### jam
 ```js
-require( [ "aureooms-js-sat" ] , function ( sat ) { ... } ) ;
+require( [ "@aureooms/js-sat" ] , function ( sat ) { ... } ) ;
 ```
 
 ## Reference
