@@ -1,6 +1,6 @@
 
-var compare = require( 'aureooms-js-compare' ) ;
-var itertools = require( 'aureooms-js-itertools' ) ;
+var compare = require( '@aureooms/js-compare' ) ;
+var itertools = require( '@aureooms/js-itertools' ) ;
 
 var lex = compare.lexicographical( compare.increasing ) ;
 var list = itertools.list ;

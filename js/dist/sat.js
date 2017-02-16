@@ -1031,12 +1031,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 	if (typeof exports === "object") {
 		definition(exports);
 	} else if (typeof define === "function" && define.amd) {
-		define("aureooms-js-sat", [], function () {
+		define("@aureooms/js-sat", [], function () {
 			return definition({});
 		});
 	} else if (typeof window === "object" && typeof window.document === "object") {
 		definition(window["sat"] = {});
-	} else console.error("unable to detect type of module to define for aureooms-js-sat");
+	} else console.error("unable to detect type of module to define for @aureooms/js-sat");
 })();
 
 /**
