@@ -20,8 +20,8 @@
 		"main": "js/dist/sat.js"
 	},
 	"devDependencies": {
-		"aureooms-js-compare": "^1.4.5",
-		"aureooms-js-itertools": "^3.0.0",
+		"@aureooms/js-compare": "^1.4.5",
+		"@aureooms/js-itertools": "^3.0.0",
 		"aureooms-node-package": "^6.0.1"
 	},
 	"keywords": [
@@ -35,7 +35,7 @@
 		"js",
 		"satisfiability"
 	],
-	"name": "aureooms-js-sat",
+	"name": "@aureooms/js-sat",
 	"description": "Satisfiability code bricks for JavaScript",
 	"license": "AGPL-3.0"
 }
