@@ -1,7 +1,10 @@
-[js-sat](http://aureooms.github.io/js-sat)
+[@aureooms/js-sat](https://aureooms.github.io/js-sat)
 ==
 
 Boolean formula satisfiability algorithms for JavaScript.
+Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
+For a polynomial time algorithm for the 2SAT problem see
+[@aureooms/js-2sat](https://github.com/aureooms/js-2sat).
 
 ```js
 let instance = sat.from.signs( [ [ -1 , 2 , 3 ] , [ -2 , -4 , 5 ] , [ 1 , -5 ] ] ) ;
