@@ -96,9 +96,9 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
-    "@aureooms/js-sat/src/core/setup_assigment.js~setup_assignment",
+    "@aureooms/js-sat/src/core/setup_assignment.js~setup_assignment",
     "function/index.html#static-function-setup_assignment",
-    "<span>setup_assignment</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/setup_assigment.js</span>",
+    "<span>setup_assignment</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/setup_assignment.js</span>",
     "function"
   ],
   [
@@ -672,9 +672,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/core/setup_assigment.js",
-    "file/src/core/setup_assigment.js.html",
-    "src/core/setup_assigment.js",
+    "src/core/setup_assignment.js",
+    "file/src/core/setup_assignment.js.html",
+    "src/core/setup_assignment.js",
     "file"
   ],
   [

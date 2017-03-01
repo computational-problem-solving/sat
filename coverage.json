@@ -1,29 +1,25 @@
 {
-  "coverage": "0%",
+  "coverage": "32.35%",
   "expectCount": 34,
-  "actualCount": 0,
+  "actualCount": 11,
   "files": {
     "src/core/convert/KeysInstance.js": {
       "expectCount": 6,
-      "actualCount": 0,
+      "actualCount": 2,
       "undocumentLines": [
         3,
         11,
-        7,
-        5,
-        8,
-        6
+        12,
+        10
       ]
     },
     "src/core/convert/ParitiesInstance.js": {
       "expectCount": 5,
-      "actualCount": 0,
+      "actualCount": 2,
       "undocumentLines": [
         3,
-        10,
-        6,
-        5,
-        7
+        9,
+        10
       ]
     },
     "src/core/SAT0W/SAT0W.js": {
@@ -35,28 +31,22 @@
     },
     "src/core/convert/SignsInstance.js": {
       "expectCount": 5,
-      "actualCount": 0,
+      "actualCount": 2,
       "undocumentLines": [
         3,
-        10,
-        6,
-        5,
-        7
+        9,
+        10
       ]
     },
     "src/core/convert/_certificate_to_keys.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/core/convert/_count.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/core/convert/_keys_to_parity.js": {
       "expectCount": 1,
@@ -97,10 +87,8 @@
     },
     "src/core/_verify.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/api/decide.js": {
       "expectCount": 1,
@@ -111,12 +99,10 @@
     },
     "src/api/from.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
-    "src/core/setup_assigment.js": {
+    "src/core/setup_assignment.js": {
       "expectCount": 1,
       "actualCount": 0,
       "undocumentLines": [
@@ -132,10 +118,8 @@
     },
     "src/api/solve.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/core/SAT0W/update_watchlist.js": {
       "expectCount": 1,

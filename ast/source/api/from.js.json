@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 314,
+  "end": 1210,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 9,
+      "line": 32,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 314,
+    "end": 1210,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 9,
+        "line": 32,
         "column": 0
       }
     },
@@ -259,19 +259,37 @@
             "raw": "'../core'"
           },
           "value": "../core"
-        }
+        },
+        "trailingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * The input is converted to parity format in each case.\n ",
+            "start": 100,
+            "end": 164,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 5,
+                "column": 3
+              }
+            }
+          }
+        ]
       },
       {
         "type": "ExportNamedDeclaration",
-        "start": 100,
-        "end": 313,
+        "start": 165,
+        "end": 1209,
         "loc": {
           "start": {
-            "line": 3,
+            "line": 6,
             "column": 0
           },
           "end": {
-            "line": 8,
+            "line": 31,
             "column": 3
           }
         },
@@ -279,76 +297,77 @@
         "source": null,
         "declaration": {
           "type": "VariableDeclaration",
-          "start": 107,
-          "end": 313,
+          "start": 172,
+          "end": 1209,
           "loc": {
             "start": {
-              "line": 3,
+              "line": 6,
               "column": 7
             },
             "end": {
-              "line": 8,
+              "line": 31,
               "column": 3
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 113,
-              "end": 311,
+              "start": 178,
+              "end": 1207,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 6,
                   "column": 13
                 },
                 "end": {
-                  "line": 8,
+                  "line": 31,
                   "column": 1
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 113,
-                "end": 117,
+                "start": 178,
+                "end": 182,
                 "loc": {
                   "start": {
-                    "line": 3,
+                    "line": 6,
                     "column": 13
                   },
                   "end": {
-                    "line": 3,
+                    "line": 6,
                     "column": 17
                   },
                   "identifierName": "from"
                 },
-                "name": "from"
+                "name": "from",
+                "leadingComments": null
               },
               "init": {
                 "type": "ObjectExpression",
-                "start": 120,
-                "end": 311,
+                "start": 185,
+                "end": 1207,
                 "loc": {
                   "start": {
-                    "line": 3,
+                    "line": 6,
                     "column": 20
                   },
                   "end": {
-                    "line": 8,
+                    "line": 31,
                     "column": 1
                   }
                 },
                 "properties": [
                   {
                     "type": "ObjectProperty",
-                    "start": 123,
-                    "end": 180,
+                    "start": 462,
+                    "end": 519,
                     "loc": {
                       "start": {
-                        "line": 4,
+                        "line": 13,
                         "column": 1
                       },
                       "end": {
-                        "line": 4,
+                        "line": 13,
                         "column": 58
                       }
                     },
@@ -357,32 +376,33 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 123,
-                      "end": 131,
+                      "start": 462,
+                      "end": 470,
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 13,
                           "column": 1
                         },
                         "end": {
-                          "line": 4,
+                          "line": 13,
                           "column": 9
                         },
                         "identifierName": "parities"
                       },
-                      "name": "parities"
+                      "name": "parities",
+                      "leadingComments": null
                     },
                     "value": {
                       "type": "ArrowFunctionExpression",
-                      "start": 134,
-                      "end": 180,
+                      "start": 473,
+                      "end": 519,
                       "loc": {
                         "start": {
-                          "line": 4,
+                          "line": 13,
                           "column": 12
                         },
                         "end": {
-                          "line": 4,
+                          "line": 13,
                           "column": 58
                         }
                       },
@@ -393,15 +413,15 @@
                       "params": [
                         {
                           "type": "Identifier",
-                          "start": 136,
-                          "end": 143,
+                          "start": 475,
+                          "end": 482,
                           "loc": {
                             "start": {
-                              "line": 4,
+                              "line": 13,
                               "column": 14
                             },
                             "end": {
-                              "line": 4,
+                              "line": 13,
                               "column": 21
                             },
                             "identifierName": "clauses"
@@ -411,29 +431,29 @@
                       ],
                       "body": {
                         "type": "NewExpression",
-                        "start": 149,
-                        "end": 180,
+                        "start": 488,
+                        "end": 519,
                         "loc": {
                           "start": {
-                            "line": 4,
+                            "line": 13,
                             "column": 27
                           },
                           "end": {
-                            "line": 4,
+                            "line": 13,
                             "column": 58
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 153,
-                          "end": 169,
+                          "start": 492,
+                          "end": 508,
                           "loc": {
                             "start": {
-                              "line": 4,
+                              "line": 13,
                               "column": 31
                             },
                             "end": {
-                              "line": 4,
+                              "line": 13,
                               "column": 47
                             },
                             "identifierName": "ParitiesInstance"
@@ -443,15 +463,15 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 171,
-                            "end": 178,
+                            "start": 510,
+                            "end": 517,
                             "loc": {
                               "start": {
-                                "line": 4,
+                                "line": 13,
                                 "column": 49
                               },
                               "end": {
-                                "line": 4,
+                                "line": 13,
                                 "column": 56
                               },
                               "identifierName": "clauses"
@@ -460,19 +480,37 @@
                           }
                         ]
                       }
-                    }
+                    },
+                    "leadingComments": [
+                      {
+                        "type": "CommentBlock",
+                        "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t ",
+                        "start": 188,
+                        "end": 460,
+                        "loc": {
+                          "start": {
+                            "line": 7,
+                            "column": 1
+                          },
+                          "end": {
+                            "line": 12,
+                            "column": 4
+                          }
+                        }
+                      }
+                    ]
                   },
                   {
                     "type": "ObjectProperty",
-                    "start": 184,
-                    "end": 207,
+                    "start": 761,
+                    "end": 784,
                     "loc": {
                       "start": {
-                        "line": 5,
+                        "line": 19,
                         "column": 1
                       },
                       "end": {
-                        "line": 5,
+                        "line": 19,
                         "column": 24
                       }
                     },
@@ -481,50 +519,69 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 184,
-                      "end": 189,
+                      "start": 761,
+                      "end": 766,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 19,
                           "column": 1
                         },
                         "end": {
-                          "line": 5,
+                          "line": 19,
                           "column": 6
                         },
                         "identifierName": "signs"
                       },
-                      "name": "signs"
+                      "name": "signs",
+                      "leadingComments": null
                     },
                     "value": {
                       "type": "Identifier",
-                      "start": 192,
-                      "end": 207,
+                      "start": 769,
+                      "end": 784,
                       "loc": {
                         "start": {
-                          "line": 5,
+                          "line": 19,
                           "column": 9
                         },
                         "end": {
-                          "line": 5,
+                          "line": 19,
                           "column": 24
                         },
                         "identifierName": "_sign_to_parity"
                       },
                       "name": "_sign_to_parity"
-                    }
+                    },
+                    "leadingComments": [
+                      {
+                        "type": "CommentBlock",
+                        "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t ",
+                        "start": 523,
+                        "end": 759,
+                        "loc": {
+                          "start": {
+                            "line": 14,
+                            "column": 1
+                          },
+                          "end": {
+                            "line": 18,
+                            "column": 4
+                          }
+                        }
+                      }
+                    ]
                   },
                   {
                     "type": "ObjectProperty",
-                    "start": 211,
-                    "end": 233,
+                    "start": 1055,
+                    "end": 1077,
                     "loc": {
                       "start": {
-                        "line": 6,
+                        "line": 26,
                         "column": 1
                       },
                       "end": {
-                        "line": 6,
+                        "line": 26,
                         "column": 23
                       }
                     },
@@ -533,50 +590,69 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 211,
-                      "end": 215,
+                      "start": 1055,
+                      "end": 1059,
                       "loc": {
                         "start": {
-                          "line": 6,
+                          "line": 26,
                           "column": 1
                         },
                         "end": {
-                          "line": 6,
+                          "line": 26,
                           "column": 5
                         },
                         "identifierName": "keys"
                       },
-                      "name": "keys"
+                      "name": "keys",
+                      "leadingComments": null
                     },
                     "value": {
                       "type": "Identifier",
-                      "start": 218,
-                      "end": 233,
+                      "start": 1062,
+                      "end": 1077,
                       "loc": {
                         "start": {
-                          "line": 6,
+                          "line": 26,
                           "column": 8
                         },
                         "end": {
-                          "line": 6,
+                          "line": 26,
                           "column": 23
                         },
                         "identifierName": "_keys_to_parity"
                       },
                       "name": "_keys_to_parity"
-                    }
+                    },
+                    "leadingComments": [
+                      {
+                        "type": "CommentBlock",
+                        "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t ",
+                        "start": 788,
+                        "end": 1053,
+                        "loc": {
+                          "start": {
+                            "line": 20,
+                            "column": 1
+                          },
+                          "end": {
+                            "line": 25,
+                            "column": 4
+                          }
+                        }
+                      }
+                    ]
                   },
                   {
                     "type": "ObjectProperty",
-                    "start": 237,
-                    "end": 309,
+                    "start": 1133,
+                    "end": 1205,
                     "loc": {
                       "start": {
-                        "line": 7,
+                        "line": 30,
                         "column": 1
                       },
                       "end": {
-                        "line": 7,
+                        "line": 30,
                         "column": 73
                       }
                     },
@@ -585,32 +661,33 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 237,
-                      "end": 241,
+                      "start": 1133,
+                      "end": 1137,
                       "loc": {
                         "start": {
-                          "line": 7,
+                          "line": 30,
                           "column": 1
                         },
                         "end": {
-                          "line": 7,
+                          "line": 30,
                           "column": 5
                         },
                         "identifierName": "dcnf"
                       },
-                      "name": "dcnf"
+                      "name": "dcnf",
+                      "leadingComments": null
                     },
                     "value": {
                       "type": "ArrowFunctionExpression",
-                      "start": 244,
-                      "end": 309,
+                      "start": 1140,
+                      "end": 1205,
                       "loc": {
                         "start": {
-                          "line": 7,
+                          "line": 30,
                           "column": 8
                         },
                         "end": {
-                          "line": 7,
+                          "line": 30,
                           "column": 73
                         }
                       },
@@ -621,15 +698,15 @@
                       "params": [
                         {
                           "type": "Identifier",
-                          "start": 246,
-                          "end": 252,
+                          "start": 1142,
+                          "end": 1148,
                           "loc": {
                             "start": {
-                              "line": 7,
+                              "line": 30,
                               "column": 10
                             },
                             "end": {
-                              "line": 7,
+                              "line": 30,
                               "column": 16
                             },
                             "identifierName": "stream"
@@ -639,29 +716,29 @@
                       ],
                       "body": {
                         "type": "NewExpression",
-                        "start": 258,
-                        "end": 309,
+                        "start": 1154,
+                        "end": 1205,
                         "loc": {
                           "start": {
-                            "line": 7,
+                            "line": 30,
                             "column": 22
                           },
                           "end": {
-                            "line": 7,
+                            "line": 30,
                             "column": 73
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 262,
-                          "end": 278,
+                          "start": 1158,
+                          "end": 1174,
                           "loc": {
                             "start": {
-                              "line": 7,
+                              "line": 30,
                               "column": 26
                             },
                             "end": {
-                              "line": 7,
+                              "line": 30,
                               "column": 42
                             },
                             "identifierName": "ParitiesInstance"
@@ -671,29 +748,29 @@
                         "arguments": [
                           {
                             "type": "CallExpression",
-                            "start": 280,
-                            "end": 307,
+                            "start": 1176,
+                            "end": 1203,
                             "loc": {
                               "start": {
-                                "line": 7,
+                                "line": 30,
                                 "column": 44
                               },
                               "end": {
-                                "line": 7,
+                                "line": 30,
                                 "column": 71
                               }
                             },
                             "callee": {
                               "type": "Identifier",
-                              "start": 280,
-                              "end": 297,
+                              "start": 1176,
+                              "end": 1193,
                               "loc": {
                                 "start": {
-                                  "line": 7,
+                                  "line": 30,
                                   "column": 44
                                 },
                                 "end": {
-                                  "line": 7,
+                                  "line": 30,
                                   "column": 61
                                 },
                                 "identifierName": "_parse_DIMACS_CNF"
@@ -703,15 +780,15 @@
                             "arguments": [
                               {
                                 "type": "Identifier",
-                                "start": 299,
-                                "end": 305,
+                                "start": 1195,
+                                "end": 1201,
                                 "loc": {
                                   "start": {
-                                    "line": 7,
+                                    "line": 30,
                                     "column": 63
                                   },
                                   "end": {
-                                    "line": 7,
+                                    "line": 30,
                                     "column": 69
                                   },
                                   "identifierName": "stream"
@@ -722,21 +799,156 @@
                           }
                         ]
                       }
-                    }
+                    },
+                    "leadingComments": [
+                      {
+                        "type": "CommentBlock",
+                        "value": "*\n\t * Parses a stream in DIMACS CNF format.\n\t ",
+                        "start": 1081,
+                        "end": 1131,
+                        "loc": {
+                          "start": {
+                            "line": 27,
+                            "column": 1
+                          },
+                          "end": {
+                            "line": 29,
+                            "column": 4
+                          }
+                        }
+                      }
+                    ]
                   }
                 ]
-              }
+              },
+              "leadingComments": null
             }
           ],
           "kind": "const",
-          "leadingComments": [],
+          "leadingComments": [
+            {
+              "type": "CommentBlock",
+              "value": "*\n * The input is converted to parity format in each case.\n ",
+              "start": 100,
+              "end": 164,
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 0
+                },
+                "end": {
+                  "line": 5,
+                  "column": 3
+                }
+              }
+            }
+          ],
           "trailingComments": []
-        }
+        },
+        "leadingComments": [
+          {
+            "type": "CommentBlock",
+            "value": "*\n * The input is converted to parity format in each case.\n ",
+            "start": 100,
+            "end": 164,
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 0
+              },
+              "end": {
+                "line": 5,
+                "column": 3
+              }
+            }
+          }
+        ]
       }
     ],
     "directives": []
   },
-  "comments": [],
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * The input is converted to parity format in each case.\n ",
+      "start": 100,
+      "end": 164,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t ",
+      "start": 188,
+      "end": 460,
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 1
+        },
+        "end": {
+          "line": 12,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t ",
+      "start": 523,
+      "end": 759,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 1
+        },
+        "end": {
+          "line": 18,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t ",
+      "start": 788,
+      "end": 1053,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 1
+        },
+        "end": {
+          "line": 25,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * Parses a stream in DIMACS CNF format.\n\t ",
+      "start": 1081,
+      "end": 1131,
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 1
+        },
+        "end": {
+          "line": 29,
+          "column": 4
+        }
+      }
+    }
+  ],
   "tokens": [
     {
       "type": {
@@ -1078,6 +1290,22 @@
       }
     },
     {
+      "type": "CommentBlock",
+      "value": "*\n * The input is converted to parity format in each case.\n ",
+      "start": 100,
+      "end": 164,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 3
+        }
+      }
+    },
+    {
       "type": {
         "label": "export",
         "keyword": "export",
@@ -1092,15 +1320,15 @@
         "updateContext": null
       },
       "value": "export",
-      "start": 100,
-      "end": 106,
+      "start": 165,
+      "end": 171,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 0
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 6
         }
       }
@@ -1120,15 +1348,15 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 107,
-      "end": 112,
+      "start": 172,
+      "end": 177,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 7
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 12
         }
       }
@@ -1146,15 +1374,15 @@
         "binop": null
       },
       "value": "from",
-      "start": 113,
-      "end": 117,
+      "start": 178,
+      "end": 182,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 13
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 17
         }
       }
@@ -1173,15 +1401,15 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 118,
-      "end": 119,
+      "start": 183,
+      "end": 184,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 18
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 19
         }
       }
@@ -1198,16 +1426,32 @@
         "postfix": false,
         "binop": null
       },
-      "start": 120,
-      "end": 121,
+      "start": 185,
+      "end": 186,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 20
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 21
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t ",
+      "start": 188,
+      "end": 460,
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 1
+        },
+        "end": {
+          "line": 12,
+          "column": 4
         }
       }
     },
@@ -1224,15 +1468,15 @@
         "binop": null
       },
       "value": "parities",
-      "start": 123,
-      "end": 131,
+      "start": 462,
+      "end": 470,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 1
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 9
         }
       }
@@ -1250,15 +1494,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 132,
-      "end": 133,
+      "start": 471,
+      "end": 472,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 10
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 11
         }
       }
@@ -1275,15 +1519,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 134,
-      "end": 135,
+      "start": 473,
+      "end": 474,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 12
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 13
         }
       }
@@ -1301,15 +1545,15 @@
         "binop": null
       },
       "value": "clauses",
-      "start": 136,
-      "end": 143,
+      "start": 475,
+      "end": 482,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 14
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 21
         }
       }
@@ -1326,15 +1570,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 144,
-      "end": 145,
+      "start": 483,
+      "end": 484,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 22
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 23
         }
       }
@@ -1352,15 +1596,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 146,
-      "end": 148,
+      "start": 485,
+      "end": 487,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 24
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 26
         }
       }
@@ -1380,15 +1624,15 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 149,
-      "end": 152,
+      "start": 488,
+      "end": 491,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 27
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 30
         }
       }
@@ -1406,15 +1650,15 @@
         "binop": null
       },
       "value": "ParitiesInstance",
-      "start": 153,
-      "end": 169,
+      "start": 492,
+      "end": 508,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 31
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 47
         }
       }
@@ -1431,15 +1675,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 169,
-      "end": 170,
+      "start": 508,
+      "end": 509,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 47
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 48
         }
       }
@@ -1457,15 +1701,15 @@
         "binop": null
       },
       "value": "clauses",
-      "start": 171,
-      "end": 178,
+      "start": 510,
+      "end": 517,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 49
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 56
         }
       }
@@ -1482,15 +1726,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 179,
-      "end": 180,
+      "start": 518,
+      "end": 519,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 57
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 58
         }
       }
@@ -1508,16 +1752,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 181,
-      "end": 182,
+      "start": 520,
+      "end": 521,
       "loc": {
         "start": {
-          "line": 4,
+          "line": 13,
           "column": 59
         },
         "end": {
-          "line": 4,
+          "line": 13,
           "column": 60
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t ",
+      "start": 523,
+      "end": 759,
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 1
+        },
+        "end": {
+          "line": 18,
+          "column": 4
         }
       }
     },
@@ -1534,15 +1794,15 @@
         "binop": null
       },
       "value": "signs",
-      "start": 184,
-      "end": 189,
+      "start": 761,
+      "end": 766,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 19,
           "column": 1
         },
         "end": {
-          "line": 5,
+          "line": 19,
           "column": 6
         }
       }
@@ -1560,15 +1820,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 190,
-      "end": 191,
+      "start": 767,
+      "end": 768,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 19,
           "column": 7
         },
         "end": {
-          "line": 5,
+          "line": 19,
           "column": 8
         }
       }
@@ -1586,15 +1846,15 @@
         "binop": null
       },
       "value": "_sign_to_parity",
-      "start": 192,
-      "end": 207,
+      "start": 769,
+      "end": 784,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 19,
           "column": 9
         },
         "end": {
-          "line": 5,
+          "line": 19,
           "column": 24
         }
       }
@@ -1612,16 +1872,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 208,
-      "end": 209,
+      "start": 785,
+      "end": 786,
       "loc": {
         "start": {
-          "line": 5,
+          "line": 19,
           "column": 25
         },
         "end": {
-          "line": 5,
+          "line": 19,
           "column": 26
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t ",
+      "start": 788,
+      "end": 1053,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 1
+        },
+        "end": {
+          "line": 25,
+          "column": 4
         }
       }
     },
@@ -1638,15 +1914,15 @@
         "binop": null
       },
       "value": "keys",
-      "start": 211,
-      "end": 215,
+      "start": 1055,
+      "end": 1059,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 26,
           "column": 1
         },
         "end": {
-          "line": 6,
+          "line": 26,
           "column": 5
         }
       }
@@ -1664,15 +1940,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 216,
-      "end": 217,
+      "start": 1060,
+      "end": 1061,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 26,
           "column": 6
         },
         "end": {
-          "line": 6,
+          "line": 26,
           "column": 7
         }
       }
@@ -1690,15 +1966,15 @@
         "binop": null
       },
       "value": "_keys_to_parity",
-      "start": 218,
-      "end": 233,
+      "start": 1062,
+      "end": 1077,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 26,
           "column": 8
         },
         "end": {
-          "line": 6,
+          "line": 26,
           "column": 23
         }
       }
@@ -1716,16 +1992,32 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 234,
-      "end": 235,
+      "start": 1078,
+      "end": 1079,
       "loc": {
         "start": {
-          "line": 6,
+          "line": 26,
           "column": 24
         },
         "end": {
-          "line": 6,
+          "line": 26,
           "column": 25
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * Parses a stream in DIMACS CNF format.\n\t ",
+      "start": 1081,
+      "end": 1131,
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 1
+        },
+        "end": {
+          "line": 29,
+          "column": 4
         }
       }
     },
@@ -1742,15 +2034,15 @@
         "binop": null
       },
       "value": "dcnf",
-      "start": 237,
-      "end": 241,
+      "start": 1133,
+      "end": 1137,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 1
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 5
         }
       }
@@ -1768,15 +2060,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 242,
-      "end": 243,
+      "start": 1138,
+      "end": 1139,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 6
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 7
         }
       }
@@ -1793,15 +2085,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 244,
-      "end": 245,
+      "start": 1140,
+      "end": 1141,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 8
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 9
         }
       }
@@ -1819,15 +2111,15 @@
         "binop": null
       },
       "value": "stream",
-      "start": 246,
-      "end": 252,
+      "start": 1142,
+      "end": 1148,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 10
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 16
         }
       }
@@ -1844,15 +2136,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 253,
-      "end": 254,
+      "start": 1149,
+      "end": 1150,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 17
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 18
         }
       }
@@ -1870,15 +2162,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 255,
-      "end": 257,
+      "start": 1151,
+      "end": 1153,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 19
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 21
         }
       }
@@ -1898,15 +2190,15 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 258,
-      "end": 261,
+      "start": 1154,
+      "end": 1157,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 22
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 25
         }
       }
@@ -1924,15 +2216,15 @@
         "binop": null
       },
       "value": "ParitiesInstance",
-      "start": 262,
-      "end": 278,
+      "start": 1158,
+      "end": 1174,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 26
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 42
         }
       }
@@ -1949,15 +2241,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 278,
-      "end": 279,
+      "start": 1174,
+      "end": 1175,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 42
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 43
         }
       }
@@ -1975,15 +2267,15 @@
         "binop": null
       },
       "value": "_parse_DIMACS_CNF",
-      "start": 280,
-      "end": 297,
+      "start": 1176,
+      "end": 1193,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 44
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 61
         }
       }
@@ -2000,15 +2292,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 297,
-      "end": 298,
+      "start": 1193,
+      "end": 1194,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 61
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 62
         }
       }
@@ -2026,15 +2318,15 @@
         "binop": null
       },
       "value": "stream",
-      "start": 299,
-      "end": 305,
+      "start": 1195,
+      "end": 1201,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 63
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 69
         }
       }
@@ -2051,15 +2343,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 306,
-      "end": 307,
+      "start": 1202,
+      "end": 1203,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 70
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 71
         }
       }
@@ -2076,15 +2368,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 308,
-      "end": 309,
+      "start": 1204,
+      "end": 1205,
       "loc": {
         "start": {
-          "line": 7,
+          "line": 30,
           "column": 72
         },
         "end": {
-          "line": 7,
+          "line": 30,
           "column": 73
         }
       }
@@ -2101,15 +2393,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 310,
-      "end": 311,
+      "start": 1206,
+      "end": 1207,
       "loc": {
         "start": {
-          "line": 8,
+          "line": 31,
           "column": 0
         },
         "end": {
-          "line": 8,
+          "line": 31,
           "column": 1
         }
       }
@@ -2127,15 +2419,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 312,
-      "end": 313,
+      "start": 1208,
+      "end": 1209,
       "loc": {
         "start": {
-          "line": 8,
+          "line": 31,
           "column": 2
         },
         "end": {
-          "line": 8,
+          "line": 31,
           "column": 3
         }
       }
@@ -2153,15 +2445,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 314,
-      "end": 314,
+      "start": 1210,
+      "end": 1210,
       "loc": {
         "start": {
-          "line": 9,
+          "line": 32,
           "column": 0
         },
         "end": {
-          "line": 9,
+          "line": 32,
           "column": 0
         }
       }

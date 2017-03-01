@@ -62,6 +62,15 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/core/convert/_certificate_to_keys.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { zip } from &apos;@aureooms/js-itertools&apos; ;
 
+
+/**
+ * Constructs an assignment map from a list of variable names and an assignment
+ * vector in parity format.
+ *
+ * @param variables
+ * @param certificate
+ * @returns {undefined}
+ */
 export function _certificate_to_keys ( variables , certificate ) {
 
 	return new Map( zip( variables , certificate ) ) ;

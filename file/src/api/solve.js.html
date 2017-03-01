@@ -62,6 +62,11 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/api/solve.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { SAT0W , setup_watchlist, setup_assignment } from &apos;../core&apos; ;
 
+/**
+ * Yields all satisfying assignments for the input instance.
+ *
+ * @returns {Iterable} Generator of the satisfying assignments.
+ */
 export function* solve ( { clauses , n } ) {
 
 	yield* SAT0W( n , clauses , setup_watchlist( n , clauses ) , setup_assignment( n ) , 0 ) ;

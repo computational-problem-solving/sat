@@ -50,7 +50,7 @@
     "__docId__": 2,
     "kind": "file",
     "name": "src/api/from.js",
-    "content": "import { ParitiesInstance , _sign_to_parity, _keys_to_parity, _parse_DIMACS_CNF } from '../core' ;\n\nexport const from = {\n\tparities : ( clauses ) => new ParitiesInstance( clauses ) ,\n\tsigns : _sign_to_parity ,\n\tkeys : _keys_to_parity ,\n\tdcnf : ( stream ) => new ParitiesInstance( _parse_DIMACS_CNF( stream ) )\n} ;\n",
+    "content": "import { ParitiesInstance , _sign_to_parity, _keys_to_parity, _parse_DIMACS_CNF } from '../core' ;\n\n/**\n * The input is converted to parity format in each case.\n */\nexport const from = {\n\t/**\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t */\n\tparities : ( clauses ) => new ParitiesInstance( clauses ) ,\n\t/**\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t */\n\tsigns : _sign_to_parity ,\n\t/**\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t */\n\tkeys : _keys_to_parity ,\n\t/**\n\t * Parses a stream in DIMACS CNF format.\n\t */\n\tdcnf : ( stream ) => new ParitiesInstance( _parse_DIMACS_CNF( stream ) )\n} ;\n",
     "static": true,
     "longname": "src/api/from.js",
     "access": null,
@@ -68,15 +68,8 @@
     "export": true,
     "importPath": "@aureooms/js-sat/src/api/from.js",
     "importStyle": "{from}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "The input is converted to parity format in each case.",
+    "lineNumber": 6,
     "type": {
       "types": [
         "{\"parities\": *, \"signs\": *, \"keys\": *, \"dcnf\": *}"
@@ -98,7 +91,7 @@
     "__docId__": 5,
     "kind": "file",
     "name": "src/api/solve.js",
-    "content": "import { SAT0W , setup_watchlist, setup_assignment } from '../core' ;\n\nexport function* solve ( { clauses , n } ) {\n\n\tyield* SAT0W( n , clauses , setup_watchlist( n , clauses ) , setup_assignment( n ) , 0 ) ;\n\n}\n\n",
+    "content": "import { SAT0W , setup_watchlist, setup_assignment } from '../core' ;\n\n/**\n * Yields all satisfying assignments for the input instance.\n *\n * @returns {Iterable} Generator of the satisfying assignments.\n */\nexport function* solve ( { clauses , n } ) {\n\n\tyield* SAT0W( n , clauses , setup_watchlist( n , clauses ) , setup_assignment( n ) , 0 ) ;\n\n}\n\n",
     "static": true,
     "longname": "src/api/solve.js",
     "access": null,
@@ -118,13 +111,12 @@
     "export": true,
     "importPath": "@aureooms/js-sat/src/api/solve.js",
     "importStyle": "{solve}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "Yields all satisfying assignments for the input instance.",
+    "lineNumber": 8,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Iterable} Generator of the satisfying assignments."
       }
     ],
     "params": [
@@ -139,7 +131,15 @@
         },
         "defaultValue": "{\"clauses\":null,\"n\":null}"
       }
-    ]
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Iterable"
+      ],
+      "spread": false,
+      "description": "Generator of the satisfying assignments."
+    }
   },
   {
     "__docId__": 7,
@@ -386,7 +386,7 @@
     "__docId__": 16,
     "kind": "file",
     "name": "src/core/_verify.js",
-    "content": "\nexport function _verify ( clauses , assignment ) {\n\n\tloop : for ( const clause of clauses ) {\n\n\t\tfor ( const literal of clause ) {\n\n\t\t\tif ( ( literal ^ assignment[literal >>> 1] ) & 1 ) continue loop ;\n\n\t\t}\n\n\t\treturn false ;\n\n\t}\n\n\treturn true ;\n\n}\n",
+    "content": "\n/**\n * Verifies that an assignment vector satisfies a k-CNF formula given as a list\n * of clauses. The list of clauses and the assignment vector are in parity\n * format.\n *\n * @param {Iterable} clauses The clauses in parity format.\n * @param {Array} assignment The assignment vector in parity format.\n * @returns {Boolean} Whether the assignment satisfies the k-CNF formula\n * represented by the list of clauses.\n */\nexport function _verify ( clauses , assignment ) {\n\n\tloop : for ( const clause of clauses ) {\n\n\t\tfor ( const literal of clause ) {\n\n\t\t\tif ( ( literal ^ assignment[literal >>> 1] ) & 1 ) continue loop ;\n\n\t\t}\n\n\t\treturn false ;\n\n\t}\n\n\treturn true ;\n\n}\n",
     "static": true,
     "longname": "src/core/_verify.js",
     "access": null,
@@ -406,40 +406,50 @@
     "export": true,
     "importPath": "@aureooms/js-sat/src/core/_verify.js",
     "importStyle": "{_verify}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
+    "description": "Verifies that an assignment vector satisfies a k-CNF formula given as a list\nof clauses. The list of clauses and the assignment vector are in parity\nformat.",
+    "lineNumber": 12,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Boolean} Whether the assignment satisfies the k-CNF formula\nrepresented by the list of clauses."
       }
     ],
     "params": [
       {
-        "name": "clauses",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Iterable"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "clauses",
+        "description": "The clauses in parity format."
       },
       {
-        "name": "assignment",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "assignment",
+        "description": "The assignment vector in parity format."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "boolean"
-      ]
+        "Boolean"
+      ],
+      "spread": false,
+      "description": "Whether the assignment satisfies the k-CNF formula\nrepresented by the list of clauses."
     }
   },
   {
     "__docId__": 18,
     "kind": "file",
     "name": "src/core/convert/KeysInstance.js",
-    "content": "import { _certificate_to_keys } from './_certificate_to_keys' ;\n\nexport class KeysInstance {\n\n\tconstructor ( variables , clauses ) {\n\t\tthis.variables = variables ;\n\t\tthis.clauses = clauses ;\n\t\tthis.n = this.variables.length ;\n\t}\n\n\tassignment ( certificate ) {\n\t\treturn _certificate_to_keys( this.variables , certificate ) ;\n\t}\n\n}\n",
+    "content": "import { _certificate_to_keys } from './_certificate_to_keys' ;\n\nexport class KeysInstance {\n\n\t/**\n\t * Clauses are in parity format. The variables parameters maps parity\n\t * format literals back to variable names.\n\t */\n\tconstructor ( variables , clauses ) {\n\t\tthis.variables = variables ;\n\t\tthis.clauses = clauses ;\n\t\tthis.n = this.variables.length ;\n\t}\n\n\t/**\n\t * Returns an object that maps each variable name to a variable assignment.\n\t */\n\tassignment ( certificate ) {\n\t\treturn _certificate_to_keys( this.variables , certificate ) ;\n\t}\n\n}\n",
     "static": true,
     "longname": "src/core/convert/KeysInstance.js",
     "access": null,
@@ -478,15 +488,8 @@
     "static": false,
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#constructor",
     "access": null,
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Clauses are in parity format. The variables parameters maps parity\nformat literals back to variable names.",
+    "lineNumber": 9,
     "params": [
       {
         "name": "variables",
@@ -511,7 +514,7 @@
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#variables",
     "access": null,
     "description": null,
-    "lineNumber": 6,
+    "lineNumber": 10,
     "undocument": true,
     "unknown": [
       {
@@ -534,7 +537,7 @@
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#clauses",
     "access": null,
     "description": null,
-    "lineNumber": 7,
+    "lineNumber": 11,
     "undocument": true,
     "unknown": [
       {
@@ -557,7 +560,7 @@
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#n",
     "access": null,
     "description": null,
-    "lineNumber": 8,
+    "lineNumber": 12,
     "undocument": true,
     "unknown": [
       {
@@ -581,15 +584,8 @@
     "static": false,
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#assignment",
     "access": null,
-    "description": null,
-    "lineNumber": 11,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Returns an object that maps each variable name to a variable assignment.",
+    "lineNumber": 18,
     "params": [
       {
         "name": "certificate",
@@ -608,7 +604,7 @@
     "__docId__": 25,
     "kind": "file",
     "name": "src/core/convert/ParitiesInstance.js",
-    "content": "import { _count } from './_count' ;\n\nexport class ParitiesInstance {\n\n\tconstructor ( clauses ) {\n\t\tthis.clauses = clauses ;\n\t\tthis.n = _count( clauses ) ;\n\t}\n\n\tassignment ( certificate ) {\n\t\treturn certificate.slice( ) ;\n\t}\n\n}\n",
+    "content": "import { _count } from './_count' ;\n\nexport class ParitiesInstance {\n\n\t/**\n\t * Clauses are in parity format.\n\t */\n\tconstructor ( clauses ) {\n\t\tthis.clauses = clauses ;\n\t\tthis.n = _count( clauses ) ;\n\t}\n\n\t/**\n\t * Returns assignment vector in parity format.\n\t */\n\tassignment ( certificate ) {\n\t\treturn certificate.slice( ) ;\n\t}\n\n}\n",
     "static": true,
     "longname": "src/core/convert/ParitiesInstance.js",
     "access": null,
@@ -647,15 +643,8 @@
     "static": false,
     "longname": "src/core/convert/ParitiesInstance.js~ParitiesInstance#constructor",
     "access": null,
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Clauses are in parity format.",
+    "lineNumber": 8,
     "params": [
       {
         "name": "clauses",
@@ -674,7 +663,7 @@
     "longname": "src/core/convert/ParitiesInstance.js~ParitiesInstance#clauses",
     "access": null,
     "description": null,
-    "lineNumber": 6,
+    "lineNumber": 9,
     "undocument": true,
     "unknown": [
       {
@@ -697,7 +686,7 @@
     "longname": "src/core/convert/ParitiesInstance.js~ParitiesInstance#n",
     "access": null,
     "description": null,
-    "lineNumber": 7,
+    "lineNumber": 10,
     "undocument": true,
     "unknown": [
       {
@@ -721,15 +710,8 @@
     "static": false,
     "longname": "src/core/convert/ParitiesInstance.js~ParitiesInstance#assignment",
     "access": null,
-    "description": null,
-    "lineNumber": 10,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Returns assignment vector in parity format.",
+    "lineNumber": 16,
     "params": [
       {
         "name": "certificate",
@@ -748,7 +730,7 @@
     "__docId__": 31,
     "kind": "file",
     "name": "src/core/convert/SignsInstance.js",
-    "content": "import { _count } from './_count' ;\n\nexport class SignsInstance {\n\n\tconstructor ( clauses ) {\n\t\tthis.clauses = clauses ;\n\t\tthis.n = _count( clauses ) ;\n\t}\n\n\tassignment ( certificate ) {\n\t\treturn [ 0 ].concat( certificate ) ;\n\t}\n\n}\n",
+    "content": "import { _count } from './_count' ;\n\nexport class SignsInstance {\n\n\t/**\n\t * Clauses are in parity format.\n\t */\n\tconstructor ( clauses ) {\n\t\tthis.clauses = clauses ;\n\t\tthis.n = _count( clauses ) ;\n\t}\n\n\t/**\n\t * Returns assignment vector in signs format.\n\t */\n\tassignment ( certificate ) {\n\t\treturn [ 0 ].concat( certificate ) ;\n\t}\n\n}\n",
     "static": true,
     "longname": "src/core/convert/SignsInstance.js",
     "access": null,
@@ -787,15 +769,8 @@
     "static": false,
     "longname": "src/core/convert/SignsInstance.js~SignsInstance#constructor",
     "access": null,
-    "description": null,
-    "lineNumber": 5,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Clauses are in parity format.",
+    "lineNumber": 8,
     "params": [
       {
         "name": "clauses",
@@ -814,7 +789,7 @@
     "longname": "src/core/convert/SignsInstance.js~SignsInstance#clauses",
     "access": null,
     "description": null,
-    "lineNumber": 6,
+    "lineNumber": 9,
     "undocument": true,
     "unknown": [
       {
@@ -837,7 +812,7 @@
     "longname": "src/core/convert/SignsInstance.js~SignsInstance#n",
     "access": null,
     "description": null,
-    "lineNumber": 7,
+    "lineNumber": 10,
     "undocument": true,
     "unknown": [
       {
@@ -861,15 +836,8 @@
     "static": false,
     "longname": "src/core/convert/SignsInstance.js~SignsInstance#assignment",
     "access": null,
-    "description": null,
-    "lineNumber": 10,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
+    "description": "Returns assignment vector in signs format.",
+    "lineNumber": 16,
     "params": [
       {
         "name": "certificate",
@@ -888,7 +856,7 @@
     "__docId__": 37,
     "kind": "file",
     "name": "src/core/convert/_certificate_to_keys.js",
-    "content": "import { zip } from '@aureooms/js-itertools' ;\n\nexport function _certificate_to_keys ( variables , certificate ) {\n\n\treturn new Map( zip( variables , certificate ) ) ;\n\n}\n",
+    "content": "import { zip } from '@aureooms/js-itertools' ;\n\n\n/**\n * Constructs an assignment map from a list of variable names and an assignment\n * vector in parity format.\n *\n * @param variables\n * @param certificate\n * @returns {undefined}\n */\nexport function _certificate_to_keys ( variables , certificate ) {\n\n\treturn new Map( zip( variables , certificate ) ) ;\n\n}\n",
     "static": true,
     "longname": "src/core/convert/_certificate_to_keys.js",
     "access": null,
@@ -908,40 +876,50 @@
     "export": true,
     "importPath": "@aureooms/js-sat/src/core/convert/_certificate_to_keys.js",
     "importStyle": "{_certificate_to_keys}",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "Constructs an assignment map from a list of variable names and an assignment\nvector in parity format.",
+    "lineNumber": 12,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{undefined}"
       }
     ],
     "params": [
       {
-        "name": "variables",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "variables",
+        "description": ""
       },
       {
-        "name": "certificate",
+        "nullable": null,
         "types": [
           "*"
-        ]
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "certificate",
+        "description": ""
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "undefined"
+      ],
+      "spread": false,
+      "description": ""
     }
   },
   {
     "__docId__": 39,
     "kind": "file",
     "name": "src/core/convert/_count.js",
-    "content": "\nexport function _count ( clauses ) {\n\n\tlet c = -1 ;\n\n\tfor ( const clause of clauses ) {\n\t\tfor ( const literal of clause ) {\n\t\t\tc = Math.max( c , literal >>> 1 ) ;\n\t\t}\n\t}\n\n\treturn c + 1 ;\n\n}\n",
+    "content": "\n/**\n * Counts the number of variables in a parity format clauses list.\n *\n * @param {Array} clauses The clauses list in parity format.\n * @returns {Number} The number of variables in the clauses list.\n */\nexport function _count ( clauses ) {\n\n\tlet c = -1 ;\n\n\tfor ( const clause of clauses ) {\n\t\tfor ( const literal of clause ) {\n\t\t\tc = Math.max( c , literal >>> 1 ) ;\n\t\t}\n\t}\n\n\treturn c + 1 ;\n\n}\n",
     "static": true,
     "longname": "src/core/convert/_count.js",
     "access": null,
@@ -961,27 +939,33 @@
     "export": true,
     "importPath": "@aureooms/js-sat/src/core/convert/_count.js",
     "importStyle": "{_count}",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
+    "description": "Counts the number of variables in a parity format clauses list.",
+    "lineNumber": 8,
     "unknown": [
       {
-        "tagName": "@_undocument",
-        "tagValue": ""
+        "tagName": "@returns",
+        "tagValue": "{Number} The number of variables in the clauses list."
       }
     ],
     "params": [
       {
-        "name": "clauses",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "clauses",
+        "description": "The clauses list in parity format."
       }
     ],
     "return": {
+      "nullable": null,
       "types": [
-        "*"
-      ]
+        "Number"
+      ],
+      "spread": false,
+      "description": "The number of variables in the clauses list."
     }
   },
   {
@@ -1193,7 +1177,7 @@
     "__docId__": 50,
     "kind": "file",
     "name": "src/core/index.js",
-    "content": "export * from './SAT0W' ;\nexport * from './_verify' ;\nexport * from './convert' ;\nexport * from './parse' ;\nexport * from './setup_assigment' ;\n",
+    "content": "export * from './SAT0W' ;\nexport * from './_verify' ;\nexport * from './convert' ;\nexport * from './parse' ;\nexport * from './setup_assignment' ;\n",
     "static": true,
     "longname": "src/core/index.js",
     "access": null,
@@ -1339,10 +1323,10 @@
   {
     "__docId__": 56,
     "kind": "file",
-    "name": "src/core/setup_assigment.js",
+    "name": "src/core/setup_assignment.js",
     "content": "export function setup_assignment ( n ) {\n\n\tconst assignment = new Array( n ) ;\n\n\tfor ( let i = 0 ; i < n ; ++i ) assignment[i] = -1 ;\n\n\treturn assignment ;\n\n}\n",
     "static": true,
-    "longname": "src/core/setup_assigment.js",
+    "longname": "src/core/setup_assignment.js",
     "access": null,
     "description": null,
     "lineNumber": 1
@@ -1351,14 +1335,14 @@
     "__docId__": 57,
     "kind": "function",
     "name": "setup_assignment",
-    "memberof": "src/core/setup_assigment.js",
+    "memberof": "src/core/setup_assignment.js",
     "generator": false,
     "async": false,
     "static": true,
-    "longname": "src/core/setup_assigment.js~setup_assignment",
+    "longname": "src/core/setup_assignment.js~setup_assignment",
     "access": null,
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/setup_assigment.js",
+    "importPath": "@aureooms/js-sat/src/core/setup_assignment.js",
     "importStyle": "{setup_assignment}",
     "description": null,
     "lineNumber": 1,
