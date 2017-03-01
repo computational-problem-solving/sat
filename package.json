@@ -1,0 +1,66 @@
+{
+  "name": "@aureooms/js-sat",
+  "description": "Boolean formula satisfiability algorithms for JavaScript",
+  "version": "1.1.1",
+  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
+  "ava": {
+    "require": [
+      "babel-polyfill",
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "env": {
+      "development": {
+        "sourceMaps": "inline"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/aureooms/js-sat/issues"
+  },
+  "dependencies": {
+    "@aureooms/js-itertools": "^3.1.1"
+  },
+  "devDependencies": {
+    "@aureooms/js-array": "^4.0.0",
+    "@aureooms/js-compare": "^1.4.5",
+    "@aureooms/js-functools": "^2.0.3",
+    "ava": "^0.18.2",
+    "babel-cli": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.1.10",
+    "codeclimate-test-reporter": "^0.4.1",
+    "coveralls": "^2.11.16",
+    "esdoc": "^0.5.2",
+    "nyc": "^10.1.2"
+  },
+  "homepage": "https://aureooms.github.io/js-sat",
+  "keywords": [
+    "NP",
+    "SAT",
+    "algorithms",
+    "boolean formula",
+    "complete",
+    "complexity",
+    "computer science",
+    "javascript",
+    "js",
+    "satisfiability"
+  ],
+  "license": "AGPL-3.0",
+  "main": "lib/index.js",
+  "repository": {
+    "url": "https://github.com/aureooms/js-sat.git",
+    "type": "git"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "cover": "nyc --reporter=lcov npm test",
+    "prepublish": "npm run build",
+    "test": "ava ./test/src --concurrency 8"
+  }
+}

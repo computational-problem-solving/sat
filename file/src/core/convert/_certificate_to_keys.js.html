@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">aureooms/js-sat API Document</title>
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/core/convert/_certificate_to_keys.js | aureooms/js-sat API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -59,39 +59,16 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-js-sat-http-aureooms-github-io-js-sat-"><a href="http://aureooms.github.io/js-sat">js-sat</a></h1>
-<p>Boolean formula satisfiability algorithms for JavaScript.</p>
-<pre><code class="lang-js"><code class="source-code prettyprint">let instance = sat.from.signs( [ [ -1 , 2 , 3 ] , [ -2 , -4 , 5 ] , [ 1 , -5 ] ] ) ;
-// or
-// let instance = sat.from.keys(
-// [
-//   [ [ false , &apos;1&apos; ] , [ true , &apos;2&apos; ] , [ true , &apos;3&apos; ] ] ,
-//   [ [ false , &apos;2&apos; ] , [ false , &apos;4&apos; ] , [ true , &apos;5&apos; ] ] ,
-//   [ [ true , &apos;1&apos; ] , [ false , &apos;5&apos; ] ]
-// ]
-// ) ;
-sat.decide( instance ) ; // true
-sat.verify( instance , sat.solve( instance ).next( ).value ) ; // true
-for ( let certificate of sat.solve( instance ) ) {
-    console.log( instance.assignment( certificate ) ) ;
-}</code>
+<div class="content" data-ice="content"><h1 data-ice="title">src/core/convert/_certificate_to_keys.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { zip } from &apos;@aureooms/js-itertools&apos; ;
+
+export function _certificate_to_keys ( variables , certificate ) {
+
+	return new Map( zip( variables , certificate ) ) ;
+
+}
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-sat/master/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-sat.svg?style=flat" alt="License"></a>
-<a href="https://www.npmjs.org/package/@aureooms/js-sat"><img src="https://img.shields.io/npm/v/@aureooms/js-sat.svg?style=flat" alt="NPM version"></a>
-<a href="https://travis-ci.org/aureooms/js-sat"><img src="https://img.shields.io/travis/aureooms/js-sat.svg?style=flat" alt="Build Status"></a>
-<a href="https://coveralls.io/r/aureooms/js-sat"><img src="https://img.shields.io/coveralls/aureooms/js-sat.svg?style=flat" alt="Coverage Status"></a>
-<a href="https://david-dm.org/aureooms/js-sat#info=dependencies"><img src="https://img.shields.io/david/aureooms/js-sat.svg?style=flat" alt="Dependencies Status"></a>
-<a href="https://david-dm.org/aureooms/js-sat#info=devDependencies"><img src="https://img.shields.io/david/dev/aureooms/js-sat.svg?style=flat" alt="devDependencies Status"></a>
-<a href="https://codeclimate.com/github/aureooms/js-sat"><img src="https://img.shields.io/codeclimate/github/aureooms/js-sat.svg?style=flat" alt="Code Climate"></a>
-<a href="https://www.npmjs.org/package/@aureooms/js-sat"><img src="https://img.shields.io/npm/dm/@aureooms/js-sat.svg?style=flat" alt="NPM downloads per month"></a>
-<a href="https://github.com/aureooms/js-sat/issues"><img src="https://img.shields.io/github/issues/aureooms/js-sat.svg?style=flat" alt="GitHub issues"></a>
-<a href="https://aureooms.github.io/js-sat/source.html"><img src="https://aureooms.github.io/js-sat/badge.svg" alt="Documentation"></a></p>
-<h2 id="reference">Reference</h2>
-<ul>
-<li><a href="http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html">Simple solver in Python</a></li>
-<li><a href="http://www.cs.ubc.ca/~hoos/SATLIB/benchm.html">SATLIB</a></li>
-</ul>
-</div>
+
 </div>
 
 <footer class="footer">
