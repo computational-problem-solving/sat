@@ -2,6 +2,7 @@
 ==
 
 Boolean formula satisfiability algorithms for JavaScript.
+See [docs](https://aureooms.github.io/js-sat).
 Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
 For a polynomial time algorithm for the 2SAT problem see
 [@aureooms/js-2sat](https://github.com/aureooms/js-2sat).
