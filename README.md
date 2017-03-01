@@ -1,6 +1,8 @@
 [@aureooms/js-sat](https://aureooms.github.io/js-sat)
 ==
 
+<img src="https://imgs.xkcd.com/comics/np_complete.png" width="864">
+
 Boolean formula satisfiability algorithms for JavaScript.
 See [docs](https://aureooms.github.io/js-sat).
 Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
