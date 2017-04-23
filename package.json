@@ -35,7 +35,7 @@
     "babel-preset-env": "^1.1.10",
     "codeclimate-test-reporter": "^0.4.1",
     "coveralls": "^2.11.16",
-    "esdoc": "^0.5.2",
+    "esdoc": "^1.0.0-alpha.2",
     "nyc": "^10.1.2"
   },
   "homepage": "https://aureooms.github.io/js-sat",
