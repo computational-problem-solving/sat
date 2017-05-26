@@ -1,7 +1,7 @@
 {
   "name": "@aureooms/js-sat",
   "description": "Boolean formula satisfiability algorithms for JavaScript",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
     "require": [
