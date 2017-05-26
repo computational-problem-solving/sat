@@ -23,20 +23,20 @@
     "url": "https://github.com/aureooms/js-sat/issues"
   },
   "dependencies": {
-    "@aureooms/js-itertools": "^3.1.1"
+    "@aureooms/js-itertools": "^3.3.0"
   },
   "devDependencies": {
     "@aureooms/js-array": "^4.0.0",
     "@aureooms/js-compare": "^1.4.5",
     "@aureooms/js-functools": "^2.0.3",
-    "ava": "^0.19.0",
-    "babel-cli": "^6.23.0",
+    "ava": "^0.19.1",
+    "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.1.10",
+    "babel-preset-env": "^1.5.1",
     "codeclimate-test-reporter": "^0.4.1",
-    "coveralls": "^2.11.16",
+    "coveralls": "^2.13.1",
     "esdoc": "^0.5.2",
-    "nyc": "^10.1.2"
+    "nyc": "^10.3.2"
   },
   "homepage": "https://aureooms.github.io/js-sat",
   "keywords": [
