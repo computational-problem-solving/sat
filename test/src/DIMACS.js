@@ -7,7 +7,7 @@ function text ( lines ) {
 
 test( 'DIMACS 1' , t => {
 
-	var instance = sat.from.dcnf( text( [
+	const instance = sat.from.dcnf( text( [
 		"c jdkljsqmljdmsqljf jds kljd mlsqkjdl " ,
 		"c p cnf 10 20" ,
 		"c 1 2 0 0 2 -1 0" ,
@@ -16,7 +16,6 @@ test( 'DIMACS 1' , t => {
 		"p cnf 3 4" ,
 		"%",
 		"djshhfkdsjhkf hkjsdfh kjsdhf k"
-
 	] ) ) ;
 
 	t.is( instance.n , 0 ) ;
@@ -26,7 +25,7 @@ test( 'DIMACS 1' , t => {
 
 test( 'DIMACS 2' , t => {
 
-	var instance = sat.from.dcnf( text( [
+	const instance = sat.from.dcnf( text( [
 		"c jdkljsqmljdmsqljf jds kljd mlsqkjdl " ,
 		"c p cnf 10 20" ,
 		"c 1 2 0 0 2 -1 0" ,
@@ -48,7 +47,7 @@ test( 'DIMACS 2' , t => {
 
 test( 'DIMACS 3' , t => {
 
-	var instance = sat.from.dcnf( text( [
+	const instance = sat.from.dcnf( text( [
 		"c jdkljsqmljdmsqljf jds kljd mlsqkjdl " ,
 		"c p cnf 10 20" ,
 		"c 1 2 0 0 2 -1 0" ,

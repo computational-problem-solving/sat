@@ -15,9 +15,6 @@
     "source": "./test/src"
   },
   "manual": {
-    "overview": [
-      "./doc/manual/overview.md"
-    ],
     "installation": [
       "./doc/manual/installation.md"
     ],

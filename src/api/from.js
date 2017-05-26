@@ -25,7 +25,7 @@ export const from = {
 	 */
 	keys : _keys_to_parity ,
 	/**
-	 * Parses a stream in DIMACS CNF format.
+	 * Parses a character iterable in DIMACS CNF format.
 	 */
-	dcnf : ( stream ) => new ParitiesInstance( _parse_DIMACS_CNF( stream ) )
+	dcnf : ( iterable ) => new ParitiesInstance( _parse_DIMACS_CNF( iterable ) )
 } ;

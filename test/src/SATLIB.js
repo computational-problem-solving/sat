@@ -12,10 +12,10 @@ function T ( name , satisfiable ) {
 
 	test( name , t => {
 
-		var filename = './test/data/' + name + '.cnf' ;
-		var iterable = fs.readFileSync( filename , { encoding : 'utf8' } ) ;
+		const filename = './test/data/' + name + '.cnf' ;
+		const iterable = fs.readFileSync( filename , { encoding : 'utf8' } ) ;
 
-		var instance = sat.from.dcnf( iterable ) ;
+		const instance = sat.from.dcnf( iterable ) ;
 
 		if ( !satisfiable ) {
 			t.truthy( !sat.decide( instance ) ) ;
@@ -23,8 +23,8 @@ function T ( name , satisfiable ) {
 
 		else {
 			t.truthy( sat.decide( instance ) ) ;
-			var certificate = sat.solve( instance ).next( ).value ;
-			if ( !certificate ) t.truthy( false , 'missing certificate' ) ;
+			const certificate = sat.solve( instance ).next( ).value ;
+			if ( !certificate ) t.fail( 'missing certificate' ) ;
 			else t.truthy( sat.verify( instance , certificate ) ) ;
 		}
 
