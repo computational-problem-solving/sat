@@ -33,27 +33,25 @@
 
 <nav class="navigation" data-ice="nav"><div class="manual-toc-root">
   
-<div data-ice="manual" data-toc-name="overview">
-    <ul class="manual-toc">
-      
-    </ul>
-  </div>
 <div data-ice="manual" data-toc-name="installation">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#jspm" data-ice="link">jspm</a></li>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-installation" data-section-count="&#x25A0;" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html" data-ice="link">Installation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#jspm" data-ice="link">jspm</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#npm" data-ice="link">npm</a></li>
 </ul>
   </div>
 <div data-ice="manual" data-toc-name="usage">
     <ul class="manual-toc">
       
-    </ul>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-usage" data-section-count="&#x25A0;" data-link="manual/usage/usage.html"><a href="manual/usage/usage.html" data-ice="link">Usage</a></li>
+</ul>
   </div>
 <div data-ice="manual" data-toc-name="example">
     <ul class="manual-toc">
       
-    </ul>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-example" data-section-count="&#x25A0;" data-link="manual/example/example.html"><a href="manual/example/example.html" data-ice="link">Example</a></li>
+</ul>
   </div>
 <div data-ice="manual" data-toc-name="reference">
     <ul class="manual-toc">
@@ -73,7 +71,46 @@
     <span>&#xBB;</span>
     <span data-ice="title">Example</span>
   </div>
-  
+  <div data-ice="content"><h1 id="example">Example</h1>
+<pre><code class="lang-js"><code class="source-code prettyprint">
+import { lexicographical , increasing } from &apos;@aureooms/js-compare&apos; ;
+import { list } from &apos;@aureooms/js-itertools&apos; ;
+
+const lex = lexicographical( increasing ) ;
+
+const instance = sat.from.keys( [
+  [ [ 1 , &apos;A&apos; ] , [ 1 , &apos;B&apos; ] , [ 0 , &apos;C&apos; ] ] ,
+  [ [ 1 , &apos;B&apos; ] , [ 1 , &apos;C&apos; ] ] ,
+  [ [ 0 , &apos;B&apos; ] ],
+  [ [ 0 , &apos;A&apos; ] , [ 1 , &apos;C&apos; ] ]
+] ) ;
+
+const certificates = sat.solve( instance ) ;
+const state = certificates.next( ) ;
+const certificate = state.value ;
+sat.verify( instance , certificate ) ; // true
+sat.decide( instance ) ; // true
+
+state.done ; // false
+
+const assignment = instance.assignment( certificate ) ;
+
+list( assignment.entries( ) ).sort( lex ) ; // [ [ &apos;A&apos; , 1 ] , [ &apos;B&apos; , 0 ] , [ &apos;C&apos; , 1 ] ]
+
+certificates.next( ).done ; // true</code>
+</code></pre>
+<pre><code class="lang-js"><code class="source-code prettyprint">const text = &quot;p cnf 30 4\n10 0 10 20 30\n0\n-10 -20\n-30 0 10 -20 30&quot; ;
+const instance = sat.from.dcnf( text ) ;
+
+instance.n ; // 30
+instance.clauses ; // [ [ 18 ] , [ 18 , 38 , 58 ] , [ 19 , 39 , 59 ] , [ 18 , 39 , 58 ] ]</code>
+</code></pre>
+<pre><code class="lang-js"><code class="source-code prettyprint">const filename = &apos;uf20-010.cnf&apos; ;
+const iterable = fs.readFileSync( filename , { encoding : &apos;utf8&apos; } ) ;
+
+const instance = sat.from.dcnf( iterable ) ;</code>
+</code></pre>
+</div>
 </div>
 </div>
 

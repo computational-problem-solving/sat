@@ -33,27 +33,25 @@
 
 <nav class="navigation" data-ice="nav"><div class="manual-toc-root">
   
-<div data-ice="manual" data-toc-name="overview">
-    <ul class="manual-toc">
-      
-    </ul>
-  </div>
 <div data-ice="manual" data-toc-name="installation">
     <ul class="manual-toc">
       
-    <li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#jspm" data-ice="link">jspm</a></li>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-installation" data-section-count="&#x25A0;" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html" data-ice="link">Installation</a></li>
+<li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#jspm" data-ice="link">jspm</a></li>
 <li data-ice="manualNav" class="indent-h3" data-link="manual/installation/installation.html"><a href="manual/installation/installation.html#npm" data-ice="link">npm</a></li>
 </ul>
   </div>
 <div data-ice="manual" data-toc-name="usage">
     <ul class="manual-toc">
       
-    </ul>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-usage" data-section-count="&#x25A0;" data-link="manual/usage/usage.html"><a href="manual/usage/usage.html" data-ice="link">Usage</a></li>
+</ul>
   </div>
 <div data-ice="manual" data-toc-name="example">
     <ul class="manual-toc">
       
-    </ul>
+    <li data-ice="manualNav" class="indent-h1 manual-color manual-color-example" data-section-count="&#x25A0;" data-link="manual/example/example.html"><a href="manual/example/example.html" data-ice="link">Example</a></li>
+</ul>
   </div>
 <div data-ice="manual" data-toc-name="reference">
     <ul class="manual-toc">
@@ -75,6 +73,73 @@
   <div class="manual-cards">
     
   <div class="manual-card-wrap" data-ice="cards">
+      <h1 data-ice="label" class="manual-color manual-color-installation" data-section-count="&#x25A0;"><span data-ice="label-inner">Installation</span></h1>
+      <div class="manual-card">
+        <div data-ice="card"><h1>Installation</h1><p>Can be managed using
+<a href="http://jspm.io">jspm</a>
+or <a href="https://github.com/npm/npm">npm</a>.</p><h3>jspm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">jspm install npm:@aureooms/js-sat</code>
+</code></pre><h3>npm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">npm install @aureooms/js-sat --save</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/installation/installation.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <h1 data-ice="label" class="manual-color manual-color-usage" data-section-count="&#x25A0;"><span data-ice="label-inner">Usage</span></h1>
+      <div class="manual-card">
+        <div data-ice="card"><h1>Usage</h1><p>The code needs a ES2015+ polyfill to work, for example
+<a href="https://babeljs.io/docs/usage/polyfill">babel-polyfill</a>.</p><pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;babel-polyfill&apos; ) ;
+// or
+import &apos;babel-polyfill&apos; ;</code>
+</code></pre><p>Then</p><pre><code class="lang-js"><code class="source-code prettyprint">const sat = require( &apos;@aureooms/js-sat&apos; ) ;
+// or
+import * as sat from &apos;@aureooms/js-sat&apos; ;</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/usage/usage.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
+      <h1 data-ice="label" class="manual-color manual-color-example" data-section-count="&#x25A0;"><span data-ice="label-inner">Example</span></h1>
+      <div class="manual-card">
+        <div data-ice="card"><h1>Example</h1><pre><code class="lang-js"><code class="source-code prettyprint">
+import { lexicographical , increasing } from &apos;@aureooms/js-compare&apos; ;
+import { list } from &apos;@aureooms/js-itertools&apos; ;
+
+const lex = lexicographical( increasing ) ;
+
+const instance = sat.from.keys( [
+  [ [ 1 , &apos;A&apos; ] , [ 1 , &apos;B&apos; ] , [ 0 , &apos;C&apos; ] ] ,
+  [ [ 1 , &apos;B&apos; ] , [ 1 , &apos;C&apos; ] ] ,
+  [ [ 0 , &apos;B&apos; ] ],
+  [ [ 0 , &apos;A&apos; ] , [ 1 , &apos;C&apos; ] ]
+] ) ;
+
+const certificates = sat.solve( instance ) ;
+const state = certificates.next( ) ;
+const certificate = state.value ;
+sat.verify( instance , certificate ) ; // true
+sat.decide( instance ) ; // true
+
+state.done ; // false
+
+const assignment = instance.assignment( certificate ) ;
+
+list( assignment.entries( ) ).sort( lex ) ; // [ [ &apos;A&apos; , 1 ] , [ &apos;B&apos; , 0 ] , [ &apos;C&apos; , 1 ] ]
+
+certificates.next( ).done ; // true</code>
+</code></pre><pre><code class="lang-js"><code class="source-code prettyprint">const text = &quot;p cnf 30 4\n10 0 10 20 30\n0\n-10 -20\n-30 0 10 -20 30&quot; ;
+const instance = sat.from.dcnf( text ) ;
+
+instance.n ; // 30
+instance.clauses ; // [ [ 18 ] , [ 18 , 38 , 58 ] , [ 19 , 39 , 59 ] , [ 18 , 39 , 58 ] ]</code>
+</code></pre><pre><code class="lang-js"><code class="source-code prettyprint">const filename = &apos;uf20-010.cnf&apos; ;
+const iterable = fs.readFileSync( filename , { encoding : &apos;utf8&apos; } ) ;
+
+const instance = sat.from.dcnf( iterable ) ;</code>
+</code></pre></div>
+        <a data-ice="link" href="manual/example/example.html"></a>
+      </div>
+    </div>
+<div class="manual-card-wrap" data-ice="cards">
       <h1 data-ice="label" class="manual-color manual-color-reference" data-section-count="&#x25A0;&#x25A0;&#x25A0;&#x25A0;&#x25A0;"><span data-ice="label-inner">References</span></h1>
       <div class="manual-card">
         <div data-ice="card"><h1>References</h1>
