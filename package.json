@@ -29,7 +29,7 @@
     "@aureooms/js-array": "4.0.0",
     "@aureooms/js-compare": "1.4.5",
     "@aureooms/js-functools": "2.0.3",
-    "ava": "0.19.1",
+    "ava": "0.25.0",
     "babel-cli": "6.26.0",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
