@@ -34,7 +34,7 @@
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
     "codeclimate-test-reporter": "0.5.1",
-    "coveralls": "2.13.3",
+    "coveralls": "3.0.9",
     "esdoc": "0.5.2",
     "nyc": "11.9.0"
   },
