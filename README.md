@@ -26,16 +26,20 @@ for ( let certificate of sat.solve( instance ) ) {
 }
 ```
 
-[![License](https://img.shields.io/github/license/aureooms/js-sat.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-sat/master/LICENSE)
-[![NPM version](https://img.shields.io/npm/v/@aureooms/js-sat.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-sat)
-[![Build Status](https://img.shields.io/travis/aureooms/js-sat.svg?style=flat)](https://travis-ci.org/aureooms/js-sat)
-[![Coverage Status](https://img.shields.io/coveralls/aureooms/js-sat.svg?style=flat)](https://coveralls.io/r/aureooms/js-sat)
-[![Dependencies Status](https://img.shields.io/david/aureooms/js-sat.svg?style=flat)](https://david-dm.org/aureooms/js-sat#info=dependencies)
-[![devDependencies Status](https://img.shields.io/david/dev/aureooms/js-sat.svg?style=flat)](https://david-dm.org/aureooms/js-sat#info=devDependencies)
-[![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-sat.svg?style=flat)](https://codeclimate.com/github/aureooms/js-sat)
-[![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-sat.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-sat)
-[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-sat.svg?style=flat)](https://github.com/aureooms/js-sat/issues)
+[![License](https://img.shields.io/github/license/aureooms/js-sat.git.svg)](https://raw.githubusercontent.com/aureooms/js-sat.git/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/@aureooms/js-sat.svg)](https://www.npmjs.org/package/@aureooms/js-sat)
+[![Build](https://img.shields.io/travis/aureooms/js-sat.git/master.svg)](https://travis-ci.org/aureooms/js-sat.git/branches)
+[![Dependencies](https://img.shields.io/david/aureooms/js-sat.git.svg)](https://david-dm.org/aureooms/js-sat.git)
+[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-sat.git.svg)](https://david-dm.org/aureooms/js-sat.git?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-sat.git.svg)](https://github.com/aureooms/js-sat.git/issues)
+[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-sat.svg)](https://www.npmjs.org/package/@aureooms/js-sat)
+
+[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-sat.git.svg)](https://codeclimate.com/github/aureooms/js-sat.git/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-sat.git.svg)](https://codeclimate.com/github/aureooms/js-sat.git/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-sat.git/master.svg)](https://codecov.io/gh/aureooms/js-sat.git)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-sat.git.svg)](https://codeclimate.com/github/aureooms/js-sat.git/trends/technical_debt)
 [![Documentation](https://aureooms.github.io/js-sat/badge.svg)](https://aureooms.github.io/js-sat/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-sat)](https://bundlephobia.com/result?p=@aureooms/js-sat)
 
 ## Reference
 
