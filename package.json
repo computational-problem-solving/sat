@@ -5,13 +5,18 @@
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "ava": {
     "require": [
-      "babel-polyfill",
-      "babel-register"
-    ]
+      "@babel/polyfill",
+      "@babel/register"
+    ],
+    "files": [
+      "test/src/**/*"
+    ],
+    "timeout": "1m",
+    "concurrency": 8
   },
   "babel": {
     "presets": [
-      "env"
+      "@babel/preset-env"
     ],
     "env": {
       "development": {
@@ -23,21 +28,29 @@
     "url": "https://github.com/aureooms/js-sat/issues"
   },
   "dependencies": {
-    "@aureooms/js-itertools": "^3.3.0"
+    "@aureooms/js-itertools": "^3.4.0"
   },
   "devDependencies": {
     "@aureooms/js-array": "4.0.0",
     "@aureooms/js-compare": "1.4.5",
     "@aureooms/js-functools": "2.0.3",
-    "ava": "0.25.0",
-    "babel-cli": "6.26.0",
-    "babel-polyfill": "6.26.0",
-    "babel-preset-env": "1.7.0",
-    "codeclimate-test-reporter": "0.5.1",
-    "coveralls": "2.13.3",
-    "esdoc": "0.5.2",
-    "nyc": "11.9.0"
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/polyfill": "7.8.7",
+    "@babel/preset-env": "7.9.5",
+    "@babel/register": "7.9.0",
+    "ava": "3.7.1",
+    "coveralls": "3.0.13",
+    "esdoc": "1.1.0",
+    "esdoc-inject-script-plugin": "1.0.0",
+    "esdoc-inject-style-plugin": "1.0.0",
+    "esdoc-standard-plugin": "1.0.0",
+    "np": "6.2.2",
+    "nyc": "15.0.1"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "https://aureooms.github.io/js-sat",
   "keywords": [
     "NP",
@@ -58,9 +71,11 @@
     "type": "git"
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "rm -rf lib && babel src -d lib",
     "cover": "nyc --reporter=lcov npm test",
-    "prepublish": "npm run build",
-    "test": "ava ./test/src --concurrency 8"
+    "esdoc": "esdoc",
+    "prepare": "npm run build",
+    "release": "np",
+    "test": "ava"
   }
 }
