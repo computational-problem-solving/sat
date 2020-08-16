@@ -1,7 +1,7 @@
 import test from 'ava';
 import * as sat from '../../src';
 
-import compare from '@aureooms/js-compare' ;
+import * as compare from '@aureooms/js-compare' ;
 import { list } from '@aureooms/js-itertools' ;
 
 const lex = compare.lexicographical( compare.increasing ) ;
