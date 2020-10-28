@@ -1,7 +1,12 @@
 :satisfied: [@aureooms/js-sat](https://aureooms.github.io/js-sat)
 ==
 
-<img src="https://imgs.xkcd.com/comics/np_complete.png" width="864">
+<p align="center">
+<a href="https://xkcd.com/287">
+<img src="https://imgs.xkcd.com/comics/np_complete.png" width="600">
+</a><br/>
+© <a href="https://xkcd.com">xkcd.com</a>
+</p>
 
 Boolean formula satisfiability algorithms for JavaScript.
 See [docs](https://aureooms.github.io/js-sat).
