@@ -1,4 +1,4 @@
-[@aureooms/js-sat](https://aureooms.github.io/js-sat)
+:satisfied: [@aureooms/js-sat](https://aureooms.github.io/js-sat)
 ==
 
 <img src="https://imgs.xkcd.com/comics/np_complete.png" width="864">
@@ -41,7 +41,7 @@ for ( let certificate of sat.solve( instance ) ) {
 [![Documentation](https://aureooms.github.io/js-sat/badge.svg)](https://aureooms.github.io/js-sat/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-sat)](https://bundlephobia.com/result?p=@aureooms/js-sat)
 
-## Reference
+## :scroll: Reference
 
   - [Simple solver in Python](http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html)
   - [SATLIB](http://www.cs.ubc.ca/~hoos/SATLIB/benchm.html)
