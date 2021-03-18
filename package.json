@@ -28,7 +28,7 @@
     "url": "https://github.com/aureooms/js-sat/issues"
   },
   "dependencies": {
-    "@aureooms/js-itertools": "^4.1.0"
+    "@aureooms/js-itertools": "^5.0.0"
   },
   "devDependencies": {
     "@aureooms/js-array": "4.0.0",
