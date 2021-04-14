@@ -68,7 +68,7 @@
   "license": "AGPL-3.0",
   "main": "lib/index.js",
   "repository": {
-    "url": "https://github.com/aureooms/js-sat.git",
+    "url": "https://github.com/aureooms/js-sat",
     "type": "git"
   },
   "scripts": {
