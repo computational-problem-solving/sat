@@ -33,7 +33,7 @@ for ( let certificate of sat.solve( instance ) ) {
 
 [![License](https://img.shields.io/github/license/aureooms/js-sat.svg)](https://raw.githubusercontent.com/aureooms/js-sat/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-sat.svg)](https://www.npmjs.org/package/@aureooms/js-sat)
-[![Build](https://img.shields.io/travis/aureooms/js-sat/main.svg)](https://travis-ci.com/aureooms/js-sat/branches)
+[![Tests](https://img.shields.io/github/workflow/status/aureooms/js-sat/ci:test?event=push&label=tests)](https://github.com/aureooms/js-sat/actions/workflows/ci:test.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/david/aureooms/js-sat.svg)](https://david-dm.org/aureooms/js-sat)
 [![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-sat.svg)](https://david-dm.org/aureooms/js-sat?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/aureooms/js-sat.svg)](https://github.com/aureooms/js-sat/issues)
