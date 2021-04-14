@@ -61,12 +61,12 @@
     "nyc": "15.1.0"
   },
   "ava": {
+    "files": [
+      "test/src/**/*"
+    ],
     "require": [
       "@babel/polyfill",
       "@babel/register"
-    ],
-    "files": [
-      "test/src/**/*"
     ],
     "timeout": "1m",
     "concurrency": 8
