@@ -1,5 +1,8 @@
 import _count from './_count.js';
 
+/**
+ * Holds all properties of a k-CNF SAT instance in parity format.
+ */
 export default class ParitiesInstance {
 	/**
 	 * Clauses are in parity format.

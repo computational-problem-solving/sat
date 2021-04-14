@@ -1,5 +1,8 @@
 import _count from './_count.js';
 
+/**
+ * Allows to produce an assignment format that makes sense in sign format.
+ */
 export default class SignsInstance {
 	/**
 	 * Clauses are in parity format.

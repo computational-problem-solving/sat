@@ -1,5 +1,9 @@
 import _certificate_to_keys from './_certificate_to_keys.js';
 
+/**
+ * Maintains a mapping between variable names and a parity
+ * representation of the instance.
+ */
 export default class KeysInstance {
 	/**
 	 * Constructor.

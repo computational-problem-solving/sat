@@ -3,9 +3,9 @@
  * of clauses. The list of clauses and the assignment vector are in parity
  * format.
  *
- * @param {Iterable} clauses The clauses in parity format.
- * @param {Array} assignment The assignment vector in parity format.
- * @returns {Boolean} Whether the assignment satisfies the k-CNF formula
+ * @param {number[][]} clauses The clauses in parity format.
+ * @param {number[]} assignment The assignment vector in parity format.
+ * @returns {boolean} Whether the assignment satisfies the k-CNF formula
  * represented by the list of clauses.
  */
 export default function _verify(clauses, assignment) {
