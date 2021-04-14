@@ -78,6 +78,7 @@
     "prepare": "npm run build",
     "release": "np",
     "test": "ava",
-    "lint-config-and-fix": "fixpack || fixpack"
+    "lint-config-and-fix": "fixpack || fixpack",
+    "lint-config": "fixpack --dryRun"
   }
 }
