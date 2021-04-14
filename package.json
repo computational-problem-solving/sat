@@ -152,7 +152,8 @@
           ],
           "babel-preset-power-assert"
         ]
-      }
+      },
+      "production": {}
     }
   }
 }
