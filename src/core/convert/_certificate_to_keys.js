@@ -1,5 +1,4 @@
-import { zip } from '@aureooms/js-itertools' ;
-
+import {zip} from '@aureooms/js-itertools';
 
 /**
  * Constructs an assignment map from a list of variable names and an assignment
@@ -9,8 +8,6 @@ import { zip } from '@aureooms/js-itertools' ;
  * @param certificate
  * @returns {undefined}
  */
-export function _certificate_to_keys ( variables , certificate ) {
-
-	return new Map( zip( variables , certificate ) ) ;
-
+export function _certificate_to_keys(variables, certificate) {
+	return new Map(zip(variables, certificate));
 }

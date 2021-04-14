@@ -1,8 +1,5 @@
-import { solve } from "./solve.js" ;
+import {solve} from './solve.js';
 
-export function decide ( instance ) {
-
-	return !solve( instance ).next( ).done ;
-
+export function decide(instance) {
+	return !solve(instance).next().done;
 }
-

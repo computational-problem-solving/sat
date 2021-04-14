@@ -1,35 +1,28 @@
-import { KeysInstance } from "./KeysInstance.js" ;
+import {KeysInstance} from './KeysInstance.js';
 
+export function _keys_to_parity(clauses) {
+	const keys = new Map();
+	const variables = [];
 
-export function _keys_to_parity ( clauses ) {
+	const instance = [];
 
-	const keys = new Map( ) ;
-	const variables = [ ] ;
+	for (const clause of clauses) {
+		const new_clause = new Set();
 
-	const instance = [ ] ;
-
-	for ( const clause of clauses ) {
-
-		const new_clause = new Set( ) ;
-
-		for ( const [ positive , variable ] of clause ) {
-
-			if ( !keys.has( variable ) ) {
-				keys.set( variable , variables.length ) ;
-				variables.push( variable ) ;
+		for (const [positive, variable] of clause) {
+			if (!keys.has(variable)) {
+				keys.set(variable, variables.length);
+				variables.push(variable);
 			}
 
-			const negated = positive ? 0 : 1 ;
-			const literal = keys.get( variable ) << 1 | negated ;
+			const negated = positive ? 0 : 1;
+			const literal = (keys.get(variable) << 1) | negated;
 
-			new_clause.add( literal ) ;
-
+			new_clause.add(literal);
 		}
 
-		instance.push( [ ...new_clause ] ) ;
-
+		instance.push([...new_clause]);
 	}
 
-	return new KeysInstance( variables , instance ) ;
-
+	return new KeysInstance(variables, instance);
 }

@@ -1,125 +1,108 @@
+export function _skip_blanks(iterator) {
+	while (true) {
+		const current = iterator.next();
+		if (current.done) return [true, null];
 
-export function _skip_blanks ( iterator ) {
-
-	while ( true ) {
-		const current = iterator.next( ) ;
-		if ( current.done ) return [ true , null ] ;
-
-		switch ( current.value ) {
-			case ' ' :
-			case '\t' :
-			case '\n' :
-				continue ;
+		switch (current.value) {
+			case ' ':
+			case '\t':
+			case '\n':
+				continue;
 			// HANDLE CUSTOM DELIMITER OF SATLIB
-			case '%' :
-				return [ true , null ] ;
+			case '%':
+				return [true, null];
+			default:
+				return [false, current.value];
 		}
-
-		return [ false , current.value ] ;
 	}
-
 }
 
-export function _parse_int ( first_symbol , iterator ) {
+export function _parse_int(first_symbol, iterator) {
+	let i = 0;
+	let s = 1;
 
-	let i = 0 ;
-	let s = 1 ;
+	if (first_symbol === '-') s = -1;
+	else i = Number(first_symbol);
 
-	if ( first_symbol === '-' ) s = -1 ;
-	else i = +first_symbol ;
+	while (true) {
+		const current = iterator.next();
+		if (current.done) return [true, s * i];
 
-	while ( true ) {
+		const c = current.value;
 
-		const current = iterator.next( ) ;
-		if ( current.done ) return [ true , s * i ] ;
+		if (c < '0' || c > '9') return [false, s * i];
 
-		const c = current.value ;
-
-		if ( c < '0' || c > '9' ) return [ false , s * i ] ;
-
-		i *= 10 ;
-		i += +c ;
-
+		i *= 10;
+		i += Number(c);
 	}
-
 }
 
-export function _parse_DIMACS_CNF ( iterable ) {
+export function _parse_DIMACS_CNF(iterable) {
+	const iterator = iterable[Symbol.iterator]();
 
-	const iterator = iterable[Symbol.iterator]( ) ;
+	const clauses = [];
 
-	const clauses = [ ] ;
+	// Skip comments
+	while (true) {
+		const current = iterator.next();
 
-	// skip comments
-	while ( true ) {
+		if (current.done) return clauses;
 
-		const current = iterator.next( ) ;
+		const c = current.value;
 
-		if ( current.done ) return clauses ;
+		// Go to problem description
+		if (c === 'p') break;
 
-		const c = current.value ;
+		// Skip comment
+		while (true) {
+			const current = iterator.next();
 
-		// go to problem description
-		if ( c === 'p' ) break ;
+			if (current.done) return clauses;
 
-		// skip comment
-		while ( true ) {
-
-			const current = iterator.next( ) ;
-
-			if ( current.done ) return clauses ;
-
-			// end of comment
-			if ( current.value === '\n' ) break ;
-
+			// End of comment
+			if (current.value === '\n') break;
 		}
-
 	}
 
-	// parse problem description
+	// Parse problem description
 	// ( we do not actually need to parse it if we suppose it is correct )
 
-	while ( true ) {
+	while (true) {
+		const current = iterator.next();
 
-		const current = iterator.next( ) ;
+		if (current.done) return clauses;
 
-		if ( current.done ) return clauses ;
-
-		// end of description
-		if ( current.value === '\n' ) break ;
-
+		// End of description
+		if (current.value === '\n') break;
 	}
 
-	// parse problem
+	// Parse problem
 
-	loop : while ( true ) {
+	// eslint-disable-next-line no-labels
+	loop: while (true) {
+		const clause = [];
 
-		const clause = [ ] ;
-
-		while ( true ) {
-
-			const [ done1 , symbol ] = _skip_blanks( iterator ) ;
-			if ( done1 ) {
-				if ( clause.length > 0 ) clauses.push( clause ) ;
-				return clauses ;
+		while (true) {
+			const [done1, symbol] = _skip_blanks(iterator);
+			if (done1) {
+				if (clause.length > 0) clauses.push(clause);
+				return clauses;
 			}
 
-			const [ done2 , i ] = _parse_int( symbol , iterator ) ;
-			if ( i === 0 ) {
-				if ( done2 ) return clauses ;
-				clauses.push( clause ) ;
-				continue loop ;
+			const [done2, i] = _parse_int(symbol, iterator);
+			if (i === 0) {
+				if (done2) return clauses;
+				clauses.push(clause);
+				// eslint-disable-next-line no-labels
+				continue loop;
 			}
 
-			clause.push( i > 0 ? ( i - 1 ) << 1 : ( -i - 1 ) << 1 | 1 ) ;
+			clause.push(i > 0 ? (i - 1) << 1 : ((-i - 1) << 1) | 1);
 
-			if ( done2 ) {
-				clauses.push( clause ) ;
-				return clauses ;
+			if (done2) {
+				clauses.push(clause);
+				return clauses;
 			}
-
 		}
-
 	}
-
 }

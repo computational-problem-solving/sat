@@ -1,1 +1,1 @@
-export * from "./_parse_DIMACS_CNF.js" ;
+export * from './_parse_DIMACS_CNF.js';
