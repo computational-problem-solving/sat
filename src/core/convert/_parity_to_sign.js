@@ -1,6 +1,12 @@
 import {list, map} from '@aureooms/js-itertools';
 
-export function _parity_to_sign(clauses) {
+/**
+ * _parity_to_sign.
+ *
+ * @param {number[][]} clauses
+ * @return {number[][]}
+ */
+export default function _parity_to_sign(clauses) {
 	return list(
 		map(
 			(clause) =>

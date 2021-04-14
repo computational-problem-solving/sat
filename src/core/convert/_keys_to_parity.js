@@ -1,6 +1,12 @@
-import {KeysInstance} from './KeysInstance.js';
+import KeysInstance from './KeysInstance.js';
 
-export function _keys_to_parity(clauses) {
+/**
+ * _keys_to_parity.
+ *
+ * @param {[any,any][][]} clauses
+ * @return {KeysInstance}
+ */
+export default function _keys_to_parity(clauses) {
 	const keys = new Map();
 	const variables = [];
 

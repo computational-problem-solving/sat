@@ -1,43 +1,12 @@
-export function _skip_blanks(iterator) {
-	while (true) {
-		const current = iterator.next();
-		if (current.done) return [true, null];
+import _skip_blanks from './_skip_blanks.js';
+import _parse_int from './_parse_int.js';
 
-		switch (current.value) {
-			case ' ':
-			case '\t':
-			case '\n':
-				continue;
-			// HANDLE CUSTOM DELIMITER OF SATLIB
-			case '%':
-				return [true, null];
-			default:
-				return [false, current.value];
-		}
-	}
-}
-
-export function _parse_int(first_symbol, iterator) {
-	let i = 0;
-	let s = 1;
-
-	if (first_symbol === '-') s = -1;
-	else i = Number(first_symbol);
-
-	while (true) {
-		const current = iterator.next();
-		if (current.done) return [true, s * i];
-
-		const c = current.value;
-
-		if (c < '0' || c > '9') return [false, s * i];
-
-		i *= 10;
-		i += Number(c);
-	}
-}
-
-export function _parse_DIMACS_CNF(iterable) {
+/**
+ * _parse_DIMACS_CNF.
+ *
+ * @param {Iterable<string>} iterable
+ */
+export default function _parse_DIMACS_CNF(iterable) {
 	const iterator = iterable[Symbol.iterator]();
 
 	const clauses = [];

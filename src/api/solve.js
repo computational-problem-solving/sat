@@ -1,11 +1,14 @@
-import {SAT0W, setup_watchlist, setup_assignment} from '../core/index.js';
+import setup_assignment from '../core/setup_assignment.js';
+import setup_watchlist from '../core/SAT0W/setup_watchlist.js';
+import SAT0W from '../core/SAT0W/SAT0W.js';
 
 /**
  * Yields all satisfying assignments for the input instance.
  *
- * @returns {Iterable} Generator of the satisfying assignments.
+ * @param {ParitiesInstance|SignsInstance|KeysInstance} instance
+ * @returns {IterableIterator<number[]>} Generator of the satisfying assignments.
  */
-export function* solve({clauses, n}) {
+export default function solve({clauses, n}) {
 	// eslint-disable-next-line new-cap
-	yield* SAT0W(n, clauses, setup_watchlist(n, clauses), setup_assignment(n), 0);
+	return SAT0W(n, clauses, setup_watchlist(n, clauses), setup_assignment(n), 0);
 }

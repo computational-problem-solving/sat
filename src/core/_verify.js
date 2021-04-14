@@ -8,7 +8,7 @@
  * @returns {Boolean} Whether the assignment satisfies the k-CNF formula
  * represented by the list of clauses.
  */
-export function _verify(clauses, assignment) {
+export default function _verify(clauses, assignment) {
 	// eslint-disable-next-line no-labels
 	loop: for (const clause of clauses) {
 		for (const literal of clause) {

@@ -1,10 +1,14 @@
-export function update_watchlist(watchlist, false_literal, assignment) {
-	/**
-	 * Updates the watch list after literal 'false_literal' was just assigned
-	 * False, by making any clause watching false_literal watch something else.
-	 * Returns False it is impossible to do so, meaning a clause is contradicted
-	 * by the current assignment.
-	 */
+/**
+ * Updates the watch list after literal 'false_literal' was just assigned
+ * False, by making any clause watching false_literal watch something else.
+ * Returns False it is impossible to do so, meaning a clause is contradicted
+ * by the current assignment.
+ *
+ * @param {number[][][]} watchlist
+ * @param {number} false_literal
+ * @param {number[]} assignment
+ */
+export default function update_watchlist(watchlist, false_literal, assignment) {
 	while (watchlist[false_literal].length > 0) {
 		const clause =
 			watchlist[false_literal][watchlist[false_literal].length - 1];

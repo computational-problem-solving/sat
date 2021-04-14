@@ -1,8 +1,14 @@
 import {list, map} from '@aureooms/js-itertools';
 
-import {SignsInstance} from './SignsInstance.js';
+import SignsInstance from './SignsInstance.js';
 
-export function _sign_to_parity(clauses) {
+/**
+ * _sign_to_parity.
+ *
+ * @param {number[][]} clauses
+ * @return {SignsInstance}
+ */
+export default function _sign_to_parity(clauses) {
 	return new SignsInstance(
 		list(
 			map(
