@@ -101,13 +101,23 @@
     "concurrency": 8
   },
   "babel": {
+    "sourceMaps": true,
     "presets": [
       [
         "@babel/preset-env",
         {
-          "targets": [
-            "defaults",
-            "maintained node versions"
+          "targets": "current node"
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "transform-remove-console",
+        {
+          "exclude": [
+            "log",
+            "error",
+            "warn"
           ]
         }
       ]
@@ -115,95 +125,63 @@
     "env": {
       "debug": {
         "presets": [
-          [
-            "@babel/preset-env",
-            {
-              "targets": "current node"
-            }
-          ],
           "babel-preset-power-assert"
+        ],
+        "plugins": [
+          [
+            "transform-remove-console",
+            {
+              "exclude": [
+                "debug",
+                "log",
+                "error",
+                "warn"
+              ]
+            }
+          ]
         ]
       },
       "test": {
         "presets": [
-          [
-            "@babel/preset-env",
-            {
-              "targets": "current node"
-            }
-          ],
           "babel-preset-power-assert"
-        ],
-        "plugins": [
-          [
-            "transform-remove-console",
-            {
-              "exclude": [
-                "log",
-                "error",
-                "warn"
-              ]
-            }
-          ]
-        ]
-      },
-      "development": {
-        "presets": [
-          "babel-preset-power-assert"
-        ],
-        "plugins": [
-          [
-            "transform-remove-console",
-            {
-              "exclude": [
-                "log",
-                "error",
-                "warn"
-              ]
-            }
-          ]
-        ]
-      },
-      "production": {
-        "plugins": [
-          "babel-plugin-unassert",
-          [
-            "transform-remove-console",
-            {
-              "exclude": [
-                "log",
-                "error",
-                "warn"
-              ]
-            }
-          ]
         ]
       },
       "cover": {
         "sourceMaps": "both",
         "presets": [
+          "babel-preset-power-assert"
+        ]
+      },
+      "development": {
+        "presets": [
           [
             "@babel/preset-env",
             {
-              "targets": "current node"
+              "targets": [
+                "defaults",
+                "maintained node versions"
+              ]
             }
           ],
           "babel-preset-power-assert"
-        ],
-        "plugins": [
+        ]
+      },
+      "production": {
+        "presets": [
           [
-            "transform-remove-console",
+            "@babel/preset-env",
             {
-              "exclude": [
-                "log",
-                "error",
-                "warn"
+              "targets": [
+                "defaults",
+                "maintained node versions"
               ]
             }
           ]
+        ],
+        "plugins": [
+          "babel-plugin-unassert"
         ]
       }
-    },
-    "sourceMaps": true
+    }
   }
 }
