@@ -1,4 +1,4 @@
-import { ParitiesInstance , _sign_to_parity, _keys_to_parity, _parse_DIMACS_CNF } from '../core' ;
+import { ParitiesInstance , _sign_to_parity, _keys_to_parity, _parse_DIMACS_CNF } from "../core/index.js" ;
 
 /**
  * The input is converted to parity format in each case.

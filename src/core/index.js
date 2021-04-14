@@ -1,5 +1,5 @@
-export * from './SAT0W' ;
-export * from './_verify' ;
-export * from './convert' ;
-export * from './parse' ;
-export * from './setup_assignment' ;
+export * from "./SAT0W/index.js" ;
+export * from "./_verify.js" ;
+export * from "./convert/index.js" ;
+export * from "./parse/index.js" ;
+export * from "./setup_assignment.js" ;

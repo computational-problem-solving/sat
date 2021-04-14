@@ -1,4 +1,4 @@
-import { update_watchlist } from './update_watchlist' ;
+import { update_watchlist } from "./update_watchlist.js" ;
 
 export function* SAT0W ( n , clauses , watchlist , assignment , d ) {
 

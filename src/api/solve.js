@@ -1,4 +1,4 @@
-import { SAT0W , setup_watchlist, setup_assignment } from '../core' ;
+import { SAT0W , setup_watchlist, setup_assignment } from "../core/index.js" ;
 
 /**
  * Yields all satisfying assignments for the input instance.

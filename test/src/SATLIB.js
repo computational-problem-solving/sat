@@ -1,5 +1,5 @@
 import test from 'ava';
-import * as sat from '../../src';
+import * as sat from "../../src/index.js";
 
 import * as compare from '@aureooms/js-compare' ;
 import { list } from '@aureooms/js-itertools' ;

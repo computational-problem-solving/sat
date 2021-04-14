@@ -1,4 +1,4 @@
-import { KeysInstance } from './KeysInstance' ;
+import { KeysInstance } from "./KeysInstance.js" ;
 
 
 export function _keys_to_parity ( clauses ) {

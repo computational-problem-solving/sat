@@ -1,4 +1,4 @@
-export * from './decide' ;
-export * from './from' ;
-export * from './solve' ;
-export * from './verify' ;
+export * from "./decide.js" ;
+export * from "./from.js" ;
+export * from "./solve.js" ;
+export * from "./verify.js" ;

@@ -1,5 +1,5 @@
 import test from 'ava';
-import * as sat from '../../src';
+import * as sat from "../../src/index.js";
 
 function text ( lines ) {
 	return ( lines.join( '\n' ) ) + '\n' ;

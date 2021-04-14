@@ -1,3 +1,3 @@
-export * from './SAT0W' ;
-export * from './setup_watchlist' ;
-export * from './update_watchlist' ;
+export * from "./SAT0W.js" ;
+export * from "./setup_watchlist.js" ;
+export * from "./update_watchlist.js" ;

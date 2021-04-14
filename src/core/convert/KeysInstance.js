@@ -1,4 +1,4 @@
-import { _certificate_to_keys } from './_certificate_to_keys' ;
+import { _certificate_to_keys } from "./_certificate_to_keys.js" ;
 
 export class KeysInstance {
 
