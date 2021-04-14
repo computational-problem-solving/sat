@@ -113,12 +113,39 @@
       ]
     ],
     "env": {
+      "debug": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": "current node"
+            }
+          ],
+          "babel-preset-power-assert"
+        ]
+      },
+      "test": {},
       "development": {
         "sourceMaps": "inline",
         "presets": [
           "babel-preset-power-assert"
         ],
         "plugins": [
+          [
+            "transform-remove-console",
+            {
+              "exclude": [
+                "log",
+                "error",
+                "warn"
+              ]
+            }
+          ]
+        ]
+      },
+      "production": {
+        "plugins": [
+          "babel-plugin-unassert",
           [
             "transform-remove-console",
             {
@@ -154,34 +181,7 @@
             }
           ]
         ]
-      },
-      "debug": {
-        "presets": [
-          [
-            "@babel/preset-env",
-            {
-              "targets": "current node"
-            }
-          ],
-          "babel-preset-power-assert"
-        ]
-      },
-      "production": {
-        "plugins": [
-          "babel-plugin-unassert",
-          [
-            "transform-remove-console",
-            {
-              "exclude": [
-                "log",
-                "error",
-                "warn"
-              ]
-            }
-          ]
-        ]
-      },
-      "test": {}
+      }
     }
   }
 }
