@@ -47,7 +47,7 @@
     "build-docs": "esdoc",
     "build-gh-pages": "npm run build-docs",
     "commit-msg": "commitlint --edit",
-    "cover": "NODE_ENV=cover c8 --all --src src --reporter=lcov npm test",
+    "cover": "NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test",
     "install-hooks": "husky install",
     "lint-config": "fixpack --dryRun",
     "lint-config-and-fix": "fixpack || fixpack",
