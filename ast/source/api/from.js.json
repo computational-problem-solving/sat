@@ -1,28 +1,28 @@
 {
   "type": "File",
   "start": 0,
-  "end": 1226,
+  "end": 1722,
   "loc": {
     "start": {
       "line": 1,
       "column": 0
     },
     "end": {
-      "line": 32,
+      "line": 51,
       "column": 0
     }
   },
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 1226,
+    "end": 1722,
     "loc": {
       "start": {
         "line": 1,
         "column": 0
       },
       "end": {
-        "line": 32,
+        "line": 51,
         "column": 0
       }
     },
@@ -31,7 +31,7 @@
       {
         "type": "ImportDeclaration",
         "start": 0,
-        "end": 98,
+        "end": 67,
         "loc": {
           "start": {
             "line": 1,
@@ -39,200 +39,243 @@
           },
           "end": {
             "line": 1,
-            "column": 98
+            "column": 67
           }
         },
         "specifiers": [
           {
-            "type": "ImportSpecifier",
-            "start": 9,
-            "end": 25,
+            "type": "ImportDefaultSpecifier",
+            "start": 7,
+            "end": 23,
             "loc": {
               "start": {
                 "line": 1,
-                "column": 9
+                "column": 7
               },
               "end": {
                 "line": 1,
-                "column": 25
+                "column": 23
               }
-            },
-            "imported": {
-              "type": "Identifier",
-              "start": 9,
-              "end": 25,
-              "loc": {
-                "start": {
-                  "line": 1,
-                  "column": 9
-                },
-                "end": {
-                  "line": 1,
-                  "column": 25
-                },
-                "identifierName": "ParitiesInstance"
-              },
-              "name": "ParitiesInstance"
             },
             "local": {
               "type": "Identifier",
-              "start": 9,
-              "end": 25,
+              "start": 7,
+              "end": 23,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 7
                 },
                 "end": {
                   "line": 1,
-                  "column": 25
+                  "column": 23
                 },
                 "identifierName": "ParitiesInstance"
               },
               "name": "ParitiesInstance"
             }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 29,
+          "end": 66,
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 29
+            },
+            "end": {
+              "line": 1,
+              "column": 66
+            }
           },
+          "extra": {
+            "rawValue": "../core/convert/ParitiesInstance.js",
+            "raw": "'../core/convert/ParitiesInstance.js'"
+          },
+          "value": "../core/convert/ParitiesInstance.js"
+        }
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 68,
+        "end": 133,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 0
+          },
+          "end": {
+            "line": 2,
+            "column": 65
+          }
+        },
+        "specifiers": [
           {
-            "type": "ImportSpecifier",
-            "start": 28,
-            "end": 43,
+            "type": "ImportDefaultSpecifier",
+            "start": 75,
+            "end": 90,
             "loc": {
               "start": {
-                "line": 1,
-                "column": 28
+                "line": 2,
+                "column": 7
               },
               "end": {
-                "line": 1,
-                "column": 43
+                "line": 2,
+                "column": 22
               }
-            },
-            "imported": {
-              "type": "Identifier",
-              "start": 28,
-              "end": 43,
-              "loc": {
-                "start": {
-                  "line": 1,
-                  "column": 28
-                },
-                "end": {
-                  "line": 1,
-                  "column": 43
-                },
-                "identifierName": "_sign_to_parity"
-              },
-              "name": "_sign_to_parity"
             },
             "local": {
               "type": "Identifier",
-              "start": 28,
-              "end": 43,
+              "start": 75,
+              "end": 90,
               "loc": {
                 "start": {
-                  "line": 1,
-                  "column": 28
+                  "line": 2,
+                  "column": 7
                 },
                 "end": {
-                  "line": 1,
-                  "column": 43
+                  "line": 2,
+                  "column": 22
                 },
                 "identifierName": "_sign_to_parity"
               },
               "name": "_sign_to_parity"
             }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 96,
+          "end": 132,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 28
+            },
+            "end": {
+              "line": 2,
+              "column": 64
+            }
           },
+          "extra": {
+            "rawValue": "../core/convert/_sign_to_parity.js",
+            "raw": "'../core/convert/_sign_to_parity.js'"
+          },
+          "value": "../core/convert/_sign_to_parity.js"
+        }
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 134,
+        "end": 199,
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 0
+          },
+          "end": {
+            "line": 3,
+            "column": 65
+          }
+        },
+        "specifiers": [
           {
-            "type": "ImportSpecifier",
-            "start": 45,
-            "end": 60,
+            "type": "ImportDefaultSpecifier",
+            "start": 141,
+            "end": 156,
             "loc": {
               "start": {
-                "line": 1,
-                "column": 45
+                "line": 3,
+                "column": 7
               },
               "end": {
-                "line": 1,
-                "column": 60
+                "line": 3,
+                "column": 22
               }
-            },
-            "imported": {
-              "type": "Identifier",
-              "start": 45,
-              "end": 60,
-              "loc": {
-                "start": {
-                  "line": 1,
-                  "column": 45
-                },
-                "end": {
-                  "line": 1,
-                  "column": 60
-                },
-                "identifierName": "_keys_to_parity"
-              },
-              "name": "_keys_to_parity"
             },
             "local": {
               "type": "Identifier",
-              "start": 45,
-              "end": 60,
+              "start": 141,
+              "end": 156,
               "loc": {
                 "start": {
-                  "line": 1,
-                  "column": 45
+                  "line": 3,
+                  "column": 7
                 },
                 "end": {
-                  "line": 1,
-                  "column": 60
+                  "line": 3,
+                  "column": 22
                 },
                 "identifierName": "_keys_to_parity"
               },
               "name": "_keys_to_parity"
             }
+          }
+        ],
+        "source": {
+          "type": "StringLiteral",
+          "start": 162,
+          "end": 198,
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 28
+            },
+            "end": {
+              "line": 3,
+              "column": 64
+            }
           },
+          "extra": {
+            "rawValue": "../core/convert/_keys_to_parity.js",
+            "raw": "'../core/convert/_keys_to_parity.js'"
+          },
+          "value": "../core/convert/_keys_to_parity.js"
+        }
+      },
+      {
+        "type": "ImportDeclaration",
+        "start": 200,
+        "end": 267,
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 0
+          },
+          "end": {
+            "line": 4,
+            "column": 67
+          }
+        },
+        "specifiers": [
           {
-            "type": "ImportSpecifier",
-            "start": 62,
-            "end": 79,
+            "type": "ImportDefaultSpecifier",
+            "start": 207,
+            "end": 224,
             "loc": {
               "start": {
-                "line": 1,
-                "column": 62
+                "line": 4,
+                "column": 7
               },
               "end": {
-                "line": 1,
-                "column": 79
+                "line": 4,
+                "column": 24
               }
-            },
-            "imported": {
-              "type": "Identifier",
-              "start": 62,
-              "end": 79,
-              "loc": {
-                "start": {
-                  "line": 1,
-                  "column": 62
-                },
-                "end": {
-                  "line": 1,
-                  "column": 79
-                },
-                "identifierName": "_parse_DIMACS_CNF"
-              },
-              "name": "_parse_DIMACS_CNF"
             },
             "local": {
               "type": "Identifier",
-              "start": 62,
-              "end": 79,
+              "start": 207,
+              "end": 224,
               "loc": {
                 "start": {
-                  "line": 1,
-                  "column": 62
+                  "line": 4,
+                  "column": 7
                 },
                 "end": {
-                  "line": 1,
-                  "column": 79
+                  "line": 4,
+                  "column": 24
                 },
                 "identifierName": "_parse_DIMACS_CNF"
               },
@@ -242,37 +285,37 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 87,
-          "end": 96,
+          "start": 230,
+          "end": 266,
           "loc": {
             "start": {
-              "line": 1,
-              "column": 87
+              "line": 4,
+              "column": 30
             },
             "end": {
-              "line": 1,
-              "column": 96
+              "line": 4,
+              "column": 66
             }
           },
           "extra": {
-            "rawValue": "../core",
-            "raw": "'../core'"
+            "rawValue": "../core/parse/_parse_DIMACS_CNF.js",
+            "raw": "'../core/parse/_parse_DIMACS_CNF.js'"
           },
-          "value": "../core"
+          "value": "../core/parse/_parse_DIMACS_CNF.js"
         },
         "trailingComments": [
           {
             "type": "CommentBlock",
             "value": "*\n * The input is converted to parity format in each case.\n ",
-            "start": 100,
-            "end": 164,
+            "start": 269,
+            "end": 333,
             "loc": {
               "start": {
-                "line": 3,
+                "line": 6,
                 "column": 0
               },
               "end": {
-                "line": 5,
+                "line": 8,
                 "column": 3
               }
             }
@@ -280,62 +323,629 @@
         ]
       },
       {
-        "type": "ExportNamedDeclaration",
-        "start": 165,
-        "end": 1225,
+        "type": "Identifier",
+        "start": 334,
+        "end": 1699,
         "loc": {
           "start": {
-            "line": 6,
+            "line": 9,
             "column": 0
           },
           "end": {
-            "line": 31,
-            "column": 3
+            "line": 48,
+            "column": 2
           }
         },
-        "specifiers": [],
-        "source": null,
+        "declarations": [
+          {
+            "type": "VariableDeclarator",
+            "start": 340,
+            "end": 1698,
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 6
+              },
+              "end": {
+                "line": 48,
+                "column": 1
+              }
+            },
+            "id": {
+              "type": "Identifier",
+              "start": 340,
+              "end": 344,
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 6
+                },
+                "end": {
+                  "line": 9,
+                  "column": 10
+                },
+                "identifierName": "from"
+              },
+              "name": "from",
+              "leadingComments": null
+            },
+            "init": {
+              "type": "ObjectExpression",
+              "start": 347,
+              "end": 1698,
+              "loc": {
+                "start": {
+                  "line": 9,
+                  "column": 13
+                },
+                "end": {
+                  "line": 48,
+                  "column": 1
+                }
+              },
+              "properties": [
+                {
+                  "type": "ObjectProperty",
+                  "start": 721,
+                  "end": 773,
+                  "loc": {
+                    "start": {
+                      "line": 19,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 19,
+                      "column": 53
+                    }
+                  },
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "start": 721,
+                    "end": 729,
+                    "loc": {
+                      "start": {
+                        "line": 19,
+                        "column": 1
+                      },
+                      "end": {
+                        "line": 19,
+                        "column": 9
+                      },
+                      "identifierName": "parities"
+                    },
+                    "name": "parities",
+                    "leadingComments": null
+                  },
+                  "value": {
+                    "type": "ArrowFunctionExpression",
+                    "start": 731,
+                    "end": 773,
+                    "loc": {
+                      "start": {
+                        "line": 19,
+                        "column": 11
+                      },
+                      "end": {
+                        "line": 19,
+                        "column": 53
+                      }
+                    },
+                    "id": null,
+                    "generator": false,
+                    "expression": true,
+                    "async": false,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "start": 732,
+                        "end": 739,
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 12
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 19
+                          },
+                          "identifierName": "clauses"
+                        },
+                        "name": "clauses"
+                      }
+                    ],
+                    "body": {
+                      "type": "NewExpression",
+                      "start": 744,
+                      "end": 773,
+                      "loc": {
+                        "start": {
+                          "line": 19,
+                          "column": 24
+                        },
+                        "end": {
+                          "line": 19,
+                          "column": 53
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 748,
+                        "end": 764,
+                        "loc": {
+                          "start": {
+                            "line": 19,
+                            "column": 28
+                          },
+                          "end": {
+                            "line": 19,
+                            "column": 44
+                          },
+                          "identifierName": "ParitiesInstance"
+                        },
+                        "name": "ParitiesInstance"
+                      },
+                      "arguments": [
+                        {
+                          "type": "Identifier",
+                          "start": 765,
+                          "end": 772,
+                          "loc": {
+                            "start": {
+                              "line": 19,
+                              "column": 45
+                            },
+                            "end": {
+                              "line": 19,
+                              "column": 52
+                            },
+                            "identifierName": "clauses"
+                          },
+                          "name": "clauses"
+                        }
+                      ]
+                    }
+                  },
+                  "leadingComments": [
+                    {
+                      "type": "CommentBlock",
+                      "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t * @return {ParitiesInstance}\n\t ",
+                      "start": 350,
+                      "end": 719,
+                      "loc": {
+                        "start": {
+                          "line": 10,
+                          "column": 1
+                        },
+                        "end": {
+                          "line": 18,
+                          "column": 4
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "ObjectProperty",
+                  "start": 1092,
+                  "end": 1114,
+                  "loc": {
+                    "start": {
+                      "line": 29,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 29,
+                      "column": 23
+                    }
+                  },
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "start": 1092,
+                    "end": 1097,
+                    "loc": {
+                      "start": {
+                        "line": 29,
+                        "column": 1
+                      },
+                      "end": {
+                        "line": 29,
+                        "column": 6
+                      },
+                      "identifierName": "signs"
+                    },
+                    "name": "signs",
+                    "leadingComments": null
+                  },
+                  "value": {
+                    "type": "Identifier",
+                    "start": 1099,
+                    "end": 1114,
+                    "loc": {
+                      "start": {
+                        "line": 29,
+                        "column": 8
+                      },
+                      "end": {
+                        "line": 29,
+                        "column": 23
+                      },
+                      "identifierName": "_sign_to_parity"
+                    },
+                    "name": "_sign_to_parity"
+                  },
+                  "leadingComments": [
+                    {
+                      "type": "CommentBlock",
+                      "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t *\n\t * @function\n\t * @param {number[][]} clauses\n\t * @return {SignsInstance}\n\t ",
+                      "start": 776,
+                      "end": 1090,
+                      "loc": {
+                        "start": {
+                          "line": 20,
+                          "column": 1
+                        },
+                        "end": {
+                          "line": 28,
+                          "column": 4
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "ObjectProperty",
+                  "start": 1464,
+                  "end": 1485,
+                  "loc": {
+                    "start": {
+                      "line": 40,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 40,
+                      "column": 22
+                    }
+                  },
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "start": 1464,
+                    "end": 1468,
+                    "loc": {
+                      "start": {
+                        "line": 40,
+                        "column": 1
+                      },
+                      "end": {
+                        "line": 40,
+                        "column": 5
+                      },
+                      "identifierName": "keys"
+                    },
+                    "name": "keys",
+                    "leadingComments": null
+                  },
+                  "value": {
+                    "type": "Identifier",
+                    "start": 1470,
+                    "end": 1485,
+                    "loc": {
+                      "start": {
+                        "line": 40,
+                        "column": 7
+                      },
+                      "end": {
+                        "line": 40,
+                        "column": 22
+                      },
+                      "identifierName": "_keys_to_parity"
+                    },
+                    "name": "_keys_to_parity"
+                  },
+                  "leadingComments": [
+                    {
+                      "type": "CommentBlock",
+                      "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t *\n\t * @function\n\t * @param {[any,any][][]} clauses\n\t * @return {KeysInstance}\n\t ",
+                      "start": 1117,
+                      "end": 1462,
+                      "loc": {
+                        "start": {
+                          "line": 30,
+                          "column": 1
+                        },
+                        "end": {
+                          "line": 39,
+                          "column": 4
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "ObjectProperty",
+                  "start": 1626,
+                  "end": 1695,
+                  "loc": {
+                    "start": {
+                      "line": 47,
+                      "column": 1
+                    },
+                    "end": {
+                      "line": 47,
+                      "column": 70
+                    }
+                  },
+                  "method": false,
+                  "shorthand": false,
+                  "computed": false,
+                  "key": {
+                    "type": "Identifier",
+                    "start": 1626,
+                    "end": 1630,
+                    "loc": {
+                      "start": {
+                        "line": 47,
+                        "column": 1
+                      },
+                      "end": {
+                        "line": 47,
+                        "column": 5
+                      },
+                      "identifierName": "dcnf"
+                    },
+                    "name": "dcnf",
+                    "leadingComments": null
+                  },
+                  "value": {
+                    "type": "ArrowFunctionExpression",
+                    "start": 1632,
+                    "end": 1695,
+                    "loc": {
+                      "start": {
+                        "line": 47,
+                        "column": 7
+                      },
+                      "end": {
+                        "line": 47,
+                        "column": 70
+                      }
+                    },
+                    "id": null,
+                    "generator": false,
+                    "expression": true,
+                    "async": false,
+                    "params": [
+                      {
+                        "type": "Identifier",
+                        "start": 1633,
+                        "end": 1641,
+                        "loc": {
+                          "start": {
+                            "line": 47,
+                            "column": 8
+                          },
+                          "end": {
+                            "line": 47,
+                            "column": 16
+                          },
+                          "identifierName": "iterable"
+                        },
+                        "name": "iterable"
+                      }
+                    ],
+                    "body": {
+                      "type": "NewExpression",
+                      "start": 1646,
+                      "end": 1695,
+                      "loc": {
+                        "start": {
+                          "line": 47,
+                          "column": 21
+                        },
+                        "end": {
+                          "line": 47,
+                          "column": 70
+                        }
+                      },
+                      "callee": {
+                        "type": "Identifier",
+                        "start": 1650,
+                        "end": 1666,
+                        "loc": {
+                          "start": {
+                            "line": 47,
+                            "column": 25
+                          },
+                          "end": {
+                            "line": 47,
+                            "column": 41
+                          },
+                          "identifierName": "ParitiesInstance"
+                        },
+                        "name": "ParitiesInstance"
+                      },
+                      "arguments": [
+                        {
+                          "type": "CallExpression",
+                          "start": 1667,
+                          "end": 1694,
+                          "loc": {
+                            "start": {
+                              "line": 47,
+                              "column": 42
+                            },
+                            "end": {
+                              "line": 47,
+                              "column": 69
+                            }
+                          },
+                          "callee": {
+                            "type": "Identifier",
+                            "start": 1667,
+                            "end": 1684,
+                            "loc": {
+                              "start": {
+                                "line": 47,
+                                "column": 42
+                              },
+                              "end": {
+                                "line": 47,
+                                "column": 59
+                              },
+                              "identifierName": "_parse_DIMACS_CNF"
+                            },
+                            "name": "_parse_DIMACS_CNF"
+                          },
+                          "arguments": [
+                            {
+                              "type": "Identifier",
+                              "start": 1685,
+                              "end": 1693,
+                              "loc": {
+                                "start": {
+                                  "line": 47,
+                                  "column": 60
+                                },
+                                "end": {
+                                  "line": 47,
+                                  "column": 68
+                                },
+                                "identifierName": "iterable"
+                              },
+                              "name": "iterable"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  "leadingComments": [
+                    {
+                      "type": "CommentBlock",
+                      "value": "*\n\t * Parses a character iterable in DIMACS CNF format.\n\t *\n\t * @param {Iterable<string>} iterable\n\t * @return {ParitiesInstance}\n\t ",
+                      "start": 1488,
+                      "end": 1624,
+                      "loc": {
+                        "start": {
+                          "line": 41,
+                          "column": 1
+                        },
+                        "end": {
+                          "line": 46,
+                          "column": 4
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "leadingComments": null
+          }
+        ],
+        "kind": "const",
+        "leadingComments": [],
+        "name": "_",
+        "trailingComments": []
+      },
+      {
+        "type": "Identifier",
+        "start": 1701,
+        "end": 1721,
+        "loc": {
+          "start": {
+            "line": 50,
+            "column": 0
+          },
+          "end": {
+            "line": 50,
+            "column": 20
+          }
+        },
         "declaration": {
-          "type": "VariableDeclaration",
-          "start": 172,
-          "end": 1225,
+          "type": "Identifier",
+          "start": 1716,
+          "end": 1720,
           "loc": {
             "start": {
-              "line": 6,
-              "column": 7
+              "line": 50,
+              "column": 15
             },
             "end": {
-              "line": 31,
-              "column": 3
+              "line": 50,
+              "column": 19
+            },
+            "identifierName": "from"
+          },
+          "name": "from"
+        },
+        "name": "_",
+        "leadingComments": [],
+        "trailingComments": []
+      },
+      {
+        "type": "ExportDefaultDeclaration",
+        "start": 1701,
+        "end": 1721,
+        "loc": {
+          "start": {
+            "line": 50,
+            "column": 0
+          },
+          "end": {
+            "line": 50,
+            "column": 20
+          }
+        },
+        "declaration": {
+          "type": "VariableDeclaration",
+          "start": 334,
+          "end": 1699,
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 0
+            },
+            "end": {
+              "line": 48,
+              "column": 2
             }
           },
           "declarations": [
             {
               "type": "VariableDeclarator",
-              "start": 178,
-              "end": 1223,
+              "start": 340,
+              "end": 1698,
               "loc": {
                 "start": {
-                  "line": 6,
-                  "column": 13
+                  "line": 9,
+                  "column": 6
                 },
                 "end": {
-                  "line": 31,
+                  "line": 48,
                   "column": 1
                 }
               },
               "id": {
                 "type": "Identifier",
-                "start": 178,
-                "end": 182,
+                "start": 340,
+                "end": 344,
                 "loc": {
                   "start": {
-                    "line": 6,
-                    "column": 13
+                    "line": 9,
+                    "column": 6
                   },
                   "end": {
-                    "line": 6,
-                    "column": 17
+                    "line": 9,
+                    "column": 10
                   },
                   "identifierName": "from"
                 },
@@ -344,31 +954,31 @@
               },
               "init": {
                 "type": "ObjectExpression",
-                "start": 185,
-                "end": 1223,
+                "start": 347,
+                "end": 1698,
                 "loc": {
                   "start": {
-                    "line": 6,
-                    "column": 20
+                    "line": 9,
+                    "column": 13
                   },
                   "end": {
-                    "line": 31,
+                    "line": 48,
                     "column": 1
                   }
                 },
                 "properties": [
                   {
                     "type": "ObjectProperty",
-                    "start": 462,
-                    "end": 519,
+                    "start": 721,
+                    "end": 773,
                     "loc": {
                       "start": {
-                        "line": 13,
+                        "line": 19,
                         "column": 1
                       },
                       "end": {
-                        "line": 13,
-                        "column": 58
+                        "line": 19,
+                        "column": 53
                       }
                     },
                     "method": false,
@@ -376,15 +986,15 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 462,
-                      "end": 470,
+                      "start": 721,
+                      "end": 729,
                       "loc": {
                         "start": {
-                          "line": 13,
+                          "line": 19,
                           "column": 1
                         },
                         "end": {
-                          "line": 13,
+                          "line": 19,
                           "column": 9
                         },
                         "identifierName": "parities"
@@ -394,16 +1004,16 @@
                     },
                     "value": {
                       "type": "ArrowFunctionExpression",
-                      "start": 473,
-                      "end": 519,
+                      "start": 731,
+                      "end": 773,
                       "loc": {
                         "start": {
-                          "line": 13,
-                          "column": 12
+                          "line": 19,
+                          "column": 11
                         },
                         "end": {
-                          "line": 13,
-                          "column": 58
+                          "line": 19,
+                          "column": 53
                         }
                       },
                       "id": null,
@@ -413,16 +1023,16 @@
                       "params": [
                         {
                           "type": "Identifier",
-                          "start": 475,
-                          "end": 482,
+                          "start": 732,
+                          "end": 739,
                           "loc": {
                             "start": {
-                              "line": 13,
-                              "column": 14
+                              "line": 19,
+                              "column": 12
                             },
                             "end": {
-                              "line": 13,
-                              "column": 21
+                              "line": 19,
+                              "column": 19
                             },
                             "identifierName": "clauses"
                           },
@@ -431,30 +1041,30 @@
                       ],
                       "body": {
                         "type": "NewExpression",
-                        "start": 488,
-                        "end": 519,
+                        "start": 744,
+                        "end": 773,
                         "loc": {
                           "start": {
-                            "line": 13,
-                            "column": 27
+                            "line": 19,
+                            "column": 24
                           },
                           "end": {
-                            "line": 13,
-                            "column": 58
+                            "line": 19,
+                            "column": 53
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 492,
-                          "end": 508,
+                          "start": 748,
+                          "end": 764,
                           "loc": {
                             "start": {
-                              "line": 13,
-                              "column": 31
+                              "line": 19,
+                              "column": 28
                             },
                             "end": {
-                              "line": 13,
-                              "column": 47
+                              "line": 19,
+                              "column": 44
                             },
                             "identifierName": "ParitiesInstance"
                           },
@@ -463,16 +1073,16 @@
                         "arguments": [
                           {
                             "type": "Identifier",
-                            "start": 510,
-                            "end": 517,
+                            "start": 765,
+                            "end": 772,
                             "loc": {
                               "start": {
-                                "line": 13,
-                                "column": 49
+                                "line": 19,
+                                "column": 45
                               },
                               "end": {
-                                "line": 13,
-                                "column": 56
+                                "line": 19,
+                                "column": 52
                               },
                               "identifierName": "clauses"
                             },
@@ -484,83 +1094,12 @@
                     "leadingComments": [
                       {
                         "type": "CommentBlock",
-                        "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t ",
-                        "start": 188,
-                        "end": 460,
+                        "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t * @return {ParitiesInstance}\n\t ",
+                        "start": 350,
+                        "end": 719,
                         "loc": {
                           "start": {
-                            "line": 7,
-                            "column": 1
-                          },
-                          "end": {
-                            "line": 12,
-                            "column": 4
-                          }
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "type": "ObjectProperty",
-                    "start": 761,
-                    "end": 784,
-                    "loc": {
-                      "start": {
-                        "line": 19,
-                        "column": 1
-                      },
-                      "end": {
-                        "line": 19,
-                        "column": 24
-                      }
-                    },
-                    "method": false,
-                    "shorthand": false,
-                    "computed": false,
-                    "key": {
-                      "type": "Identifier",
-                      "start": 761,
-                      "end": 766,
-                      "loc": {
-                        "start": {
-                          "line": 19,
-                          "column": 1
-                        },
-                        "end": {
-                          "line": 19,
-                          "column": 6
-                        },
-                        "identifierName": "signs"
-                      },
-                      "name": "signs",
-                      "leadingComments": null
-                    },
-                    "value": {
-                      "type": "Identifier",
-                      "start": 769,
-                      "end": 784,
-                      "loc": {
-                        "start": {
-                          "line": 19,
-                          "column": 9
-                        },
-                        "end": {
-                          "line": 19,
-                          "column": 24
-                        },
-                        "identifierName": "_sign_to_parity"
-                      },
-                      "name": "_sign_to_parity"
-                    },
-                    "leadingComments": [
-                      {
-                        "type": "CommentBlock",
-                        "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t ",
-                        "start": 523,
-                        "end": 759,
-                        "loc": {
-                          "start": {
-                            "line": 14,
+                            "line": 10,
                             "column": 1
                           },
                           "end": {
@@ -573,15 +1112,15 @@
                   },
                   {
                     "type": "ObjectProperty",
-                    "start": 1055,
-                    "end": 1077,
+                    "start": 1092,
+                    "end": 1114,
                     "loc": {
                       "start": {
-                        "line": 26,
+                        "line": 29,
                         "column": 1
                       },
                       "end": {
-                        "line": 26,
+                        "line": 29,
                         "column": 23
                       }
                     },
@@ -590,15 +1129,86 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 1055,
-                      "end": 1059,
+                      "start": 1092,
+                      "end": 1097,
                       "loc": {
                         "start": {
-                          "line": 26,
+                          "line": 29,
                           "column": 1
                         },
                         "end": {
-                          "line": 26,
+                          "line": 29,
+                          "column": 6
+                        },
+                        "identifierName": "signs"
+                      },
+                      "name": "signs",
+                      "leadingComments": null
+                    },
+                    "value": {
+                      "type": "Identifier",
+                      "start": 1099,
+                      "end": 1114,
+                      "loc": {
+                        "start": {
+                          "line": 29,
+                          "column": 8
+                        },
+                        "end": {
+                          "line": 29,
+                          "column": 23
+                        },
+                        "identifierName": "_sign_to_parity"
+                      },
+                      "name": "_sign_to_parity"
+                    },
+                    "leadingComments": [
+                      {
+                        "type": "CommentBlock",
+                        "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t *\n\t * @function\n\t * @param {number[][]} clauses\n\t * @return {SignsInstance}\n\t ",
+                        "start": 776,
+                        "end": 1090,
+                        "loc": {
+                          "start": {
+                            "line": 20,
+                            "column": 1
+                          },
+                          "end": {
+                            "line": 28,
+                            "column": 4
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "ObjectProperty",
+                    "start": 1464,
+                    "end": 1485,
+                    "loc": {
+                      "start": {
+                        "line": 40,
+                        "column": 1
+                      },
+                      "end": {
+                        "line": 40,
+                        "column": 22
+                      }
+                    },
+                    "method": false,
+                    "shorthand": false,
+                    "computed": false,
+                    "key": {
+                      "type": "Identifier",
+                      "start": 1464,
+                      "end": 1468,
+                      "loc": {
+                        "start": {
+                          "line": 40,
+                          "column": 1
+                        },
+                        "end": {
+                          "line": 40,
                           "column": 5
                         },
                         "identifierName": "keys"
@@ -608,16 +1218,16 @@
                     },
                     "value": {
                       "type": "Identifier",
-                      "start": 1062,
-                      "end": 1077,
+                      "start": 1470,
+                      "end": 1485,
                       "loc": {
                         "start": {
-                          "line": 26,
-                          "column": 8
+                          "line": 40,
+                          "column": 7
                         },
                         "end": {
-                          "line": 26,
-                          "column": 23
+                          "line": 40,
+                          "column": 22
                         },
                         "identifierName": "_keys_to_parity"
                       },
@@ -626,16 +1236,16 @@
                     "leadingComments": [
                       {
                         "type": "CommentBlock",
-                        "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t ",
-                        "start": 788,
-                        "end": 1053,
+                        "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t *\n\t * @function\n\t * @param {[any,any][][]} clauses\n\t * @return {KeysInstance}\n\t ",
+                        "start": 1117,
+                        "end": 1462,
                         "loc": {
                           "start": {
-                            "line": 20,
+                            "line": 30,
                             "column": 1
                           },
                           "end": {
-                            "line": 25,
+                            "line": 39,
                             "column": 4
                           }
                         }
@@ -644,16 +1254,16 @@
                   },
                   {
                     "type": "ObjectProperty",
-                    "start": 1145,
-                    "end": 1221,
+                    "start": 1626,
+                    "end": 1695,
                     "loc": {
                       "start": {
-                        "line": 30,
+                        "line": 47,
                         "column": 1
                       },
                       "end": {
-                        "line": 30,
-                        "column": 77
+                        "line": 47,
+                        "column": 70
                       }
                     },
                     "method": false,
@@ -661,15 +1271,15 @@
                     "computed": false,
                     "key": {
                       "type": "Identifier",
-                      "start": 1145,
-                      "end": 1149,
+                      "start": 1626,
+                      "end": 1630,
                       "loc": {
                         "start": {
-                          "line": 30,
+                          "line": 47,
                           "column": 1
                         },
                         "end": {
-                          "line": 30,
+                          "line": 47,
                           "column": 5
                         },
                         "identifierName": "dcnf"
@@ -679,16 +1289,16 @@
                     },
                     "value": {
                       "type": "ArrowFunctionExpression",
-                      "start": 1152,
-                      "end": 1221,
+                      "start": 1632,
+                      "end": 1695,
                       "loc": {
                         "start": {
-                          "line": 30,
-                          "column": 8
+                          "line": 47,
+                          "column": 7
                         },
                         "end": {
-                          "line": 30,
-                          "column": 77
+                          "line": 47,
+                          "column": 70
                         }
                       },
                       "id": null,
@@ -698,16 +1308,16 @@
                       "params": [
                         {
                           "type": "Identifier",
-                          "start": 1154,
-                          "end": 1162,
+                          "start": 1633,
+                          "end": 1641,
                           "loc": {
                             "start": {
-                              "line": 30,
-                              "column": 10
+                              "line": 47,
+                              "column": 8
                             },
                             "end": {
-                              "line": 30,
-                              "column": 18
+                              "line": 47,
+                              "column": 16
                             },
                             "identifierName": "iterable"
                           },
@@ -716,30 +1326,30 @@
                       ],
                       "body": {
                         "type": "NewExpression",
-                        "start": 1168,
-                        "end": 1221,
+                        "start": 1646,
+                        "end": 1695,
                         "loc": {
                           "start": {
-                            "line": 30,
-                            "column": 24
+                            "line": 47,
+                            "column": 21
                           },
                           "end": {
-                            "line": 30,
-                            "column": 77
+                            "line": 47,
+                            "column": 70
                           }
                         },
                         "callee": {
                           "type": "Identifier",
-                          "start": 1172,
-                          "end": 1188,
+                          "start": 1650,
+                          "end": 1666,
                           "loc": {
                             "start": {
-                              "line": 30,
-                              "column": 28
+                              "line": 47,
+                              "column": 25
                             },
                             "end": {
-                              "line": 30,
-                              "column": 44
+                              "line": 47,
+                              "column": 41
                             },
                             "identifierName": "ParitiesInstance"
                           },
@@ -748,30 +1358,30 @@
                         "arguments": [
                           {
                             "type": "CallExpression",
-                            "start": 1190,
-                            "end": 1219,
+                            "start": 1667,
+                            "end": 1694,
                             "loc": {
                               "start": {
-                                "line": 30,
-                                "column": 46
+                                "line": 47,
+                                "column": 42
                               },
                               "end": {
-                                "line": 30,
-                                "column": 75
+                                "line": 47,
+                                "column": 69
                               }
                             },
                             "callee": {
                               "type": "Identifier",
-                              "start": 1190,
-                              "end": 1207,
+                              "start": 1667,
+                              "end": 1684,
                               "loc": {
                                 "start": {
-                                  "line": 30,
-                                  "column": 46
+                                  "line": 47,
+                                  "column": 42
                                 },
                                 "end": {
-                                  "line": 30,
-                                  "column": 63
+                                  "line": 47,
+                                  "column": 59
                                 },
                                 "identifierName": "_parse_DIMACS_CNF"
                               },
@@ -780,16 +1390,16 @@
                             "arguments": [
                               {
                                 "type": "Identifier",
-                                "start": 1209,
-                                "end": 1217,
+                                "start": 1685,
+                                "end": 1693,
                                 "loc": {
                                   "start": {
-                                    "line": 30,
-                                    "column": 65
+                                    "line": 47,
+                                    "column": 60
                                   },
                                   "end": {
-                                    "line": 30,
-                                    "column": 73
+                                    "line": 47,
+                                    "column": 68
                                   },
                                   "identifierName": "iterable"
                                 },
@@ -803,16 +1413,16 @@
                     "leadingComments": [
                       {
                         "type": "CommentBlock",
-                        "value": "*\n\t * Parses a character iterable in DIMACS CNF format.\n\t ",
-                        "start": 1081,
-                        "end": 1143,
+                        "value": "*\n\t * Parses a character iterable in DIMACS CNF format.\n\t *\n\t * @param {Iterable<string>} iterable\n\t * @return {ParitiesInstance}\n\t ",
+                        "start": 1488,
+                        "end": 1624,
                         "loc": {
                           "start": {
-                            "line": 27,
+                            "line": 41,
                             "column": 1
                           },
                           "end": {
-                            "line": 29,
+                            "line": 46,
                             "column": 4
                           }
                         }
@@ -829,40 +1439,22 @@
             {
               "type": "CommentBlock",
               "value": "*\n * The input is converted to parity format in each case.\n ",
-              "start": 100,
-              "end": 164,
+              "start": 269,
+              "end": 333,
               "loc": {
                 "start": {
-                  "line": 3,
+                  "line": 6,
                   "column": 0
                 },
                 "end": {
-                  "line": 5,
+                  "line": 8,
                   "column": 3
                 }
               }
             }
           ],
           "trailingComments": []
-        },
-        "leadingComments": [
-          {
-            "type": "CommentBlock",
-            "value": "*\n * The input is converted to parity format in each case.\n ",
-            "start": 100,
-            "end": 164,
-            "loc": {
-              "start": {
-                "line": 3,
-                "column": 0
-              },
-              "end": {
-                "line": 5,
-                "column": 3
-              }
-            }
-          }
-        ]
+        }
       }
     ],
     "directives": []
@@ -871,43 +1463,27 @@
     {
       "type": "CommentBlock",
       "value": "*\n * The input is converted to parity format in each case.\n ",
-      "start": 100,
-      "end": 164,
+      "start": 269,
+      "end": 333,
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 0
         },
         "end": {
-          "line": 5,
+          "line": 8,
           "column": 3
         }
       }
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t ",
-      "start": 188,
-      "end": 460,
+      "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t * @return {ParitiesInstance}\n\t ",
+      "start": 350,
+      "end": 719,
       "loc": {
         "start": {
-          "line": 7,
-          "column": 1
-        },
-        "end": {
-          "line": 12,
-          "column": 4
-        }
-      }
-    },
-    {
-      "type": "CommentBlock",
-      "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t ",
-      "start": 523,
-      "end": 759,
-      "loc": {
-        "start": {
-          "line": 14,
+          "line": 10,
           "column": 1
         },
         "end": {
@@ -918,32 +1494,48 @@
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t ",
-      "start": 788,
-      "end": 1053,
+      "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t *\n\t * @function\n\t * @param {number[][]} clauses\n\t * @return {SignsInstance}\n\t ",
+      "start": 776,
+      "end": 1090,
       "loc": {
         "start": {
           "line": 20,
           "column": 1
         },
         "end": {
-          "line": 25,
+          "line": 28,
           "column": 4
         }
       }
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t * Parses a character iterable in DIMACS CNF format.\n\t ",
-      "start": 1081,
-      "end": 1143,
+      "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t *\n\t * @function\n\t * @param {[any,any][][]} clauses\n\t * @return {KeysInstance}\n\t ",
+      "start": 1117,
+      "end": 1462,
       "loc": {
         "start": {
-          "line": 27,
+          "line": 30,
           "column": 1
         },
         "end": {
-          "line": 29,
+          "line": 39,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * Parses a character iterable in DIMACS CNF format.\n\t *\n\t * @param {Iterable<string>} iterable\n\t * @return {ParitiesInstance}\n\t ",
+      "start": 1488,
+      "end": 1624,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 1
+        },
+        "end": {
+          "line": 46,
           "column": 4
         }
       }
@@ -955,7 +1547,7 @@
         "label": "import",
         "keyword": "import",
         "beforeExpr": false,
-        "startsExpr": false,
+        "startsExpr": true,
         "rightAssociative": false,
         "isLoop": false,
         "isAssign": false,
@@ -980,31 +1572,6 @@
     },
     {
       "type": {
-        "label": "{",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 7,
-      "end": 8,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 7
-        },
-        "end": {
-          "line": 1,
-          "column": 8
-        }
-      }
-    },
-    {
-      "type": {
         "label": "name",
         "beforeExpr": false,
         "startsExpr": true,
@@ -1016,197 +1583,16 @@
         "binop": null
       },
       "value": "ParitiesInstance",
-      "start": 9,
-      "end": 25,
+      "start": 7,
+      "end": 23,
       "loc": {
         "start": {
           "line": 1,
-          "column": 9
+          "column": 7
         },
         "end": {
           "line": 1,
-          "column": 25
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 26,
-      "end": 27,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 26
-        },
-        "end": {
-          "line": 1,
-          "column": 27
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "_sign_to_parity",
-      "start": 28,
-      "end": 43,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 28
-        },
-        "end": {
-          "line": 1,
-          "column": 43
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 43,
-      "end": 44,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 43
-        },
-        "end": {
-          "line": 1,
-          "column": 44
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "_keys_to_parity",
-      "start": 45,
-      "end": 60,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 45
-        },
-        "end": {
-          "line": 1,
-          "column": 60
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 60,
-      "end": 61,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 60
-        },
-        "end": {
-          "line": 1,
-          "column": 61
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "_parse_DIMACS_CNF",
-      "start": 62,
-      "end": 79,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 62
-        },
-        "end": {
-          "line": 1,
-          "column": 79
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "}",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 80,
-      "end": 81,
-      "loc": {
-        "start": {
-          "line": 1,
-          "column": 80
-        },
-        "end": {
-          "line": 1,
-          "column": 81
+          "column": 23
         }
       }
     },
@@ -1223,16 +1609,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 82,
-      "end": 86,
+      "start": 24,
+      "end": 28,
       "loc": {
         "start": {
           "line": 1,
-          "column": 82
+          "column": 24
         },
         "end": {
           "line": 1,
-          "column": 86
+          "column": 28
         }
       }
     },
@@ -1249,17 +1635,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "../core",
-      "start": 87,
-      "end": 96,
+      "value": "../core/convert/ParitiesInstance.js",
+      "start": 29,
+      "end": 66,
       "loc": {
         "start": {
           "line": 1,
-          "column": 87
+          "column": 29
         },
         "end": {
           "line": 1,
-          "column": 96
+          "column": 66
         }
       }
     },
@@ -1276,40 +1662,130 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 97,
-      "end": 98,
+      "start": 66,
+      "end": 67,
       "loc": {
         "start": {
           "line": 1,
-          "column": 97
+          "column": 66
         },
         "end": {
           "line": 1,
-          "column": 98
-        }
-      }
-    },
-    {
-      "type": "CommentBlock",
-      "value": "*\n * The input is converted to parity format in each case.\n ",
-      "start": 100,
-      "end": 164,
-      "loc": {
-        "start": {
-          "line": 3,
-          "column": 0
-        },
-        "end": {
-          "line": 5,
-          "column": 3
+          "column": 67
         }
       }
     },
     {
       "type": {
-        "label": "export",
-        "keyword": "export",
+        "label": "import",
+        "keyword": "import",
         "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 68,
+      "end": 74,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 0
+        },
+        "end": {
+          "line": 2,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_sign_to_parity",
+      "start": 75,
+      "end": 90,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 7
+        },
+        "end": {
+          "line": 2,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 91,
+      "end": 95,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 23
+        },
+        "end": {
+          "line": 2,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "../core/convert/_sign_to_parity.js",
+      "start": 96,
+      "end": 132,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 28
+        },
+        "end": {
+          "line": 2,
+          "column": 64
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
         "startsExpr": false,
         "rightAssociative": false,
         "isLoop": false,
@@ -1319,17 +1795,298 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "export",
-      "start": 165,
-      "end": 171,
+      "start": 132,
+      "end": 133,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 64
+        },
+        "end": {
+          "line": 2,
+          "column": 65
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 134,
+      "end": 140,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_keys_to_parity",
+      "start": 141,
+      "end": 156,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 7
+        },
+        "end": {
+          "line": 3,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 157,
+      "end": 161,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 23
+        },
+        "end": {
+          "line": 3,
+          "column": 27
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "../core/convert/_keys_to_parity.js",
+      "start": 162,
+      "end": 198,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 28
+        },
+        "end": {
+          "line": 3,
+          "column": 64
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 198,
+      "end": 199,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 64
+        },
+        "end": {
+          "line": 3,
+          "column": 65
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "import",
+        "keyword": "import",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "import",
+      "start": 200,
+      "end": 206,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 0
+        },
+        "end": {
+          "line": 4,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_parse_DIMACS_CNF",
+      "start": 207,
+      "end": 224,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 7
+        },
+        "end": {
+          "line": 4,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 225,
+      "end": 229,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 25
+        },
+        "end": {
+          "line": 4,
+          "column": 29
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "string",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "../core/parse/_parse_DIMACS_CNF.js",
+      "start": 230,
+      "end": 266,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 30
+        },
+        "end": {
+          "line": 4,
+          "column": 66
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 266,
+      "end": 267,
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 66
+        },
+        "end": {
+          "line": 4,
+          "column": 67
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * The input is converted to parity format in each case.\n ",
+      "start": 269,
+      "end": 333,
       "loc": {
         "start": {
           "line": 6,
           "column": 0
         },
         "end": {
-          "line": 6,
-          "column": 6
+          "line": 8,
+          "column": 3
         }
       }
     },
@@ -1348,16 +2105,16 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 172,
-      "end": 177,
+      "start": 334,
+      "end": 339,
       "loc": {
         "start": {
-          "line": 6,
-          "column": 7
+          "line": 9,
+          "column": 0
         },
         "end": {
-          "line": 6,
-          "column": 12
+          "line": 9,
+          "column": 5
         }
       }
     },
@@ -1374,16 +2131,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 178,
-      "end": 182,
+      "start": 340,
+      "end": 344,
       "loc": {
         "start": {
-          "line": 6,
-          "column": 13
+          "line": 9,
+          "column": 6
         },
         "end": {
-          "line": 6,
-          "column": 17
+          "line": 9,
+          "column": 10
         }
       }
     },
@@ -1401,16 +2158,16 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 183,
-      "end": 184,
+      "start": 345,
+      "end": 346,
       "loc": {
         "start": {
-          "line": 6,
-          "column": 18
+          "line": 9,
+          "column": 11
         },
         "end": {
-          "line": 6,
-          "column": 19
+          "line": 9,
+          "column": 12
         }
       }
     },
@@ -1426,353 +2183,27 @@
         "postfix": false,
         "binop": null
       },
-      "start": 185,
-      "end": 186,
+      "start": 347,
+      "end": 348,
       "loc": {
         "start": {
-          "line": 6,
-          "column": 20
-        },
-        "end": {
-          "line": 6,
-          "column": 21
-        }
-      }
-    },
-    {
-      "type": "CommentBlock",
-      "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t ",
-      "start": 188,
-      "end": 460,
-      "loc": {
-        "start": {
-          "line": 7,
-          "column": 1
-        },
-        "end": {
-          "line": 12,
-          "column": 4
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "parities",
-      "start": 462,
-      "end": 470,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 1
-        },
-        "end": {
-          "line": 13,
-          "column": 9
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ":",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 471,
-      "end": 472,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 10
-        },
-        "end": {
-          "line": 13,
-          "column": 11
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 473,
-      "end": 474,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 12
-        },
-        "end": {
-          "line": 13,
+          "line": 9,
           "column": 13
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "clauses",
-      "start": 475,
-      "end": 482,
-      "loc": {
-        "start": {
-          "line": 13,
+        },
+        "end": {
+          "line": 9,
           "column": 14
-        },
-        "end": {
-          "line": 13,
-          "column": 21
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 483,
-      "end": 484,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 22
-        },
-        "end": {
-          "line": 13,
-          "column": 23
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "=>",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 485,
-      "end": 487,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 24
-        },
-        "end": {
-          "line": 13,
-          "column": 26
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "new",
-        "keyword": "new",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "value": "new",
-      "start": 488,
-      "end": 491,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 27
-        },
-        "end": {
-          "line": 13,
-          "column": 30
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "ParitiesInstance",
-      "start": 492,
-      "end": 508,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 31
-        },
-        "end": {
-          "line": 13,
-          "column": 47
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "(",
-        "beforeExpr": true,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 508,
-      "end": 509,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 47
-        },
-        "end": {
-          "line": 13,
-          "column": 48
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "clauses",
-      "start": 510,
-      "end": 517,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 49
-        },
-        "end": {
-          "line": 13,
-          "column": 56
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ")",
-        "beforeExpr": false,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "start": 518,
-      "end": 519,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 57
-        },
-        "end": {
-          "line": 13,
-          "column": 58
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 520,
-      "end": 521,
-      "loc": {
-        "start": {
-          "line": 13,
-          "column": 59
-        },
-        "end": {
-          "line": 13,
-          "column": 60
         }
       }
     },
     {
       "type": "CommentBlock",
-      "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t ",
-      "start": 523,
-      "end": 759,
+      "value": "*\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t * @return {ParitiesInstance}\n\t ",
+      "start": 350,
+      "end": 719,
       "loc": {
         "start": {
-          "line": 14,
+          "line": 10,
           "column": 1
         },
         "end": {
@@ -1793,9 +2224,9 @@
         "postfix": false,
         "binop": null
       },
-      "value": "signs",
-      "start": 761,
-      "end": 766,
+      "value": "parities",
+      "start": 721,
+      "end": 729,
       "loc": {
         "start": {
           "line": 19,
@@ -1803,7 +2234,7 @@
         },
         "end": {
           "line": 19,
-          "column": 6
+          "column": 9
         }
       }
     },
@@ -1820,34 +2251,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 767,
-      "end": 768,
-      "loc": {
-        "start": {
-          "line": 19,
-          "column": 7
-        },
-        "end": {
-          "line": 19,
-          "column": 8
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "_sign_to_parity",
-      "start": 769,
-      "end": 784,
+      "start": 729,
+      "end": 730,
       "loc": {
         "start": {
           "line": 19,
@@ -1855,221 +2260,7 @@
         },
         "end": {
           "line": 19,
-          "column": 24
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 785,
-      "end": 786,
-      "loc": {
-        "start": {
-          "line": 19,
-          "column": 25
-        },
-        "end": {
-          "line": 19,
-          "column": 26
-        }
-      }
-    },
-    {
-      "type": "CommentBlock",
-      "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t ",
-      "start": 788,
-      "end": 1053,
-      "loc": {
-        "start": {
-          "line": 20,
-          "column": 1
-        },
-        "end": {
-          "line": 25,
-          "column": 4
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "keys",
-      "start": 1055,
-      "end": 1059,
-      "loc": {
-        "start": {
-          "line": 26,
-          "column": 1
-        },
-        "end": {
-          "line": 26,
-          "column": 5
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ":",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 1060,
-      "end": 1061,
-      "loc": {
-        "start": {
-          "line": 26,
-          "column": 6
-        },
-        "end": {
-          "line": 26,
-          "column": 7
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "_keys_to_parity",
-      "start": 1062,
-      "end": 1077,
-      "loc": {
-        "start": {
-          "line": 26,
-          "column": 8
-        },
-        "end": {
-          "line": 26,
-          "column": 23
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ",",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 1078,
-      "end": 1079,
-      "loc": {
-        "start": {
-          "line": 26,
-          "column": 24
-        },
-        "end": {
-          "line": 26,
-          "column": 25
-        }
-      }
-    },
-    {
-      "type": "CommentBlock",
-      "value": "*\n\t * Parses a character iterable in DIMACS CNF format.\n\t ",
-      "start": 1081,
-      "end": 1143,
-      "loc": {
-        "start": {
-          "line": 27,
-          "column": 1
-        },
-        "end": {
-          "line": 29,
-          "column": 4
-        }
-      }
-    },
-    {
-      "type": {
-        "label": "name",
-        "beforeExpr": false,
-        "startsExpr": true,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null
-      },
-      "value": "dcnf",
-      "start": 1145,
-      "end": 1149,
-      "loc": {
-        "start": {
-          "line": 30,
-          "column": 1
-        },
-        "end": {
-          "line": 30,
-          "column": 5
-        }
-      }
-    },
-    {
-      "type": {
-        "label": ":",
-        "beforeExpr": true,
-        "startsExpr": false,
-        "rightAssociative": false,
-        "isLoop": false,
-        "isAssign": false,
-        "prefix": false,
-        "postfix": false,
-        "binop": null,
-        "updateContext": null
-      },
-      "start": 1150,
-      "end": 1151,
-      "loc": {
-        "start": {
-          "line": 30,
-          "column": 6
-        },
-        "end": {
-          "line": 30,
-          "column": 7
+          "column": 10
         }
       }
     },
@@ -2085,16 +2276,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1152,
-      "end": 1153,
+      "start": 731,
+      "end": 732,
       "loc": {
         "start": {
-          "line": 30,
-          "column": 8
+          "line": 19,
+          "column": 11
         },
         "end": {
-          "line": 30,
-          "column": 9
+          "line": 19,
+          "column": 12
         }
       }
     },
@@ -2110,17 +2301,17 @@
         "postfix": false,
         "binop": null
       },
-      "value": "iterable",
-      "start": 1154,
-      "end": 1162,
+      "value": "clauses",
+      "start": 732,
+      "end": 739,
       "loc": {
         "start": {
-          "line": 30,
-          "column": 10
+          "line": 19,
+          "column": 12
         },
         "end": {
-          "line": 30,
-          "column": 18
+          "line": 19,
+          "column": 19
         }
       }
     },
@@ -2136,15 +2327,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1163,
-      "end": 1164,
+      "start": 739,
+      "end": 740,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 19,
           "column": 19
         },
         "end": {
-          "line": 30,
+          "line": 19,
           "column": 20
         }
       }
@@ -2162,15 +2353,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1165,
-      "end": 1167,
+      "start": 741,
+      "end": 743,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 19,
           "column": 21
         },
         "end": {
-          "line": 30,
+          "line": 19,
           "column": 23
         }
       }
@@ -2190,15 +2381,15 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 1168,
-      "end": 1171,
+      "start": 744,
+      "end": 747,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 19,
           "column": 24
         },
         "end": {
-          "line": 30,
+          "line": 19,
           "column": 27
         }
       }
@@ -2216,15 +2407,15 @@
         "binop": null
       },
       "value": "ParitiesInstance",
-      "start": 1172,
-      "end": 1188,
+      "start": 748,
+      "end": 764,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 19,
           "column": 28
         },
         "end": {
-          "line": 30,
+          "line": 19,
           "column": 44
         }
       }
@@ -2241,15 +2432,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1188,
-      "end": 1189,
+      "start": 764,
+      "end": 765,
       "loc": {
         "start": {
-          "line": 30,
+          "line": 19,
           "column": 44
         },
         "end": {
-          "line": 30,
+          "line": 19,
           "column": 45
         }
       }
@@ -2266,17 +2457,376 @@
         "postfix": false,
         "binop": null
       },
-      "value": "_parse_DIMACS_CNF",
-      "start": 1190,
-      "end": 1207,
+      "value": "clauses",
+      "start": 765,
+      "end": 772,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 45
+        },
+        "end": {
+          "line": 19,
+          "column": 52
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 772,
+      "end": 773,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 52
+        },
+        "end": {
+          "line": 19,
+          "column": 53
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 773,
+      "end": 774,
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 53
+        },
+        "end": {
+          "line": 19,
+          "column": 54
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t *\n\t * @function\n\t * @param {number[][]} clauses\n\t * @return {SignsInstance}\n\t ",
+      "start": 776,
+      "end": 1090,
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 1
+        },
+        "end": {
+          "line": 28,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "signs",
+      "start": 1092,
+      "end": 1097,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 1
+        },
+        "end": {
+          "line": 29,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1097,
+      "end": 1098,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 6
+        },
+        "end": {
+          "line": 29,
+          "column": 7
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_sign_to_parity",
+      "start": 1099,
+      "end": 1114,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 8
+        },
+        "end": {
+          "line": 29,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1114,
+      "end": 1115,
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 23
+        },
+        "end": {
+          "line": 29,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t *\n\t * @function\n\t * @param {[any,any][][]} clauses\n\t * @return {KeysInstance}\n\t ",
+      "start": 1117,
+      "end": 1462,
       "loc": {
         "start": {
           "line": 30,
-          "column": 46
+          "column": 1
         },
         "end": {
-          "line": 30,
-          "column": 63
+          "line": 39,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "keys",
+      "start": 1464,
+      "end": 1468,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 1
+        },
+        "end": {
+          "line": 40,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1468,
+      "end": 1469,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 5
+        },
+        "end": {
+          "line": 40,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_keys_to_parity",
+      "start": 1470,
+      "end": 1485,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 7
+        },
+        "end": {
+          "line": 40,
+          "column": 22
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1485,
+      "end": 1486,
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 22
+        },
+        "end": {
+          "line": 40,
+          "column": 23
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n\t * Parses a character iterable in DIMACS CNF format.\n\t *\n\t * @param {Iterable<string>} iterable\n\t * @return {ParitiesInstance}\n\t ",
+      "start": 1488,
+      "end": 1624,
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 1
+        },
+        "end": {
+          "line": 46,
+          "column": 4
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "dcnf",
+      "start": 1626,
+      "end": 1630,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 1
+        },
+        "end": {
+          "line": 47,
+          "column": 5
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ":",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1630,
+      "end": 1631,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 5
+        },
+        "end": {
+          "line": 47,
+          "column": 6
         }
       }
     },
@@ -2292,16 +2842,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1207,
-      "end": 1208,
+      "start": 1632,
+      "end": 1633,
       "loc": {
         "start": {
-          "line": 30,
-          "column": 63
+          "line": 47,
+          "column": 7
         },
         "end": {
-          "line": 30,
-          "column": 64
+          "line": 47,
+          "column": 8
         }
       }
     },
@@ -2318,16 +2868,16 @@
         "binop": null
       },
       "value": "iterable",
-      "start": 1209,
-      "end": 1217,
+      "start": 1633,
+      "end": 1641,
       "loc": {
         "start": {
-          "line": 30,
-          "column": 65
+          "line": 47,
+          "column": 8
         },
         "end": {
-          "line": 30,
-          "column": 73
+          "line": 47,
+          "column": 16
         }
       }
     },
@@ -2343,16 +2893,198 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1218,
-      "end": 1219,
+      "start": 1641,
+      "end": 1642,
       "loc": {
         "start": {
-          "line": 30,
-          "column": 74
+          "line": 47,
+          "column": 16
         },
         "end": {
-          "line": 30,
-          "column": 75
+          "line": 47,
+          "column": 17
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "=>",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1643,
+      "end": 1645,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 18
+        },
+        "end": {
+          "line": 47,
+          "column": 20
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "new",
+        "keyword": "new",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "new",
+      "start": 1646,
+      "end": 1649,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 21
+        },
+        "end": {
+          "line": 47,
+          "column": 24
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "ParitiesInstance",
+      "start": 1650,
+      "end": 1666,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 25
+        },
+        "end": {
+          "line": 47,
+          "column": 41
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1666,
+      "end": 1667,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 41
+        },
+        "end": {
+          "line": 47,
+          "column": 42
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "_parse_DIMACS_CNF",
+      "start": 1667,
+      "end": 1684,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 42
+        },
+        "end": {
+          "line": 47,
+          "column": 59
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "(",
+        "beforeExpr": true,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1684,
+      "end": 1685,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 59
+        },
+        "end": {
+          "line": 47,
+          "column": 60
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "iterable",
+      "start": 1685,
+      "end": 1693,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 60
+        },
+        "end": {
+          "line": 47,
+          "column": 68
         }
       }
     },
@@ -2368,16 +3100,67 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1220,
-      "end": 1221,
+      "start": 1693,
+      "end": 1694,
       "loc": {
         "start": {
-          "line": 30,
-          "column": 76
+          "line": 47,
+          "column": 68
         },
         "end": {
-          "line": 30,
-          "column": 77
+          "line": 47,
+          "column": 69
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ")",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "start": 1694,
+      "end": 1695,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 69
+        },
+        "end": {
+          "line": 47,
+          "column": 70
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ",",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1695,
+      "end": 1696,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 70
+        },
+        "end": {
+          "line": 47,
+          "column": 71
         }
       }
     },
@@ -2393,15 +3176,15 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1222,
-      "end": 1223,
+      "start": 1697,
+      "end": 1698,
       "loc": {
         "start": {
-          "line": 31,
+          "line": 48,
           "column": 0
         },
         "end": {
-          "line": 31,
+          "line": 48,
           "column": 1
         }
       }
@@ -2419,16 +3202,124 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1224,
-      "end": 1225,
+      "start": 1698,
+      "end": 1699,
       "loc": {
         "start": {
-          "line": 31,
-          "column": 2
+          "line": 48,
+          "column": 1
         },
         "end": {
-          "line": 31,
-          "column": 3
+          "line": 48,
+          "column": 2
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "export",
+        "keyword": "export",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "export",
+      "start": 1701,
+      "end": 1707,
+      "loc": {
+        "start": {
+          "line": 50,
+          "column": 0
+        },
+        "end": {
+          "line": 50,
+          "column": 6
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "default",
+        "keyword": "default",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "value": "default",
+      "start": 1708,
+      "end": 1715,
+      "loc": {
+        "start": {
+          "line": 50,
+          "column": 7
+        },
+        "end": {
+          "line": 50,
+          "column": 14
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "name",
+        "beforeExpr": false,
+        "startsExpr": true,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null
+      },
+      "value": "from",
+      "start": 1716,
+      "end": 1720,
+      "loc": {
+        "start": {
+          "line": 50,
+          "column": 15
+        },
+        "end": {
+          "line": 50,
+          "column": 19
+        }
+      }
+    },
+    {
+      "type": {
+        "label": ";",
+        "beforeExpr": true,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 1720,
+      "end": 1721,
+      "loc": {
+        "start": {
+          "line": 50,
+          "column": 19
+        },
+        "end": {
+          "line": 50,
+          "column": 20
         }
       }
     },
@@ -2445,15 +3336,15 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1226,
-      "end": 1226,
+      "start": 1722,
+      "end": 1722,
       "loc": {
         "start": {
-          "line": 32,
+          "line": 51,
           "column": 0
         },
         "end": {
-          "line": 32,
+          "line": 51,
           "column": 0
         }
       }
