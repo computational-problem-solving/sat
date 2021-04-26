@@ -6,11 +6,11 @@
   "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
   "homepage": "https://make-github-pseudonymous-again.github.io/js-sat",
   "repository": {
-    "url": "https://github.com/aureooms/js-sat",
+    "url": "https://github.com/make-github-pseudonymous-again/js-sat",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-sat/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-sat/issues"
   },
   "keywords": [
     "NP",
