@@ -1,4 +1,4 @@
-:satisfied: [@aureooms/js-sat](https://aureooms.github.io/js-sat)
+:satisfied: [@aureooms/js-sat](https://make-github-pseudonymous-again.github.io/js-sat)
 ==
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 Boolean formula satisfiability algorithms for JavaScript.
-See [docs](https://aureooms.github.io/js-sat).
+See [docs](https://make-github-pseudonymous-again.github.io/js-sat).
 Parent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).
 For a polynomial time algorithm for the 2SAT problem see
 [@aureooms/js-2sat](https://github.com/aureooms/js-2sat).
@@ -43,7 +43,7 @@ for ( let certificate of sat.solve( instance ) ) {
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-sat.svg)](https://codeclimate.com/github/aureooms/js-sat/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-sat/main.svg)](https://codecov.io/gh/aureooms/js-sat)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-sat.svg)](https://codeclimate.com/github/aureooms/js-sat/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-sat/badge.svg)](https://aureooms.github.io/js-sat/source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-sat/badge.svg)](https://make-github-pseudonymous-again.github.io/js-sat/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-sat)](https://bundlephobia.com/result?p=@aureooms/js-sat)
 
 ## :scroll: Reference
