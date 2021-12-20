@@ -1364,12 +1364,12 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@total-order/lex@^1.0.0":
+"@total-order/lex@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@total-order/lex/-/lex-1.0.0.tgz#6ecbf85442c1892d008b2415c8ea0ba57e757948"
   integrity sha512-D4KM/U13QXdPNJDSW67Ux9dqCr9jUTK4APYtBYrL9cveIv14ewx6SMgsrJS/bgHm0/F6T4lgq3oNkKsYxDZYAQ==
 
-"@total-order/primitive@^1.0.1":
+"@total-order/primitive@1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@total-order/primitive/-/primitive-1.0.1.tgz#7e409d303a2a3b24ed2af30bd9068027d6a4a326"
   integrity sha512-BXCXyXoQIpdwFkplPRTuxFB0I1GHHia4t22bLAEqjdk48DFwQMwSbHq1EdLA81X/eFC/b6RdVxG4Q+WEcfs0aA==
@@ -1851,7 +1851,7 @@ autoprefixer@^10.1.0:
     picocolors "^1.0.0"
     postcss-value-parser "^4.1.0"
 
-ava@^3.15.0:
+ava@3.15.0:
   version "3.15.0"
   resolved "https://registry.yarnpkg.com/ava/-/ava-3.15.0.tgz#a239658ab1de8a29a243cc902e6b42e4574de2f0"
   integrity sha512-HGAnk1SHPk4Sx6plFAUkzV/XC1j9+iQhOzt4vBly18/yo0AV8Oytx7mtJd/CR8igCJ5p160N/Oo/cNJi2uSeWA==
@@ -4224,7 +4224,7 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-fs@^0.0.1-security:
+fs@0.0.1-security:
   version "0.0.1-security"
   resolved "https://registry.yarnpkg.com/fs/-/fs-0.0.1-security.tgz#8a7bd37186b6dddf3813f23858b57ecaaf5e41d4"
   integrity sha1-invTcYa23d84E/I4WLV+yq9eQdQ=
