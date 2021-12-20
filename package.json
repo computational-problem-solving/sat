@@ -1,7 +1,7 @@
 {
   "name": "@problem-solving/sat",
   "description": "Boolean formula satisfiability algorithms for JavaScript",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
   "homepage": "https://computational-problem-solving.github.io/sat",
