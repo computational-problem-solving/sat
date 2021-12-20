@@ -34,8 +34,7 @@ for ( let certificate of sat.solve( instance ) ) {
 [![License](https://img.shields.io/github/license/computational-problem-solving/sat.svg)](https://raw.githubusercontent.com/computational-problem-solving/sat/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@problem-solving/sat.svg)](https://www.npmjs.org/package/@problem-solving/sat)
 [![Tests](https://img.shields.io/github/workflow/status/computational-problem-solving/sat/ci:test?event=push&label=tests)](https://github.com/computational-problem-solving/sat/actions/workflows/ci:test.yml?query=branch:main)
-[![Dependencies](https://img.shields.io/david/computational-problem-solving/sat.svg)](https://david-dm.org/computational-problem-solving/sat)
-[![Dev dependencies](https://img.shields.io/david/dev/computational-problem-solving/sat.svg)](https://david-dm.org/computational-problem-solving/sat?type=dev)
+[![Dependencies](https://img.shields.io/librariesio/github/computational-problem-solving/sat.svg)](https://github.com/computational-problem-solving/sat/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/computational-problem-solving/sat.svg)](https://github.com/computational-problem-solving/sat/issues)
 [![Downloads](https://img.shields.io/npm/dm/@problem-solving/sat.svg)](https://www.npmjs.org/package/@problem-solving/sat)
 
