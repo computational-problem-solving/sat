@@ -10,7 +10,7 @@ import 'regenerator-runtime/runtime.js' ;
 
 Then
 ```js
-const sat = require( '@aureooms/js-sat' ) ;
+const sat = require( '@problem-solving/sat' ) ;
 // or
-import * as sat from '@aureooms/js-sat' ;
+import * as sat from '@problem-solving/sat' ;
 ```

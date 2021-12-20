@@ -1,4 +1,4 @@
-:satisfied: [@aureooms/js-sat](https://make-github-pseudonymous-again.github.io/js-sat)
+:satisfied: [@problem-solving/sat](https://computational-problem-solving.github.io/sat)
 ==
 
 <p align="center">
@@ -9,10 +9,10 @@
 </p>
 
 Boolean formula satisfiability algorithms for JavaScript.
-See [docs](https://make-github-pseudonymous-again.github.io/js-sat).
-Parent is [@aureooms/js-algorithms](https://github.com/make-github-pseudonymous-again/js-algorithms).
+See [docs](https://computational-problem-solving.github.io/sat).
+Parent is [js-algorithms](https://github.com/make-github-pseudonymous-again/js-algorithms).
 For a polynomial time algorithm for the 2SAT problem see
-[@aureooms/js-2sat](https://github.com/make-github-pseudonymous-again/js-2sat).
+[@problem-solving/2sat](https://github.com/computational-problem-solving/2sat).
 
 ```js
 let instance = sat.from.signs( [ [ -1 , 2 , 3 ] , [ -2 , -4 , 5 ] , [ 1 , -5 ] ] ) ;
@@ -31,20 +31,20 @@ for ( let certificate of sat.solve( instance ) ) {
 }
 ```
 
-[![License](https://img.shields.io/github/license/make-github-pseudonymous-again/js-sat.svg)](https://raw.githubusercontent.com/make-github-pseudonymous-again/js-sat/main/LICENSE)
-[![Version](https://img.shields.io/npm/v/@aureooms/js-sat.svg)](https://www.npmjs.org/package/@aureooms/js-sat)
-[![Tests](https://img.shields.io/github/workflow/status/make-github-pseudonymous-again/js-sat/ci:test?event=push&label=tests)](https://github.com/make-github-pseudonymous-again/js-sat/actions/workflows/ci:test.yml?query=branch:main)
-[![Dependencies](https://img.shields.io/david/make-github-pseudonymous-again/js-sat.svg)](https://david-dm.org/make-github-pseudonymous-again/js-sat)
-[![Dev dependencies](https://img.shields.io/david/dev/make-github-pseudonymous-again/js-sat.svg)](https://david-dm.org/make-github-pseudonymous-again/js-sat?type=dev)
-[![GitHub issues](https://img.shields.io/github/issues/make-github-pseudonymous-again/js-sat.svg)](https://github.com/make-github-pseudonymous-again/js-sat/issues)
-[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-sat.svg)](https://www.npmjs.org/package/@aureooms/js-sat)
+[![License](https://img.shields.io/github/license/computational-problem-solving/sat.svg)](https://raw.githubusercontent.com/computational-problem-solving/sat/main/LICENSE)
+[![Version](https://img.shields.io/npm/v/@problem-solving/sat.svg)](https://www.npmjs.org/package/@problem-solving/sat)
+[![Tests](https://img.shields.io/github/workflow/status/computational-problem-solving/sat/ci:test?event=push&label=tests)](https://github.com/computational-problem-solving/sat/actions/workflows/ci:test.yml?query=branch:main)
+[![Dependencies](https://img.shields.io/david/computational-problem-solving/sat.svg)](https://david-dm.org/computational-problem-solving/sat)
+[![Dev dependencies](https://img.shields.io/david/dev/computational-problem-solving/sat.svg)](https://david-dm.org/computational-problem-solving/sat?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/computational-problem-solving/sat.svg)](https://github.com/computational-problem-solving/sat/issues)
+[![Downloads](https://img.shields.io/npm/dm/@problem-solving/sat.svg)](https://www.npmjs.org/package/@problem-solving/sat)
 
-[![Code issues](https://img.shields.io/codeclimate/issues/make-github-pseudonymous-again/js-sat.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-sat/issues)
-[![Code maintainability](https://img.shields.io/codeclimate/maintainability/make-github-pseudonymous-again/js-sat.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-sat/trends/churn)
-[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/make-github-pseudonymous-again/js-sat/main.svg)](https://codecov.io/gh/make-github-pseudonymous-again/js-sat)
-[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/make-github-pseudonymous-again/js-sat.svg)](https://codeclimate.com/github/make-github-pseudonymous-again/js-sat/trends/technical_debt)
-[![Documentation](https://make-github-pseudonymous-again.github.io/js-sat/badge.svg)](https://make-github-pseudonymous-again.github.io/js-sat/source.html)
-[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-sat)](https://bundlephobia.com/result?p=@aureooms/js-sat)
+[![Code issues](https://img.shields.io/codeclimate/issues/computational-problem-solving/sat.svg)](https://codeclimate.com/github/computational-problem-solving/sat/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/computational-problem-solving/sat.svg)](https://codeclimate.com/github/computational-problem-solving/sat/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/computational-problem-solving/sat/main.svg)](https://codecov.io/gh/computational-problem-solving/sat)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/computational-problem-solving/sat.svg)](https://codeclimate.com/github/computational-problem-solving/sat/trends/technical_debt)
+[![Documentation](https://computational-problem-solving.github.io/sat/badge.svg)](https://computational-problem-solving.github.io/sat/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@problem-solving/sat)](https://bundlephobia.com/result?p=@problem-solving/sat)
 
 ## :scroll: Reference
 

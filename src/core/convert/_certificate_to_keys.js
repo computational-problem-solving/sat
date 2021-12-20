@@ -1,4 +1,4 @@
-import {_zip2} from '@aureooms/js-itertools';
+import {_zip2} from '@iterable-iterator/zip';
 
 /**
  * Constructs an assignment map from a list of variable names and an assignment

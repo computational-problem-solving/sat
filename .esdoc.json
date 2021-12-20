@@ -17,7 +17,7 @@
           "autoPrivate": true
         },
         "brand": {
-          "title": "@aureooms/js-sat"
+          "title": "@problem-solving/sat"
         },
         "test": {
           "type": "ava",

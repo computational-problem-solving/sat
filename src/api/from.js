@@ -47,4 +47,5 @@ const from = {
 	dcnf: (iterable) => new ParitiesInstance(_parse_DIMACS_CNF(iterable)),
 };
 
+// eslint-disable-next-line prettier/prettier
 export default from;

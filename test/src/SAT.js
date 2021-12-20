@@ -1,10 +1,12 @@
 import test from 'ava';
+
+import {increasing} from '@total-order/primitive';
+import {lexicographical} from '@total-order/lex';
+import {list} from '@iterable-iterator/list';
+import {map} from '@iterable-iterator/map';
 import * as sat from '../../src/index.js';
 
-import * as compare from '@aureooms/js-compare';
-import {list, map} from '@aureooms/js-itertools';
-
-const lex = compare.lexicographical(compare.increasing);
+const lex = lexicographical(increasing);
 
 test('#1', (t) => {
 	const instance = sat.from.keys([

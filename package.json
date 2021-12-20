@@ -1,16 +1,16 @@
 {
-  "name": "@aureooms/js-sat",
+  "name": "@problem-solving/sat",
   "description": "Boolean formula satisfiability algorithms for JavaScript",
   "version": "3.0.0",
   "license": "AGPL-3.0",
-  "author": "Aurélien Ooms <aurelien.ooms@gmail.com>",
-  "homepage": "https://make-github-pseudonymous-again.github.io/js-sat",
+  "author": "make-github-pseudonymous-again",
+  "homepage": "https://computational-problem-solving.github.io/sat",
   "repository": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-sat",
+    "url": "https://github.com/computational-problem-solving/sat",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-sat/issues"
+    "url": "https://github.com/computational-problem-solving/sat/issues"
   },
   "keywords": [
     "NP",
@@ -65,36 +65,38 @@
     "test": "ava"
   },
   "dependencies": {
-    "@aureooms/js-itertools": "^5.1.0"
+    "@iterable-iterator/list": "^1.0.1",
+    "@iterable-iterator/map": "^1.0.1",
+    "@iterable-iterator/zip": "^1.0.1"
   },
   "devDependencies": {
-    "@aureooms/js-array": "4.0.0",
-    "@aureooms/js-compare": "2.0.1",
-    "@aureooms/js-functools": "2.0.3",
-    "@babel/core": "7.14.8",
-    "@babel/preset-env": "7.14.8",
-    "@babel/register": "7.14.5",
-    "@commitlint/cli": "13.1.0",
+    "@babel/core": "7.16.5",
+    "@babel/preset-env": "7.16.5",
+    "@babel/register": "7.16.5",
+    "@commitlint/cli": "15.0.0",
     "@js-library/commitlint-config": "0.0.4",
-    "ava": "3.15.0",
+    "@total-order/lex": "^1.0.0",
+    "@total-order/primitive": "^1.0.1",
+    "ava": "^3.15.0",
     "babel-plugin-transform-remove-console": "6.9.4",
-    "babel-plugin-unassert": "3.1.0",
+    "babel-plugin-unassert": "3.2.0",
     "babel-preset-power-assert": "3.0.0",
-    "c8": "7.8.0",
+    "c8": "7.10.0",
     "coveralls": "3.1.1",
     "esdoc": "1.1.0",
     "esdoc-inject-script-plugin": "1.0.0",
     "esdoc-inject-style-plugin": "1.0.0",
     "esdoc-standard-plugin": "1.0.0",
     "fixpack": "4.0.0",
-    "husky": "7.0.1",
-    "lint-staged": "11.1.1",
-    "microbundle": "0.13.3",
-    "np": "7.5.0",
+    "fs": "^0.0.1-security",
+    "husky": "7.0.4",
+    "lint-staged": "12.1.3",
+    "microbundle": "0.14.2",
+    "np": "7.6.0",
     "pinst": "2.1.6",
     "power-assert": "1.6.1",
     "regenerator-runtime": "0.13.9",
-    "xo": "0.39.1"
+    "xo": "0.47.0"
   },
   "ava": {
     "files": [
@@ -213,7 +215,9 @@
       "unicorn/prevent-abbreviations": "off",
       "no-constant-condition": "off",
       "unicorn/prefer-math-trunc": "off",
+      "unicorn/prefer-node-protocol": "off",
       "unicorn/no-new-array": "off",
+      "no-bitwise": "off",
       "no-negated-condition": "off"
     },
     "overrides": [

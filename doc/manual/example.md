@@ -2,8 +2,9 @@
 
 ```js
 
-import { lexicographical , increasing } from '@aureooms/js-compare' ;
-import { list } from '@aureooms/js-itertools' ;
+import { lexicographical } from '@total-order/lex' ;
+import { increasing } from '@total-order/primitive' ;
+import { list } from '@iterable-iterator/list' ;
 
 const lex = lexicographical( increasing ) ;
 

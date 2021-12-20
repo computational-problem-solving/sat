@@ -6,10 +6,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-sat
+jspm install npm:@problem-solving/sat
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-sat --save
+npm install @problem-solving/sat --save
 ```
