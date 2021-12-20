@@ -2,8 +2,8 @@
 ==
 
 <p align="center">
-<a href="https://xkcd.com/287">
-<img src="https://imgs.xkcd.com/comics/np_complete.png" width="600">
+<a href="https://xkcd.com/1801">
+<img src="https://imgs.xkcd.com/comics/decision_paralysis.png" width="600">
 </a><br/>
 © <a href="https://xkcd.com">xkcd.com</a>
 </p>
