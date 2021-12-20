@@ -6,7 +6,7 @@ import _parse_DIMACS_CNF from '../core/parse/_parse_DIMACS_CNF.js';
 /**
  * The input is converted to parity format in each case.
  */
-const from = {
+const from_ = {
 	/**
 	 * The input is in parity format where variables are given integer labels
 	 * 0 to n-1, a positive literal is represented by the double of its
@@ -47,5 +47,4 @@ const from = {
 	dcnf: (iterable) => new ParitiesInstance(_parse_DIMACS_CNF(iterable)),
 };
 
-// eslint-disable-next-line prettier/prettier
-export default from;
+export default from_;
