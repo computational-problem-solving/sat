@@ -569,7 +569,7 @@
     "name": "src/api/decide.js",
     "content": "import assert from 'assert';\nimport ParitiesInstance from '../core/convert/ParitiesInstance.js';\nimport SignsInstance from '../core/convert/SignsInstance.js';\nimport KeysInstance from '../core/convert/KeysInstance.js';\nimport solve from './solve.js';\n\n/**\n * Decide whether the given instance has a satisfying assignment.\n *\n * @param {ParitiesInstance|SignsInstance|KeysInstance} instance\n * @return {boolean} Whether the instance has a satisfying assignment.\n */\nexport default function decide(instance) {\n\tassert(\n\t\tinstance instanceof ParitiesInstance ||\n\t\t\tinstance instanceof SignsInstance ||\n\t\t\tinstance instanceof KeysInstance,\n\t);\n\treturn !solve(instance).next().done;\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/api/decide.js",
+    "longname": "/home/runner/work/sat/sat/src/api/decide.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -585,7 +585,7 @@
     "longname": "src/api/decide.js~decide",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/api/decide.js",
+    "importPath": "@problem-solving/sat/src/api/decide.js",
     "importStyle": "decide",
     "description": "Decide whether the given instance has a satisfying assignment.",
     "lineNumber": 13,
@@ -616,9 +616,9 @@
     "__docId__": 50,
     "kind": "file",
     "name": "src/api/from.js",
-    "content": "import ParitiesInstance from '../core/convert/ParitiesInstance.js';\nimport _sign_to_parity from '../core/convert/_sign_to_parity.js';\nimport _keys_to_parity from '../core/convert/_keys_to_parity.js';\nimport _parse_DIMACS_CNF from '../core/parse/_parse_DIMACS_CNF.js';\n\n/**\n * The input is converted to parity format in each case.\n */\nconst from = {\n\t/**\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t * @return {ParitiesInstance}\n\t */\n\tparities: (clauses) => new ParitiesInstance(clauses),\n\t/**\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t *\n\t * @function\n\t * @param {number[][]} clauses\n\t * @return {SignsInstance}\n\t */\n\tsigns: _sign_to_parity,\n\t/**\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t *\n\t * @function\n\t * @param {[any,any][][]} clauses\n\t * @return {KeysInstance}\n\t */\n\tkeys: _keys_to_parity,\n\t/**\n\t * Parses a character iterable in DIMACS CNF format.\n\t *\n\t * @param {Iterable<string>} iterable\n\t * @return {ParitiesInstance}\n\t */\n\tdcnf: (iterable) => new ParitiesInstance(_parse_DIMACS_CNF(iterable)),\n};\n\nexport default from;\n",
+    "content": "import ParitiesInstance from '../core/convert/ParitiesInstance.js';\nimport _sign_to_parity from '../core/convert/_sign_to_parity.js';\nimport _keys_to_parity from '../core/convert/_keys_to_parity.js';\nimport _parse_DIMACS_CNF from '../core/parse/_parse_DIMACS_CNF.js';\n\n/**\n * The input is converted to parity format in each case.\n */\nconst from_ = {\n\t/**\n\t * The input is in parity format where variables are given integer labels\n\t * 0 to n-1, a positive literal is represented by the double of its\n\t * variable's label, and a negative literal is represented by the successor\n\t * of the double of its variable's label.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t * @return {ParitiesInstance}\n\t */\n\tparities: (clauses) => new ParitiesInstance(clauses),\n\t/**\n\t * The input is in signs format where variables are given integer labels\n\t * 1 to n, a positive literal is represented by its variable's label, and a\n\t * negative literal is represented by the opposite of its variable's label.\n\t *\n\t * @function\n\t * @param {number[][]} clauses\n\t * @return {SignsInstance}\n\t */\n\tsigns: _sign_to_parity,\n\t/**\n\t * The input is in keys format where variables are given arbitrary object labels,\n\t * a literal is represented by a pair from the set {true, false} x\n\t * labels, where the first item in the pair is true if the literal is positive,\n\t * and false otherwise.\n\t *\n\t * @function\n\t * @param {[any,any][][]} clauses\n\t * @return {KeysInstance}\n\t */\n\tkeys: _keys_to_parity,\n\t/**\n\t * Parses a character iterable in DIMACS CNF format.\n\t *\n\t * @param {Iterable<string>} iterable\n\t * @return {ParitiesInstance}\n\t */\n\tdcnf: (iterable) => new ParitiesInstance(_parse_DIMACS_CNF(iterable)),\n};\n\nexport default from_;\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/api/from.js",
+    "longname": "/home/runner/work/sat/sat/src/api/from.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -626,14 +626,14 @@
   {
     "__docId__": 51,
     "kind": "variable",
-    "name": "from",
+    "name": "from_",
     "memberof": "src/api/from.js",
     "static": true,
-    "longname": "src/api/from.js~from",
+    "longname": "src/api/from.js~from_",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/api/from.js",
-    "importStyle": "from",
+    "importPath": "@problem-solving/sat/src/api/from.js",
+    "importStyle": "from_",
     "description": "The input is converted to parity format in each case.",
     "lineNumber": 9,
     "type": {
@@ -648,7 +648,7 @@
     "name": "src/api/solve.js",
     "content": "import setup_assignment from '../core/setup_assignment.js';\nimport setup_watchlist from '../core/SAT0W/setup_watchlist.js';\nimport SAT0W from '../core/SAT0W/SAT0W.js';\n\n/**\n * Yields all satisfying assignments for the input instance.\n *\n * @param {ParitiesInstance|SignsInstance|KeysInstance} instance\n * @returns {IterableIterator<number[]>} Generator of the satisfying assignments.\n */\nexport default function solve({clauses, n}) {\n\t// eslint-disable-next-line new-cap\n\treturn SAT0W(n, clauses, setup_watchlist(n, clauses), setup_assignment(n), 0);\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/api/solve.js",
+    "longname": "/home/runner/work/sat/sat/src/api/solve.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -664,7 +664,7 @@
     "longname": "src/api/solve.js~solve",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/api/solve.js",
+    "importPath": "@problem-solving/sat/src/api/solve.js",
     "importStyle": "solve",
     "description": "Yields all satisfying assignments for the input instance.",
     "lineNumber": 11,
@@ -701,9 +701,9 @@
     "__docId__": 54,
     "kind": "file",
     "name": "src/api/verify.js",
-    "content": "import _verify from '../core/_verify.js';\nconst verify = ({clauses}, certificate) => _verify(clauses, certificate);\nexport default verify;\n",
+    "content": "import _verify from '../core/_verify.js';\n/**\n * Verify that satisfiability of the input instance can be derived from the\n * input certificate.\n *\n * @param {ParitiesInstance|SignsInstance|KeysInstance} instance\n * @param {number[]} certificate\n * @return {boolean}\n */\nconst verify = ({clauses}, certificate) => _verify(clauses, certificate);\nexport default verify;\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/api/verify.js",
+    "longname": "/home/runner/work/sat/sat/src/api/verify.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -719,30 +719,42 @@
     "longname": "src/api/verify.js~verify",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/api/verify.js",
+    "importPath": "@problem-solving/sat/src/api/verify.js",
     "importStyle": "verify",
-    "description": null,
-    "lineNumber": 2,
-    "undocument": true,
+    "description": "Verify that satisfiability of the input instance can be derived from the\ninput certificate.",
+    "lineNumber": 10,
     "params": [
       {
-        "name": "objectPattern",
+        "nullable": null,
         "types": [
-          "{\"clauses\": *}"
+          "ParitiesInstance",
+          "SignsInstance",
+          "KeysInstance"
         ],
-        "defaultRaw": {
-          "clauses": null
-        },
-        "defaultValue": "{\"clauses\":null}"
+        "spread": false,
+        "optional": false,
+        "name": "instance",
+        "description": ""
       },
       {
-        "name": "certificate",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "number[]"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "certificate",
+        "description": ""
       }
     ],
-    "return": null
+    "return": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
   },
   {
     "__docId__": 56,
@@ -750,7 +762,7 @@
     "name": "src/core/SAT0W/SAT0W.js",
     "content": "import update_watchlist from './update_watchlist.js';\n\n/**\n * SAT0W.\n *\n * Recursively solve SAT by assigning to variables d, d+1, ..., n-1. Assumes\n * variables 0, ..., d-1 are assigned so far. A generator for all the\n * satisfying assignments is returned.\n *\n * @param {number} n\n * @param {number[][]} clauses\n * @param {number[][][]} watchlist\n * @param {number[]} assignment\n * @param {number} d\n * @return {IterableIterator<number[]>} Yields satisfying assignments.\n */\nexport default function* SAT0W(n, clauses, watchlist, assignment, d) {\n\tif (d === n) {\n\t\tyield assignment;\n\t\treturn;\n\t}\n\n\tfor (const a of [0, 1]) {\n\t\tassignment[d] = a;\n\n\t\tif (update_watchlist(watchlist, (d << 1) | a, assignment)) {\n\t\t\t// eslint-disable-next-line new-cap\n\t\t\tyield* SAT0W(n, clauses, watchlist, assignment, d + 1);\n\t\t}\n\t}\n\n\tassignment[d] = -1;\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/SAT0W/SAT0W.js",
+    "longname": "/home/runner/work/sat/sat/src/core/SAT0W/SAT0W.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -766,7 +778,7 @@
     "longname": "src/core/SAT0W/SAT0W.js~SAT0W",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/SAT0W/SAT0W.js",
+    "importPath": "@problem-solving/sat/src/core/SAT0W/SAT0W.js",
     "importStyle": "SAT0W",
     "description": "SAT0W.\n\nRecursively solve SAT by assigning to variables d, d+1, ..., n-1. Assumes\nvariables 0, ..., d-1 are assigned so far. A generator for all the\nsatisfying assignments is returned.",
     "lineNumber": 17,
@@ -837,7 +849,7 @@
     "name": "src/core/SAT0W/setup_watchlist.js",
     "content": "/**\n * Setup_watchlist.\n *\n * @param {number} n\n * @param {number[][]} clauses\n * @return {number[][][]} The literal watch list.\n */\nexport default function setup_watchlist(n, clauses) {\n\tconst watchlist = [];\n\n\tfor (let i = 0; i < 2 * n; ++i) watchlist.push([]);\n\n\tfor (const clause of clauses) {\n\t\t// # Make the clause watch its first literal\n\t\twatchlist[clause[0]].push(clause);\n\t}\n\n\treturn watchlist;\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/SAT0W/setup_watchlist.js",
+    "longname": "/home/runner/work/sat/sat/src/core/SAT0W/setup_watchlist.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -853,7 +865,7 @@
     "longname": "src/core/SAT0W/setup_watchlist.js~setup_watchlist",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/SAT0W/setup_watchlist.js",
+    "importPath": "@problem-solving/sat/src/core/SAT0W/setup_watchlist.js",
     "importStyle": "setup_watchlist",
     "description": "Setup_watchlist.",
     "lineNumber": 8,
@@ -894,7 +906,7 @@
     "name": "src/core/SAT0W/update_watchlist.js",
     "content": "/**\n * Updates the watch list after literal 'false_literal' was just assigned\n * False, by making any clause watching false_literal watch something else.\n * Returns False it is impossible to do so, meaning a clause is contradicted\n * by the current assignment.\n *\n * @param {number[][][]} watchlist\n * @param {number} false_literal\n * @param {number[]} assignment\n */\nexport default function update_watchlist(watchlist, false_literal, assignment) {\n\twhile (watchlist[false_literal].length > 0) {\n\t\tconst clause =\n\t\t\twatchlist[false_literal][watchlist[false_literal].length - 1];\n\t\tlet found_alternative = false;\n\n\t\tfor (const alternative of clause) {\n\t\t\tconst v = alternative >>> 1;\n\t\t\tconst a = alternative & 1;\n\n\t\t\tif (assignment[v] === -1 || (assignment[v] === a) ^ 1) {\n\t\t\t\tfound_alternative = true;\n\t\t\t\twatchlist[false_literal].pop();\n\t\t\t\twatchlist[alternative].push(clause);\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\n\t\tif (!found_alternative) return false;\n\t}\n\n\treturn true;\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/SAT0W/update_watchlist.js",
+    "longname": "/home/runner/work/sat/sat/src/core/SAT0W/update_watchlist.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -910,7 +922,7 @@
     "longname": "src/core/SAT0W/update_watchlist.js~update_watchlist",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/SAT0W/update_watchlist.js",
+    "importPath": "@problem-solving/sat/src/core/SAT0W/update_watchlist.js",
     "importStyle": "update_watchlist",
     "description": "Updates the watch list after literal 'false_literal' was just assigned\nFalse, by making any clause watching false_literal watch something else.\nReturns False it is impossible to do so, meaning a clause is contradicted\nby the current assignment.",
     "lineNumber": 11,
@@ -956,9 +968,9 @@
     "__docId__": 62,
     "kind": "file",
     "name": "src/core/_verify.js",
-    "content": "/**\n * Verifies that an assignment vector satisfies a k-CNF formula given as a list\n * of clauses. The list of clauses and the assignment vector are in parity\n * format.\n *\n * @param {Iterable} clauses The clauses in parity format.\n * @param {Array} assignment The assignment vector in parity format.\n * @returns {Boolean} Whether the assignment satisfies the k-CNF formula\n * represented by the list of clauses.\n */\nexport default function _verify(clauses, assignment) {\n\t// eslint-disable-next-line no-labels\n\tloop: for (const clause of clauses) {\n\t\tfor (const literal of clause) {\n\t\t\t// eslint-disable-next-line no-labels\n\t\t\tif ((literal ^ assignment[literal >>> 1]) & 1) continue loop;\n\t\t}\n\n\t\treturn false;\n\t}\n\n\treturn true;\n}\n",
+    "content": "/**\n * Verifies that an assignment vector satisfies a k-CNF formula given as a list\n * of clauses. The list of clauses and the assignment vector are in parity\n * format.\n *\n * @param {number[][]} clauses The clauses in parity format.\n * @param {number[]} assignment The assignment vector in parity format.\n * @returns {boolean} Whether the assignment satisfies the k-CNF formula\n * represented by the list of clauses.\n */\nexport default function _verify(clauses, assignment) {\n\t// eslint-disable-next-line no-labels\n\tloop: for (const clause of clauses) {\n\t\tfor (const literal of clause) {\n\t\t\t// eslint-disable-next-line no-labels\n\t\t\tif ((literal ^ assignment[literal >>> 1]) & 1) continue loop;\n\t\t}\n\n\t\treturn false;\n\t}\n\n\treturn true;\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/_verify.js",
+    "longname": "/home/runner/work/sat/sat/src/core/_verify.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -974,21 +986,21 @@
     "longname": "src/core/_verify.js~_verify",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/_verify.js",
+    "importPath": "@problem-solving/sat/src/core/_verify.js",
     "importStyle": "_verify",
     "description": "Verifies that an assignment vector satisfies a k-CNF formula given as a list\nof clauses. The list of clauses and the assignment vector are in parity\nformat.",
     "lineNumber": 11,
     "unknown": [
       {
         "tagName": "@returns",
-        "tagValue": "{Boolean} Whether the assignment satisfies the k-CNF formula\nrepresented by the list of clauses."
+        "tagValue": "{boolean} Whether the assignment satisfies the k-CNF formula\nrepresented by the list of clauses."
       }
     ],
     "params": [
       {
         "nullable": null,
         "types": [
-          "Iterable"
+          "number[][]"
         ],
         "spread": false,
         "optional": false,
@@ -998,7 +1010,7 @@
       {
         "nullable": null,
         "types": [
-          "Array"
+          "number[]"
         ],
         "spread": false,
         "optional": false,
@@ -1009,7 +1021,7 @@
     "return": {
       "nullable": null,
       "types": [
-        "Boolean"
+        "boolean"
       ],
       "spread": false,
       "description": "Whether the assignment satisfies the k-CNF formula\nrepresented by the list of clauses."
@@ -1019,9 +1031,9 @@
     "__docId__": 64,
     "kind": "file",
     "name": "src/core/convert/KeysInstance.js",
-    "content": "import _certificate_to_keys from './_certificate_to_keys.js';\n\nexport default class KeysInstance {\n\t/**\n\t * Constructor.\n\t *\n\t * Clauses are in parity format. The variables parameter allows to map\n\t * variable indices to variable names.\n\t *\n\t * @param {any[]} variables The variables of this instance.\n\t * @param {number[][]} clauses The clauses in parity format.\n\t */\n\tconstructor(variables, clauses) {\n\t\t/** @member {any[]} The variables of this instance. */\n\t\tthis.variables = variables;\n\t\t/** @member {number[][]} The clauses in parity format. */\n\t\tthis.clauses = clauses;\n\t\t/** @member {number} The number of variables in this instance. */\n\t\tthis.n = this.variables.length;\n\t}\n\n\t/**\n\t * Returns an object that maps each variable name to a variable assignment.\n\t *\n\t * @param {number[]} certificate\n\t * @return {Map<any, number>}\n\t */\n\tassignment(certificate) {\n\t\treturn _certificate_to_keys(this.variables, certificate);\n\t}\n}\n",
+    "content": "import _certificate_to_keys from './_certificate_to_keys.js';\n\n/**\n * Maintains a mapping between variable names and a parity\n * representation of the instance.\n */\nexport default class KeysInstance {\n\t/**\n\t * Constructor.\n\t *\n\t * Clauses are in parity format. The variables parameter allows to map\n\t * variable indices to variable names.\n\t *\n\t * @param {any[]} variables The variables of this instance.\n\t * @param {number[][]} clauses The clauses in parity format.\n\t */\n\tconstructor(variables, clauses) {\n\t\t/** @member {any[]} The variables of this instance. */\n\t\tthis.variables = variables;\n\t\t/** @member {number[][]} The clauses in parity format. */\n\t\tthis.clauses = clauses;\n\t\t/** @member {number} The number of variables in this instance. */\n\t\tthis.n = this.variables.length;\n\t}\n\n\t/**\n\t * Returns an object that maps each variable name to a variable assignment.\n\t *\n\t * @param {number[]} certificate\n\t * @return {Map<any, number>}\n\t */\n\tassignment(certificate) {\n\t\treturn _certificate_to_keys(this.variables, certificate);\n\t}\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/convert/KeysInstance.js",
+    "longname": "/home/runner/work/sat/sat/src/core/convert/KeysInstance.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1035,11 +1047,10 @@
     "longname": "src/core/convert/KeysInstance.js~KeysInstance",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/convert/KeysInstance.js",
+    "importPath": "@problem-solving/sat/src/core/convert/KeysInstance.js",
     "importStyle": "KeysInstance",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "Maintains a mapping between variable names and a parity\nrepresentation of the instance.",
+    "lineNumber": 7,
     "interface": false
   },
   {
@@ -1053,7 +1064,7 @@
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#constructor",
     "access": "public",
     "description": "Constructor.\n\nClauses are in parity format. The variables parameter allows to map\nvariable indices to variable names.",
-    "lineNumber": 13,
+    "lineNumber": 17,
     "params": [
       {
         "nullable": null,
@@ -1086,7 +1097,7 @@
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#variables",
     "access": "public",
     "description": null,
-    "lineNumber": 15,
+    "lineNumber": 19,
     "type": {
       "types": [
         "*"
@@ -1102,7 +1113,7 @@
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#clauses",
     "access": "public",
     "description": null,
-    "lineNumber": 17,
+    "lineNumber": 21,
     "type": {
       "types": [
         "*"
@@ -1118,7 +1129,7 @@
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#n",
     "access": "public",
     "description": null,
-    "lineNumber": 19,
+    "lineNumber": 23,
     "type": {
       "types": [
         "*"
@@ -1136,7 +1147,7 @@
     "longname": "src/core/convert/KeysInstance.js~KeysInstance#assignment",
     "access": "public",
     "description": "Returns an object that maps each variable name to a variable assignment.",
-    "lineNumber": 28,
+    "lineNumber": 32,
     "params": [
       {
         "nullable": null,
@@ -1162,9 +1173,9 @@
     "__docId__": 71,
     "kind": "file",
     "name": "src/core/convert/ParitiesInstance.js",
-    "content": "import _count from './_count.js';\n\nexport default class ParitiesInstance {\n\t/**\n\t * Clauses are in parity format.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t */\n\tconstructor(clauses) {\n\t\t/** @member {number[][]} The clauses in parity format. */\n\t\tthis.clauses = clauses;\n\t\t/** @member {number} The number of variables in this instance. */\n\t\tthis.n = _count(clauses);\n\t}\n\n\t/**\n\t * Returns assignment vector in parity format.\n\t *\n\t * @param {number[]} certificate\n\t * @return {number[]}\n\t */\n\tassignment(certificate) {\n\t\treturn certificate.slice();\n\t}\n}\n",
+    "content": "import _count from './_count.js';\n\n/**\n * Holds all properties of a k-CNF SAT instance in parity format.\n */\nexport default class ParitiesInstance {\n\t/**\n\t * Clauses are in parity format.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t */\n\tconstructor(clauses) {\n\t\t/** @member {number[][]} The clauses in parity format. */\n\t\tthis.clauses = clauses;\n\t\t/** @member {number} The number of variables in this instance. */\n\t\tthis.n = _count(clauses);\n\t}\n\n\t/**\n\t * Returns assignment vector in parity format.\n\t *\n\t * @param {number[]} certificate\n\t * @return {number[]}\n\t */\n\tassignment(certificate) {\n\t\treturn certificate.slice();\n\t}\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/convert/ParitiesInstance.js",
+    "longname": "/home/runner/work/sat/sat/src/core/convert/ParitiesInstance.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1178,11 +1189,10 @@
     "longname": "src/core/convert/ParitiesInstance.js~ParitiesInstance",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/convert/ParitiesInstance.js",
+    "importPath": "@problem-solving/sat/src/core/convert/ParitiesInstance.js",
     "importStyle": "ParitiesInstance",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "Holds all properties of a k-CNF SAT instance in parity format.",
+    "lineNumber": 6,
     "interface": false
   },
   {
@@ -1196,7 +1206,7 @@
     "longname": "src/core/convert/ParitiesInstance.js~ParitiesInstance#constructor",
     "access": "public",
     "description": "Clauses are in parity format.",
-    "lineNumber": 9,
+    "lineNumber": 12,
     "params": [
       {
         "nullable": null,
@@ -1219,7 +1229,7 @@
     "longname": "src/core/convert/ParitiesInstance.js~ParitiesInstance#clauses",
     "access": "public",
     "description": null,
-    "lineNumber": 11,
+    "lineNumber": 14,
     "type": {
       "types": [
         "*"
@@ -1235,7 +1245,7 @@
     "longname": "src/core/convert/ParitiesInstance.js~ParitiesInstance#n",
     "access": "public",
     "description": null,
-    "lineNumber": 13,
+    "lineNumber": 16,
     "type": {
       "types": [
         "*"
@@ -1253,7 +1263,7 @@
     "longname": "src/core/convert/ParitiesInstance.js~ParitiesInstance#assignment",
     "access": "public",
     "description": "Returns assignment vector in parity format.",
-    "lineNumber": 22,
+    "lineNumber": 25,
     "params": [
       {
         "nullable": null,
@@ -1279,9 +1289,9 @@
     "__docId__": 77,
     "kind": "file",
     "name": "src/core/convert/SignsInstance.js",
-    "content": "import _count from './_count.js';\n\nexport default class SignsInstance {\n\t/**\n\t * Clauses are in parity format.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t */\n\tconstructor(clauses) {\n\t\t/** @member {number[][]} The clauses in parity format. */\n\t\tthis.clauses = clauses;\n\t\t/** @member {number} The number of variables in this instance. */\n\t\tthis.n = _count(clauses);\n\t}\n\n\t/**\n\t * Returns assignment vector in signs format.\n\t *\n\t * @param {number[]} certificate\n\t * @return {number[]}\n\t */\n\tassignment(certificate) {\n\t\treturn [0].concat(certificate);\n\t}\n}\n",
+    "content": "import _count from './_count.js';\n\n/**\n * Allows to produce an assignment format that makes sense in sign format.\n */\nexport default class SignsInstance {\n\t/**\n\t * Clauses are in parity format.\n\t *\n\t * @param {number[][]} clauses The clauses in parity format.\n\t */\n\tconstructor(clauses) {\n\t\t/** @member {number[][]} The clauses in parity format. */\n\t\tthis.clauses = clauses;\n\t\t/** @member {number} The number of variables in this instance. */\n\t\tthis.n = _count(clauses);\n\t}\n\n\t/**\n\t * Returns assignment vector in signs format.\n\t *\n\t * @param {number[]} certificate\n\t * @return {number[]}\n\t */\n\tassignment(certificate) {\n\t\treturn [0].concat(certificate);\n\t}\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/convert/SignsInstance.js",
+    "longname": "/home/runner/work/sat/sat/src/core/convert/SignsInstance.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1295,11 +1305,10 @@
     "longname": "src/core/convert/SignsInstance.js~SignsInstance",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/convert/SignsInstance.js",
+    "importPath": "@problem-solving/sat/src/core/convert/SignsInstance.js",
     "importStyle": "SignsInstance",
-    "description": null,
-    "lineNumber": 3,
-    "undocument": true,
+    "description": "Allows to produce an assignment format that makes sense in sign format.",
+    "lineNumber": 6,
     "interface": false
   },
   {
@@ -1313,7 +1322,7 @@
     "longname": "src/core/convert/SignsInstance.js~SignsInstance#constructor",
     "access": "public",
     "description": "Clauses are in parity format.",
-    "lineNumber": 9,
+    "lineNumber": 12,
     "params": [
       {
         "nullable": null,
@@ -1336,7 +1345,7 @@
     "longname": "src/core/convert/SignsInstance.js~SignsInstance#clauses",
     "access": "public",
     "description": null,
-    "lineNumber": 11,
+    "lineNumber": 14,
     "type": {
       "types": [
         "*"
@@ -1352,7 +1361,7 @@
     "longname": "src/core/convert/SignsInstance.js~SignsInstance#n",
     "access": "public",
     "description": null,
-    "lineNumber": 13,
+    "lineNumber": 16,
     "type": {
       "types": [
         "*"
@@ -1370,7 +1379,7 @@
     "longname": "src/core/convert/SignsInstance.js~SignsInstance#assignment",
     "access": "public",
     "description": "Returns assignment vector in signs format.",
-    "lineNumber": 22,
+    "lineNumber": 25,
     "params": [
       {
         "nullable": null,
@@ -1396,9 +1405,9 @@
     "__docId__": 83,
     "kind": "file",
     "name": "src/core/convert/_certificate_to_keys.js",
-    "content": "import {_zip2} from '@aureooms/js-itertools';\n\n/**\n * Constructs an assignment map from a list of variable names and an assignment\n * vector in parity format.\n *\n * @param {any[]} variables\n * @param {number[]} certificate\n * @return {Map<any, number>}\n */\nexport default function _certificate_to_keys(variables, certificate) {\n\treturn new Map(_zip2(variables, certificate));\n}\n",
+    "content": "import {_zip2} from '@iterable-iterator/zip';\n\n/**\n * Constructs an assignment map from a list of variable names and an assignment\n * vector in parity format.\n *\n * @param {any[]} variables\n * @param {number[]} certificate\n * @return {Map<any, number>}\n */\nexport default function _certificate_to_keys(variables, certificate) {\n\treturn new Map(_zip2(variables, certificate));\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/convert/_certificate_to_keys.js",
+    "longname": "/home/runner/work/sat/sat/src/core/convert/_certificate_to_keys.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1414,7 +1423,7 @@
     "longname": "src/core/convert/_certificate_to_keys.js~_certificate_to_keys",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/convert/_certificate_to_keys.js",
+    "importPath": "@problem-solving/sat/src/core/convert/_certificate_to_keys.js",
     "importStyle": "_certificate_to_keys",
     "description": "Constructs an assignment map from a list of variable names and an assignment\nvector in parity format.",
     "lineNumber": 11,
@@ -1455,7 +1464,7 @@
     "name": "src/core/convert/_count.js",
     "content": "/**\n * Counts the number of variables in a parity format clauses list.\n *\n * @param {number[][]} clauses The clauses list in parity format.\n * @returns {number} The number of variables in the clauses list.\n */\nexport default function _count(clauses) {\n\tlet c = -1;\n\n\tfor (const clause of clauses) {\n\t\tfor (const literal of clause) {\n\t\t\tc = Math.max(c, literal >>> 1);\n\t\t}\n\t}\n\n\treturn c + 1;\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/convert/_count.js",
+    "longname": "/home/runner/work/sat/sat/src/core/convert/_count.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1471,7 +1480,7 @@
     "longname": "src/core/convert/_count.js~_count",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/convert/_count.js",
+    "importPath": "@problem-solving/sat/src/core/convert/_count.js",
     "importStyle": "_count",
     "description": "Counts the number of variables in a parity format clauses list.",
     "lineNumber": 7,
@@ -1508,7 +1517,7 @@
     "name": "src/core/convert/_keys_to_parity.js",
     "content": "import KeysInstance from './KeysInstance.js';\n\n/**\n * _keys_to_parity.\n *\n * @param {[any,any][][]} clauses\n * @return {KeysInstance}\n */\nexport default function _keys_to_parity(clauses) {\n\tconst keys = new Map();\n\tconst variables = [];\n\n\tconst instance = [];\n\n\tfor (const clause of clauses) {\n\t\tconst new_clause = new Set();\n\n\t\tfor (const [positive, variable] of clause) {\n\t\t\tif (!keys.has(variable)) {\n\t\t\t\tkeys.set(variable, variables.length);\n\t\t\t\tvariables.push(variable);\n\t\t\t}\n\n\t\t\tconst negated = positive ? 0 : 1;\n\t\t\tconst literal = (keys.get(variable) << 1) | negated;\n\n\t\t\tnew_clause.add(literal);\n\t\t}\n\n\t\tinstance.push([...new_clause]);\n\t}\n\n\treturn new KeysInstance(variables, instance);\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/convert/_keys_to_parity.js",
+    "longname": "/home/runner/work/sat/sat/src/core/convert/_keys_to_parity.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1524,7 +1533,7 @@
     "longname": "src/core/convert/_keys_to_parity.js~_keys_to_parity",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/convert/_keys_to_parity.js",
+    "importPath": "@problem-solving/sat/src/core/convert/_keys_to_parity.js",
     "importStyle": "_keys_to_parity",
     "description": "_keys_to_parity.",
     "lineNumber": 9,
@@ -1553,9 +1562,9 @@
     "__docId__": 89,
     "kind": "file",
     "name": "src/core/convert/_parity_to_keys.js",
-    "content": "import {list, map} from '@aureooms/js-itertools';\n\n/**\n * _parity_to_keys.\n *\n * @param {any[]} variables\n * @param {number[][]} clauses\n */\nexport default function _parity_to_keys(variables, clauses) {\n\treturn list(\n\t\tmap(\n\t\t\t(clause) =>\n\t\t\t\tlist(\n\t\t\t\t\tmap((literal) => [!(literal & 1), variables[literal >>> 1]], clause),\n\t\t\t\t),\n\t\t\tclauses,\n\t\t),\n\t);\n}\n",
+    "content": "import {list} from '@iterable-iterator/list';\nimport {map} from '@iterable-iterator/map';\n\n/**\n * _parity_to_keys.\n *\n * @param {any[]} variables\n * @param {number[][]} clauses\n */\nexport default function _parity_to_keys(variables, clauses) {\n\treturn list(\n\t\tmap(\n\t\t\t(clause) =>\n\t\t\t\tlist(\n\t\t\t\t\tmap((literal) => [!(literal & 1), variables[literal >>> 1]], clause),\n\t\t\t\t),\n\t\t\tclauses,\n\t\t),\n\t);\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/convert/_parity_to_keys.js",
+    "longname": "/home/runner/work/sat/sat/src/core/convert/_parity_to_keys.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1571,10 +1580,10 @@
     "longname": "src/core/convert/_parity_to_keys.js~_parity_to_keys",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/convert/_parity_to_keys.js",
+    "importPath": "@problem-solving/sat/src/core/convert/_parity_to_keys.js",
     "importStyle": "_parity_to_keys",
     "description": "_parity_to_keys.",
-    "lineNumber": 9,
+    "lineNumber": 10,
     "params": [
       {
         "nullable": null,
@@ -1607,9 +1616,9 @@
     "__docId__": 91,
     "kind": "file",
     "name": "src/core/convert/_parity_to_sign.js",
-    "content": "import {list, map} from '@aureooms/js-itertools';\n\n/**\n * _parity_to_sign.\n *\n * @param {number[][]} clauses\n * @return {number[][]}\n */\nexport default function _parity_to_sign(clauses) {\n\treturn list(\n\t\tmap(\n\t\t\t(clause) =>\n\t\t\t\tlist(\n\t\t\t\t\tmap(\n\t\t\t\t\t\t(literal) =>\n\t\t\t\t\t\t\tliteral & 1 ? -(literal >>> 1) - 1 : (literal >>> 1) + 1,\n\t\t\t\t\t\tclause,\n\t\t\t\t\t),\n\t\t\t\t),\n\t\t\tclauses,\n\t\t),\n\t);\n}\n",
+    "content": "import {list} from '@iterable-iterator/list';\nimport {map} from '@iterable-iterator/map';\n\n/**\n * _parity_to_sign.\n *\n * @param {number[][]} clauses\n * @return {number[][]}\n */\nexport default function _parity_to_sign(clauses) {\n\treturn list(\n\t\tmap(\n\t\t\t(clause) =>\n\t\t\t\tlist(\n\t\t\t\t\tmap(\n\t\t\t\t\t\t(literal) =>\n\t\t\t\t\t\t\tliteral & 1 ? -(literal >>> 1) - 1 : (literal >>> 1) + 1,\n\t\t\t\t\t\tclause,\n\t\t\t\t\t),\n\t\t\t\t),\n\t\t\tclauses,\n\t\t),\n\t);\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/convert/_parity_to_sign.js",
+    "longname": "/home/runner/work/sat/sat/src/core/convert/_parity_to_sign.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1625,10 +1634,10 @@
     "longname": "src/core/convert/_parity_to_sign.js~_parity_to_sign",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/convert/_parity_to_sign.js",
+    "importPath": "@problem-solving/sat/src/core/convert/_parity_to_sign.js",
     "importStyle": "_parity_to_sign",
     "description": "_parity_to_sign.",
-    "lineNumber": 9,
+    "lineNumber": 10,
     "params": [
       {
         "nullable": null,
@@ -1654,9 +1663,9 @@
     "__docId__": 93,
     "kind": "file",
     "name": "src/core/convert/_sign_to_parity.js",
-    "content": "import {list, map} from '@aureooms/js-itertools';\n\nimport SignsInstance from './SignsInstance.js';\n\n/**\n * _sign_to_parity.\n *\n * @param {number[][]} clauses\n * @return {SignsInstance}\n */\nexport default function _sign_to_parity(clauses) {\n\treturn new SignsInstance(\n\t\tlist(\n\t\t\tmap(\n\t\t\t\t(clause) =>\n\t\t\t\t\tlist(\n\t\t\t\t\t\tmap(\n\t\t\t\t\t\t\t(literal) =>\n\t\t\t\t\t\t\t\tliteral > 0 ? (literal - 1) << 1 : ((-literal - 1) << 1) | 1,\n\t\t\t\t\t\t\tclause,\n\t\t\t\t\t\t),\n\t\t\t\t\t),\n\t\t\t\tclauses,\n\t\t\t),\n\t\t),\n\t);\n}\n",
+    "content": "import {list} from '@iterable-iterator/list';\nimport {map} from '@iterable-iterator/map';\n\nimport SignsInstance from './SignsInstance.js';\n\n/**\n * _sign_to_parity.\n *\n * @param {number[][]} clauses\n * @return {SignsInstance}\n */\nexport default function _sign_to_parity(clauses) {\n\treturn new SignsInstance(\n\t\tlist(\n\t\t\tmap(\n\t\t\t\t(clause) =>\n\t\t\t\t\tlist(\n\t\t\t\t\t\tmap(\n\t\t\t\t\t\t\t(literal) =>\n\t\t\t\t\t\t\t\tliteral > 0 ? (literal - 1) << 1 : ((-literal - 1) << 1) | 1,\n\t\t\t\t\t\t\tclause,\n\t\t\t\t\t\t),\n\t\t\t\t\t),\n\t\t\t\tclauses,\n\t\t\t),\n\t\t),\n\t);\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/convert/_sign_to_parity.js",
+    "longname": "/home/runner/work/sat/sat/src/core/convert/_sign_to_parity.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1672,10 +1681,10 @@
     "longname": "src/core/convert/_sign_to_parity.js~_sign_to_parity",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/convert/_sign_to_parity.js",
+    "importPath": "@problem-solving/sat/src/core/convert/_sign_to_parity.js",
     "importStyle": "_sign_to_parity",
     "description": "_sign_to_parity.",
-    "lineNumber": 11,
+    "lineNumber": 12,
     "params": [
       {
         "nullable": null,
@@ -1703,7 +1712,7 @@
     "name": "src/core/parse/_parse_DIMACS_CNF.js",
     "content": "import _skip_blanks from './_skip_blanks.js';\nimport _parse_int from './_parse_int.js';\n\n/**\n * _parse_DIMACS_CNF.\n *\n * @param {Iterable<string>} iterable\n */\nexport default function _parse_DIMACS_CNF(iterable) {\n\tconst iterator = iterable[Symbol.iterator]();\n\n\tconst clauses = [];\n\n\t// Skip comments\n\twhile (true) {\n\t\tconst current = iterator.next();\n\n\t\tif (current.done) return clauses;\n\n\t\tconst c = current.value;\n\n\t\t// Go to problem description\n\t\tif (c === 'p') break;\n\n\t\t// Skip comment\n\t\twhile (true) {\n\t\t\tconst current = iterator.next();\n\n\t\t\tif (current.done) return clauses;\n\n\t\t\t// End of comment\n\t\t\tif (current.value === '\\n') break;\n\t\t}\n\t}\n\n\t// Parse problem description\n\t// ( we do not actually need to parse it if we suppose it is correct )\n\n\twhile (true) {\n\t\tconst current = iterator.next();\n\n\t\tif (current.done) return clauses;\n\n\t\t// End of description\n\t\tif (current.value === '\\n') break;\n\t}\n\n\t// Parse problem\n\n\t// eslint-disable-next-line no-labels\n\tloop: while (true) {\n\t\tconst clause = [];\n\n\t\twhile (true) {\n\t\t\tconst [done1, symbol] = _skip_blanks(iterator);\n\t\t\tif (done1) {\n\t\t\t\tif (clause.length > 0) clauses.push(clause);\n\t\t\t\treturn clauses;\n\t\t\t}\n\n\t\t\tconst [done2, i] = _parse_int(symbol, iterator);\n\t\t\tif (i === 0) {\n\t\t\t\tif (done2) return clauses;\n\t\t\t\tclauses.push(clause);\n\t\t\t\t// eslint-disable-next-line no-labels\n\t\t\t\tcontinue loop;\n\t\t\t}\n\n\t\t\tclause.push(i > 0 ? (i - 1) << 1 : ((-i - 1) << 1) | 1);\n\n\t\t\tif (done2) {\n\t\t\t\tclauses.push(clause);\n\t\t\t\treturn clauses;\n\t\t\t}\n\t\t}\n\t}\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/parse/_parse_DIMACS_CNF.js",
+    "longname": "/home/runner/work/sat/sat/src/core/parse/_parse_DIMACS_CNF.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1719,7 +1728,7 @@
     "longname": "src/core/parse/_parse_DIMACS_CNF.js~_parse_DIMACS_CNF",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/parse/_parse_DIMACS_CNF.js",
+    "importPath": "@problem-solving/sat/src/core/parse/_parse_DIMACS_CNF.js",
     "importStyle": "_parse_DIMACS_CNF",
     "description": "_parse_DIMACS_CNF.",
     "lineNumber": 9,
@@ -1747,7 +1756,7 @@
     "name": "src/core/parse/_parse_int.js",
     "content": "/**\n * _parse_int.\n *\n * @param {string} first_symbol\n * @param {Iterator<string>} iterator\n * @return {[boolean, number]}\n */\nexport default function _parse_int(first_symbol, iterator) {\n\tlet i = 0;\n\tlet s = 1;\n\n\tif (first_symbol === '-') s = -1;\n\telse i = Number(first_symbol);\n\n\twhile (true) {\n\t\tconst current = iterator.next();\n\t\tif (current.done) return [true, s * i];\n\n\t\tconst c = current.value;\n\n\t\tif (c < '0' || c > '9') return [false, s * i];\n\n\t\ti *= 10;\n\t\ti += Number(c);\n\t}\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/parse/_parse_int.js",
+    "longname": "/home/runner/work/sat/sat/src/core/parse/_parse_int.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1763,7 +1772,7 @@
     "longname": "src/core/parse/_parse_int.js~_parse_int",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/parse/_parse_int.js",
+    "importPath": "@problem-solving/sat/src/core/parse/_parse_int.js",
     "importStyle": "_parse_int",
     "description": "_parse_int.",
     "lineNumber": 8,
@@ -1804,7 +1813,7 @@
     "name": "src/core/parse/_skip_blanks.js",
     "content": "/**\n * _skip_blanks.\n *\n * @param {Iterator<string>} iterator\n * @return {[boolean, string]}\n */\nexport default function _skip_blanks(iterator) {\n\twhile (true) {\n\t\tconst current = iterator.next();\n\t\tif (current.done) return [true, null];\n\n\t\tswitch (current.value) {\n\t\t\tcase ' ':\n\t\t\tcase '\\t':\n\t\t\tcase '\\n':\n\t\t\t\tcontinue;\n\t\t\t// HANDLE CUSTOM DELIMITER OF SATLIB\n\t\t\tcase '%':\n\t\t\t\treturn [true, null];\n\t\t\tdefault:\n\t\t\t\treturn [false, current.value];\n\t\t}\n\t}\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/parse/_skip_blanks.js",
+    "longname": "/home/runner/work/sat/sat/src/core/parse/_skip_blanks.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1820,7 +1829,7 @@
     "longname": "src/core/parse/_skip_blanks.js~_skip_blanks",
     "access": "private",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/parse/_skip_blanks.js",
+    "importPath": "@problem-solving/sat/src/core/parse/_skip_blanks.js",
     "importStyle": "_skip_blanks",
     "description": "_skip_blanks.",
     "lineNumber": 7,
@@ -1851,7 +1860,7 @@
     "name": "src/core/setup_assignment.js",
     "content": "/**\n * Setup_assignment.\n *\n * @param {number} n\n * @return {number[]}\n */\nexport default function setup_assignment(n) {\n\tconst assignment = new Array(n);\n\n\tfor (let i = 0; i < n; ++i) assignment[i] = -1;\n\n\treturn assignment;\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/core/setup_assignment.js",
+    "longname": "/home/runner/work/sat/sat/src/core/setup_assignment.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -1867,7 +1876,7 @@
     "longname": "src/core/setup_assignment.js~setup_assignment",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-sat/src/core/setup_assignment.js",
+    "importPath": "@problem-solving/sat/src/core/setup_assignment.js",
     "importStyle": "setup_assignment",
     "description": "Setup_assignment.",
     "lineNumber": 7,
@@ -1898,23 +1907,23 @@
     "name": "src/index.js",
     "content": "export {default as decide} from './api/decide.js';\nexport {default as from} from './api/from.js';\nexport {default as solve} from './api/solve.js';\nexport {default as verify} from './api/verify.js';\nexport {default as SAT0W} from './core/SAT0W/SAT0W.js';\nexport {default as setup_watchlist} from './core/SAT0W/setup_watchlist.js';\nexport {default as update_watchlist} from './core/SAT0W/update_watchlist.js';\nexport {default as KeysInstance} from './core/convert/KeysInstance.js';\nexport {default as ParitiesInstance} from './core/convert/ParitiesInstance.js';\nexport {default as SignsInstance} from './core/convert/SignsInstance.js';\nexport {default as _certificate_to_keys} from './core/convert/_certificate_to_keys.js';\nexport {default as _count} from './core/convert/_count.js';\nexport {default as _keys_to_parity} from './core/convert/_keys_to_parity.js';\nexport {default as _parity_to_keys} from './core/convert/_parity_to_keys.js';\nexport {default as _parity_to_sign} from './core/convert/_parity_to_sign.js';\nexport {default as _sign_to_parity} from './core/convert/_sign_to_parity.js';\nexport {default as _parse_DIMACS_CNF} from './core/parse/_parse_DIMACS_CNF.js';\nexport {default as _verify} from './core/_verify.js';\nexport {default as setup_assignment} from './core/setup_assignment.js';\n",
     "static": true,
-    "longname": "/home/runner/work/js-sat/js-sat/src/index.js",
+    "longname": "/home/runner/work/sat/sat/src/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
     "kind": "index",
-    "content": ":satisfied: [@aureooms/js-sat](https://aureooms.github.io/js-sat)\n==\n\n<p align=\"center\">\n<a href=\"https://xkcd.com/287\">\n<img src=\"https://imgs.xkcd.com/comics/np_complete.png\" width=\"600\">\n</a><br/>\n© <a href=\"https://xkcd.com\">xkcd.com</a>\n</p>\n\nBoolean formula satisfiability algorithms for JavaScript.\nSee [docs](https://aureooms.github.io/js-sat).\nParent is [@aureooms/js-algorithms](https://github.com/aureooms/js-algorithms).\nFor a polynomial time algorithm for the 2SAT problem see\n[@aureooms/js-2sat](https://github.com/aureooms/js-2sat).\n\n```js\nlet instance = sat.from.signs( [ [ -1 , 2 , 3 ] , [ -2 , -4 , 5 ] , [ 1 , -5 ] ] ) ;\n// or\n// let instance = sat.from.keys(\n// [\n//   [ [ false , '1' ] , [ true , '2' ] , [ true , '3' ] ] ,\n//   [ [ false , '2' ] , [ false , '4' ] , [ true , '5' ] ] ,\n//   [ [ true , '1' ] , [ false , '5' ] ]\n// ]\n// ) ;\nsat.decide( instance ) ; // true\nsat.verify( instance , sat.solve( instance ).next( ).value ) ; // true\nfor ( let certificate of sat.solve( instance ) ) {\n    console.log( instance.assignment( certificate ) ) ;\n}\n```\n\n[![License](https://img.shields.io/github/license/aureooms/js-sat.svg)](https://raw.githubusercontent.com/aureooms/js-sat/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@aureooms/js-sat.svg)](https://www.npmjs.org/package/@aureooms/js-sat)\n[![Tests](https://img.shields.io/github/workflow/status/aureooms/js-sat/ci:test?event=push&label=tests)](https://github.com/aureooms/js-sat/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/david/aureooms/js-sat.svg)](https://david-dm.org/aureooms/js-sat)\n[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-sat.svg)](https://david-dm.org/aureooms/js-sat?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-sat.svg)](https://github.com/aureooms/js-sat/issues)\n[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-sat.svg)](https://www.npmjs.org/package/@aureooms/js-sat)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-sat.svg)](https://codeclimate.com/github/aureooms/js-sat/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-sat.svg)](https://codeclimate.com/github/aureooms/js-sat/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-sat/main.svg)](https://codecov.io/gh/aureooms/js-sat)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-sat.svg)](https://codeclimate.com/github/aureooms/js-sat/trends/technical_debt)\n[![Documentation](https://aureooms.github.io/js-sat/badge.svg)](https://aureooms.github.io/js-sat/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-sat)](https://bundlephobia.com/result?p=@aureooms/js-sat)\n\n## :scroll: Reference\n\n  - [Simple solver in Python](http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html)\n  - [SATLIB](http://www.cs.ubc.ca/~hoos/SATLIB/benchm.html)\n",
-    "longname": "/home/runner/work/js-sat/js-sat/README.md",
+    "content": ":satisfied: [@problem-solving/sat](https://computational-problem-solving.github.io/sat)\n==\n\n<p align=\"center\">\n<a href=\"https://xkcd.com/287\">\n<img src=\"https://imgs.xkcd.com/comics/np_complete.png\" width=\"600\">\n</a><br/>\n© <a href=\"https://xkcd.com\">xkcd.com</a>\n</p>\n\nBoolean formula satisfiability algorithms for JavaScript.\nSee [docs](https://computational-problem-solving.github.io/sat).\nParent is [js-algorithms](https://github.com/make-github-pseudonymous-again/js-algorithms).\nFor a polynomial time algorithm for the 2SAT problem see\n[@problem-solving/2sat](https://github.com/computational-problem-solving/2sat).\n\n```js\nlet instance = sat.from.signs( [ [ -1 , 2 , 3 ] , [ -2 , -4 , 5 ] , [ 1 , -5 ] ] ) ;\n// or\n// let instance = sat.from.keys(\n// [\n//   [ [ false , '1' ] , [ true , '2' ] , [ true , '3' ] ] ,\n//   [ [ false , '2' ] , [ false , '4' ] , [ true , '5' ] ] ,\n//   [ [ true , '1' ] , [ false , '5' ] ]\n// ]\n// ) ;\nsat.decide( instance ) ; // true\nsat.verify( instance , sat.solve( instance ).next( ).value ) ; // true\nfor ( let certificate of sat.solve( instance ) ) {\n    console.log( instance.assignment( certificate ) ) ;\n}\n```\n\n[![License](https://img.shields.io/github/license/computational-problem-solving/sat.svg)](https://raw.githubusercontent.com/computational-problem-solving/sat/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@problem-solving/sat.svg)](https://www.npmjs.org/package/@problem-solving/sat)\n[![Tests](https://img.shields.io/github/workflow/status/computational-problem-solving/sat/ci:test?event=push&label=tests)](https://github.com/computational-problem-solving/sat/actions/workflows/ci:test.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/librariesio/github/computational-problem-solving/sat.svg)](https://github.com/computational-problem-solving/sat/network/dependencies)\n[![GitHub issues](https://img.shields.io/github/issues/computational-problem-solving/sat.svg)](https://github.com/computational-problem-solving/sat/issues)\n[![Downloads](https://img.shields.io/npm/dm/@problem-solving/sat.svg)](https://www.npmjs.org/package/@problem-solving/sat)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/computational-problem-solving/sat.svg)](https://codeclimate.com/github/computational-problem-solving/sat/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/computational-problem-solving/sat.svg)](https://codeclimate.com/github/computational-problem-solving/sat/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/computational-problem-solving/sat/main.svg)](https://codecov.io/gh/computational-problem-solving/sat)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/computational-problem-solving/sat.svg)](https://codeclimate.com/github/computational-problem-solving/sat/trends/technical_debt)\n[![Documentation](https://computational-problem-solving.github.io/sat/badge.svg)](https://computational-problem-solving.github.io/sat/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@problem-solving/sat)](https://bundlephobia.com/result?p=@problem-solving/sat)\n\n## :scroll: Reference\n\n  - [Simple solver in Python](http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html)\n  - [SATLIB](http://www.cs.ubc.ca/~hoos/SATLIB/benchm.html)\n",
+    "longname": "/home/runner/work/sat/sat/README.md",
     "name": "./README.md",
     "static": true,
     "access": "public"
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@aureooms/js-sat\",\n  \"description\": \"Boolean formula satisfiability algorithms for JavaScript\",\n  \"version\": \"3.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"Aurélien Ooms <aurelien.ooms@gmail.com>\",\n  \"homepage\": \"https://aureooms.github.io/js-sat\",\n  \"repository\": {\n    \"url\": \"https://github.com/aureooms/js-sat\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-sat/issues\"\n  },\n  \"keywords\": [\n    \"NP\",\n    \"SAT\",\n    \"algorithms\",\n    \"boolean formula\",\n    \"complete\",\n    \"complexity\",\n    \"computer science\",\n    \"javascript\",\n    \"js\",\n    \"satisfiability\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {\n    \"@aureooms/js-itertools\": \"^5.1.0\"\n  },\n  \"devDependencies\": {\n    \"@aureooms/js-array\": \"4.0.0\",\n    \"@aureooms/js-compare\": \"2.0.1\",\n    \"@aureooms/js-functools\": \"2.0.3\",\n    \"@babel/core\": \"7.13.15\",\n    \"@babel/preset-env\": \"7.13.15\",\n    \"@babel/register\": \"7.13.14\",\n    \"@commitlint/cli\": \"12.1.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.7.1\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"6.0.0\",\n    \"lint-staged\": \"10.5.4\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.4.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.38.2\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\",\n      \"camelcase\": \"off\",\n      \"unicorn/prevent-abbreviations\": \"off\",\n      \"no-constant-condition\": \"off\",\n      \"unicorn/prefer-math-trunc\": \"off\",\n      \"unicorn/no-new-array\": \"off\",\n      \"no-negated-condition\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
-    "longname": "/home/runner/work/js-sat/js-sat/package.json",
+    "content": "{\n  \"name\": \"@problem-solving/sat\",\n  \"description\": \"Boolean formula satisfiability algorithms for JavaScript\",\n  \"version\": \"4.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://computational-problem-solving.github.io/sat\",\n  \"repository\": {\n    \"url\": \"https://github.com/computational-problem-solving/sat\",\n    \"type\": \"git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/computational-problem-solving/sat/issues\"\n  },\n  \"keywords\": [\n    \"NP\",\n    \"SAT\",\n    \"algorithms\",\n    \"boolean formula\",\n    \"complete\",\n    \"complexity\",\n    \"computer science\",\n    \"javascript\",\n    \"js\",\n    \"satisfiability\"\n  ],\n  \"sideEffects\": false,\n  \"type\": \"module\",\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.cjs\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.cjs\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"ci:build\": \"npm run build\",\n    \"ci:test\": \"npm run lint-config && npm run lint && npm run cover\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\"\n  },\n  \"dependencies\": {\n    \"@iterable-iterator/list\": \"^1.0.1\",\n    \"@iterable-iterator/map\": \"^1.0.1\",\n    \"@iterable-iterator/zip\": \"^1.0.1\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"7.16.5\",\n    \"@babel/preset-env\": \"7.16.5\",\n    \"@babel/register\": \"7.16.5\",\n    \"@commitlint/cli\": \"15.0.0\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"@total-order/lex\": \"^1.0.0\",\n    \"@total-order/primitive\": \"^1.0.1\",\n    \"ava\": \"^3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.2.0\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.10.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"fs\": \"^0.0.1-security\",\n    \"husky\": \"7.0.4\",\n    \"lint-staged\": \"12.1.3\",\n    \"microbundle\": \"0.14.2\",\n    \"np\": \"7.6.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.9\",\n    \"xo\": \"0.47.0\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\",\n    \"concurrency\": 8\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": \"current node\"\n        }\n      ]\n    ],\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": \"off\",\n      \"camelcase\": \"off\",\n      \"unicorn/prevent-abbreviations\": \"off\",\n      \"no-constant-condition\": \"off\",\n      \"unicorn/prefer-math-trunc\": \"off\",\n      \"unicorn/prefer-node-protocol\": \"off\",\n      \"unicorn/no-new-array\": \"off\",\n      \"no-bitwise\": \"off\",\n      \"no-negated-condition\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/sat/sat/package.json",
     "name": "package.json",
     "static": true,
     "access": "public"
@@ -1929,7 +1938,7 @@
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-sat/js-sat/doc/manual/overview.md",
+    "longname": "/home/runner/work/sat/sat/doc/manual/overview.md",
     "name": "./doc/manual/overview.md",
     "content": "# Overview\n",
     "static": true,
@@ -1937,25 +1946,25 @@
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-sat/js-sat/doc/manual/installation.md",
+    "longname": "/home/runner/work/sat/sat/doc/manual/installation.md",
     "name": "./doc/manual/installation.md",
-    "content": "# Installation\n\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@aureooms/js-sat\n```\n\n### npm\n```terminal\nnpm install @aureooms/js-sat --save\n```\n",
+    "content": "# Installation\n\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@problem-solving/sat\n```\n\n### npm\n```terminal\nnpm install @problem-solving/sat --save\n```\n",
     "static": true,
     "access": "public"
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-sat/js-sat/doc/manual/usage.md",
+    "longname": "/home/runner/work/sat/sat/doc/manual/usage.md",
     "name": "./doc/manual/usage.md",
-    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nrequire( 'regenerator-runtime/runtime' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen\n```js\nconst sat = require( '@aureooms/js-sat' ) ;\n// or\nimport * as sat from '@aureooms/js-sat' ;\n```\n",
+    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nawait import( 'regenerator-runtime/runtime.js' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen\n```js\nconst sat = await import( '@problem-solving/sat' ) ;\n// or\nimport * as sat from '@problem-solving/sat' ;\n```\n",
     "static": true,
     "access": "public"
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-sat/js-sat/doc/manual/example.md",
+    "longname": "/home/runner/work/sat/sat/doc/manual/example.md",
     "name": "./doc/manual/example.md",
-    "content": "# Example\n\n```js\n\nimport { lexicographical , increasing } from '@aureooms/js-compare' ;\nimport { list } from '@aureooms/js-itertools' ;\n\nconst lex = lexicographical( increasing ) ;\n\nconst instance = sat.from.keys( [\n  [ [ 1 , 'A' ] , [ 1 , 'B' ] , [ 0 , 'C' ] ] ,\n  [ [ 1 , 'B' ] , [ 1 , 'C' ] ] ,\n  [ [ 0 , 'B' ] ],\n  [ [ 0 , 'A' ] , [ 1 , 'C' ] ]\n] ) ;\n\nconst certificates = sat.solve( instance ) ;\nconst state = certificates.next( ) ;\nconst certificate = state.value ;\nsat.verify( instance , certificate ) ; // true\nsat.decide( instance ) ; // true\n\nstate.done ; // false\n\nconst assignment = instance.assignment( certificate ) ;\n\nlist( assignment.entries( ) ).sort( lex ) ; // [ [ 'A' , 1 ] , [ 'B' , 0 ] , [ 'C' , 1 ] ]\n\ncertificates.next( ).done ; // true\n```\n\n\n```js\nconst text = \"p cnf 30 4\\n10 0 10 20 30\\n0\\n-10 -20\\n-30 0 10 -20 30\" ;\nconst instance = sat.from.dcnf( text ) ;\n\ninstance.n ; // 30\ninstance.clauses ; // [ [ 18 ] , [ 18 , 38 , 58 ] , [ 19 , 39 , 59 ] , [ 18 , 39 , 58 ] ]\n```\n\n```js\nconst filename = 'uf20-010.cnf' ;\nconst iterable = fs.readFileSync( filename , { encoding : 'utf8' } ) ;\n\nconst instance = sat.from.dcnf( iterable ) ;\n```\n",
+    "content": "# Example\n\n```js\n\nimport { lexicographical } from '@total-order/lex' ;\nimport { increasing } from '@total-order/primitive' ;\nimport { list } from '@iterable-iterator/list' ;\n\nconst lex = lexicographical( increasing ) ;\n\nconst instance = sat.from.keys( [\n  [ [ 1 , 'A' ] , [ 1 , 'B' ] , [ 0 , 'C' ] ] ,\n  [ [ 1 , 'B' ] , [ 1 , 'C' ] ] ,\n  [ [ 0 , 'B' ] ],\n  [ [ 0 , 'A' ] , [ 1 , 'C' ] ]\n] ) ;\n\nconst certificates = sat.solve( instance ) ;\nconst state = certificates.next( ) ;\nconst certificate = state.value ;\nsat.verify( instance , certificate ) ; // true\nsat.decide( instance ) ; // true\n\nstate.done ; // false\n\nconst assignment = instance.assignment( certificate ) ;\n\nlist( assignment.entries( ) ).sort( lex ) ; // [ [ 'A' , 1 ] , [ 'B' , 0 ] , [ 'C' , 1 ] ]\n\ncertificates.next( ).done ; // true\n```\n\n\n```js\nconst text = \"p cnf 30 4\\n10 0 10 20 30\\n0\\n-10 -20\\n-30 0 10 -20 30\" ;\nconst instance = sat.from.dcnf( text ) ;\n\ninstance.n ; // 30\ninstance.clauses ; // [ [ 18 ] , [ 18 , 38 , 58 ] , [ 19 , 39 , 59 ] , [ 18 , 39 , 58 ] ]\n```\n\n```js\nconst filename = 'uf20-010.cnf' ;\nconst iterable = fs.readFileSync( filename , { encoding : 'utf8' } ) ;\n\nconst instance = sat.from.dcnf( iterable ) ;\n```\n",
     "static": true,
     "access": "public"
   }

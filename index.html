@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl">
-  <title data-ice="title">Home | @aureooms/js-sat</title>
+  <title data-ice="title">Home | @problem-solving/sat</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Boolean formula satisfiability algorithms for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@aureooms/js-sat"><meta property="twitter:description" content="Boolean formula satisfiability algorithms for JavaScript"></head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Boolean formula satisfiability algorithms for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@problem-solving/sat"><meta property="twitter:description" content="Boolean formula satisfiability algorithms for JavaScript"></head>
 <body class="layout-container" data-ice="rootContainer">
 
 <header>
@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-sat"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/computational-problem-solving/sat"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div>
   <ul>
@@ -32,7 +32,7 @@
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#api">api</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-decide">decide</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-solve">solve</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-verify">verify</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-from">from</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-from_">from_</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core">core</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_verify">_verify</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setup_assignment">setup_assignment</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-sat0w">core/SAT0W</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-SAT0W">SAT0W</a></span></span></li>
@@ -54,7 +54,7 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-satisfied---a-href--https---aureooms-github-io-js-sat---aureooms-js-sat--a-">:satisfied: <a href="https://aureooms.github.io/js-sat">@aureooms/js-sat</a></h1><p></p><p>
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="-satisfied---a-href--https---computational-problem-solving-github-io-sat---problem-solving-sat--a-">:satisfied: <a href="https://computational-problem-solving.github.io/sat">@problem-solving/sat</a></h1><p></p><p>
 <a href="https://xkcd.com/287">
 <img src="https://imgs.xkcd.com/comics/np_complete.png" width="600">
 </a><br>
@@ -63,10 +63,10 @@
 
 <p></p>
 <p>Boolean formula satisfiability algorithms for JavaScript.
-See <a href="https://aureooms.github.io/js-sat">docs</a>.
-Parent is <a href="https://github.com/aureooms/js-algorithms">@aureooms/js-algorithms</a>.
+See <a href="https://computational-problem-solving.github.io/sat">docs</a>.
+Parent is <a href="https://github.com/make-github-pseudonymous-again/js-algorithms">js-algorithms</a>.
 For a polynomial time algorithm for the 2SAT problem see
-<a href="https://github.com/aureooms/js-2sat">@aureooms/js-2sat</a>.</p>
+<a href="https://github.com/computational-problem-solving/2sat">@problem-solving/2sat</a>.</p>
 <pre><code class="lang-js"><code class="source-code prettyprint">let instance = sat.from.signs( [ [ -1 , 2 , 3 ] , [ -2 , -4 , 5 ] , [ 1 , -5 ] ] ) ;
 // or
 // let instance = sat.from.keys(
@@ -82,19 +82,18 @@ for ( let certificate of sat.solve( instance ) ) {
     console.log( instance.assignment( certificate ) ) ;
 }</code>
 </code></pre>
-<p><a href="https://raw.githubusercontent.com/aureooms/js-sat/main/LICENSE"><img src="https://img.shields.io/github/license/aureooms/js-sat.svg" alt="License"></a>
-<a href="https://www.npmjs.org/package/@aureooms/js-sat"><img src="https://img.shields.io/npm/v/@aureooms/js-sat.svg" alt="Version"></a>
-<a href="https://github.com/aureooms/js-sat/actions/workflows/ci:test.yml?query=branch:main"><img src="https://img.shields.io/github/workflow/status/aureooms/js-sat/ci:test?event=push&amp;label=tests" alt="Tests"></a>
-<a href="https://david-dm.org/aureooms/js-sat"><img src="https://img.shields.io/david/aureooms/js-sat.svg" alt="Dependencies"></a>
-<a href="https://david-dm.org/aureooms/js-sat?type=dev"><img src="https://img.shields.io/david/dev/aureooms/js-sat.svg" alt="Dev dependencies"></a>
-<a href="https://github.com/aureooms/js-sat/issues"><img src="https://img.shields.io/github/issues/aureooms/js-sat.svg" alt="GitHub issues"></a>
-<a href="https://www.npmjs.org/package/@aureooms/js-sat"><img src="https://img.shields.io/npm/dm/@aureooms/js-sat.svg" alt="Downloads"></a></p>
-<p><a href="https://codeclimate.com/github/aureooms/js-sat/issues"><img src="https://img.shields.io/codeclimate/issues/aureooms/js-sat.svg" alt="Code issues"></a>
-<a href="https://codeclimate.com/github/aureooms/js-sat/trends/churn"><img src="https://img.shields.io/codeclimate/maintainability/aureooms/js-sat.svg" alt="Code maintainability"></a>
-<a href="https://codecov.io/gh/aureooms/js-sat"><img src="https://img.shields.io/codecov/c/gh/aureooms/js-sat/main.svg" alt="Code coverage (cov)"></a>
-<a href="https://codeclimate.com/github/aureooms/js-sat/trends/technical_debt"><img src="https://img.shields.io/codeclimate/tech-debt/aureooms/js-sat.svg" alt="Code technical debt"></a>
-<a href="https://aureooms.github.io/js-sat/source.html"><img src="https://aureooms.github.io/js-sat/badge.svg" alt="Documentation"></a>
-<a href="https://bundlephobia.com/result?p=@aureooms/js-sat"><img src="https://img.shields.io/bundlephobia/minzip/@aureooms/js-sat" alt="Package size"></a></p>
+<p><a href="https://raw.githubusercontent.com/computational-problem-solving/sat/main/LICENSE"><img src="https://img.shields.io/github/license/computational-problem-solving/sat.svg" alt="License"></a>
+<a href="https://www.npmjs.org/package/@problem-solving/sat"><img src="https://img.shields.io/npm/v/@problem-solving/sat.svg" alt="Version"></a>
+<a href="https://github.com/computational-problem-solving/sat/actions/workflows/ci:test.yml?query=branch:main"><img src="https://img.shields.io/github/workflow/status/computational-problem-solving/sat/ci:test?event=push&amp;label=tests" alt="Tests"></a>
+<a href="https://github.com/computational-problem-solving/sat/network/dependencies"><img src="https://img.shields.io/librariesio/github/computational-problem-solving/sat.svg" alt="Dependencies"></a>
+<a href="https://github.com/computational-problem-solving/sat/issues"><img src="https://img.shields.io/github/issues/computational-problem-solving/sat.svg" alt="GitHub issues"></a>
+<a href="https://www.npmjs.org/package/@problem-solving/sat"><img src="https://img.shields.io/npm/dm/@problem-solving/sat.svg" alt="Downloads"></a></p>
+<p><a href="https://codeclimate.com/github/computational-problem-solving/sat/issues"><img src="https://img.shields.io/codeclimate/issues/computational-problem-solving/sat.svg" alt="Code issues"></a>
+<a href="https://codeclimate.com/github/computational-problem-solving/sat/trends/churn"><img src="https://img.shields.io/codeclimate/maintainability/computational-problem-solving/sat.svg" alt="Code maintainability"></a>
+<a href="https://codecov.io/gh/computational-problem-solving/sat"><img src="https://img.shields.io/codecov/c/gh/computational-problem-solving/sat/main.svg" alt="Code coverage (cov)"></a>
+<a href="https://codeclimate.com/github/computational-problem-solving/sat/trends/technical_debt"><img src="https://img.shields.io/codeclimate/tech-debt/computational-problem-solving/sat.svg" alt="Code technical debt"></a>
+<a href="https://computational-problem-solving.github.io/sat/source.html"><img src="https://computational-problem-solving.github.io/sat/badge.svg" alt="Documentation"></a>
+<a href="https://bundlephobia.com/result?p=@problem-solving/sat"><img src="https://img.shields.io/bundlephobia/minzip/@problem-solving/sat" alt="Package size"></a></p>
 <h2 id="-scroll--reference">:scroll: Reference</h2><ul>
 <li><a href="http://sahandsaba.com/understanding-sat-by-implementing-a-simple-sat-solver-in-python.html">Simple solver in Python</a></li>
 <li><a href="http://www.cs.ubc.ca/~hoos/SATLIB/benchm.html">SATLIB</a></li>

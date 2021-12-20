@@ -1,7 +1,7 @@
 {
-  "coverage": "88.23%",
+  "coverage": "100%",
   "expectCount": 34,
-  "actualCount": 30,
+  "actualCount": 34,
   "files": {
     "src/api/decide.js": {
       "expectCount": 1,
@@ -20,10 +20,8 @@
     },
     "src/api/verify.js": {
       "expectCount": 1,
-      "actualCount": 0,
-      "undocumentLines": [
-        2
-      ]
+      "actualCount": 1,
+      "undocumentLines": []
     },
     "src/core/SAT0W/SAT0W.js": {
       "expectCount": 1,
@@ -47,24 +45,18 @@
     },
     "src/core/convert/KeysInstance.js": {
       "expectCount": 6,
-      "actualCount": 5,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 6,
+      "undocumentLines": []
     },
     "src/core/convert/ParitiesInstance.js": {
       "expectCount": 5,
-      "actualCount": 4,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 5,
+      "undocumentLines": []
     },
     "src/core/convert/SignsInstance.js": {
       "expectCount": 5,
-      "actualCount": 4,
-      "undocumentLines": [
-        3
-      ]
+      "actualCount": 5,
+      "undocumentLines": []
     },
     "src/core/convert/_certificate_to_keys.js": {
       "expectCount": 1,

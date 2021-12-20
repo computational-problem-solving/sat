@@ -1,128 +1,128 @@
 window.esdocSearchIndex = [
   [
-    "@aureooms/js-sat/src/core/convert/keysinstance.js~keysinstance",
+    "@problem-solving/sat/src/core/convert/keysinstance.js~keysinstance",
     "class/src/core/convert/KeysInstance.js~KeysInstance.html",
-    "<span>KeysInstance</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/convert/KeysInstance.js</span>",
+    "<span>KeysInstance</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/convert/KeysInstance.js</span>",
     "class"
   ],
   [
-    "@aureooms/js-sat/src/core/convert/paritiesinstance.js~paritiesinstance",
+    "@problem-solving/sat/src/core/convert/paritiesinstance.js~paritiesinstance",
     "class/src/core/convert/ParitiesInstance.js~ParitiesInstance.html",
-    "<span>ParitiesInstance</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/convert/ParitiesInstance.js</span>",
+    "<span>ParitiesInstance</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/convert/ParitiesInstance.js</span>",
     "class"
   ],
   [
-    "@aureooms/js-sat/src/core/sat0w/sat0w.js~sat0w",
+    "@problem-solving/sat/src/core/sat0w/sat0w.js~sat0w",
     "function/index.html#static-function-SAT0W",
-    "<span>SAT0W</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/SAT0W/SAT0W.js</span>",
+    "<span>SAT0W</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/SAT0W/SAT0W.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/convert/signsinstance.js~signsinstance",
+    "@problem-solving/sat/src/core/convert/signsinstance.js~signsinstance",
     "class/src/core/convert/SignsInstance.js~SignsInstance.html",
-    "<span>SignsInstance</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/convert/SignsInstance.js</span>",
+    "<span>SignsInstance</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/convert/SignsInstance.js</span>",
     "class"
   ],
   [
-    "@aureooms/js-sat/src/core/convert/_certificate_to_keys.js~_certificate_to_keys",
+    "@problem-solving/sat/src/core/convert/_certificate_to_keys.js~_certificate_to_keys",
     "function/index.html#static-function-_certificate_to_keys",
-    "<span>_certificate_to_keys</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/convert/_certificate_to_keys.js</span>",
+    "<span>_certificate_to_keys</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/convert/_certificate_to_keys.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/convert/_count.js~_count",
+    "@problem-solving/sat/src/core/convert/_count.js~_count",
     "function/index.html#static-function-_count",
-    "<span>_count</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/convert/_count.js</span>",
+    "<span>_count</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/convert/_count.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/convert/_keys_to_parity.js~_keys_to_parity",
+    "@problem-solving/sat/src/core/convert/_keys_to_parity.js~_keys_to_parity",
     "function/index.html#static-function-_keys_to_parity",
-    "<span>_keys_to_parity</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/convert/_keys_to_parity.js</span>",
+    "<span>_keys_to_parity</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/convert/_keys_to_parity.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/convert/_parity_to_keys.js~_parity_to_keys",
+    "@problem-solving/sat/src/core/convert/_parity_to_keys.js~_parity_to_keys",
     "function/index.html#static-function-_parity_to_keys",
-    "<span>_parity_to_keys</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/convert/_parity_to_keys.js</span>",
+    "<span>_parity_to_keys</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/convert/_parity_to_keys.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/convert/_parity_to_sign.js~_parity_to_sign",
+    "@problem-solving/sat/src/core/convert/_parity_to_sign.js~_parity_to_sign",
     "function/index.html#static-function-_parity_to_sign",
-    "<span>_parity_to_sign</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/convert/_parity_to_sign.js</span>",
+    "<span>_parity_to_sign</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/convert/_parity_to_sign.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/parse/_parse_dimacs_cnf.js~_parse_dimacs_cnf",
+    "@problem-solving/sat/src/core/parse/_parse_dimacs_cnf.js~_parse_dimacs_cnf",
     "function/index.html#static-function-_parse_DIMACS_CNF",
-    "<span>_parse_DIMACS_CNF</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/parse/_parse_DIMACS_CNF.js</span>",
+    "<span>_parse_DIMACS_CNF</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/parse/_parse_DIMACS_CNF.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/parse/_parse_int.js~_parse_int",
+    "@problem-solving/sat/src/core/parse/_parse_int.js~_parse_int",
     "function/index.html#static-function-_parse_int",
-    "<span>_parse_int</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/parse/_parse_int.js</span>",
+    "<span>_parse_int</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/parse/_parse_int.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/convert/_sign_to_parity.js~_sign_to_parity",
+    "@problem-solving/sat/src/core/convert/_sign_to_parity.js~_sign_to_parity",
     "function/index.html#static-function-_sign_to_parity",
-    "<span>_sign_to_parity</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/convert/_sign_to_parity.js</span>",
+    "<span>_sign_to_parity</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/convert/_sign_to_parity.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/parse/_skip_blanks.js~_skip_blanks",
+    "@problem-solving/sat/src/core/parse/_skip_blanks.js~_skip_blanks",
     "function/index.html#static-function-_skip_blanks",
-    "<span>_skip_blanks</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/parse/_skip_blanks.js</span>",
+    "<span>_skip_blanks</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/parse/_skip_blanks.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/_verify.js~_verify",
+    "@problem-solving/sat/src/core/_verify.js~_verify",
     "function/index.html#static-function-_verify",
-    "<span>_verify</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/_verify.js</span>",
+    "<span>_verify</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/_verify.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/api/decide.js~decide",
+    "@problem-solving/sat/src/api/decide.js~decide",
     "function/index.html#static-function-decide",
-    "<span>decide</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/api/decide.js</span>",
+    "<span>decide</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/api/decide.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/api/from.js~from",
-    "variable/index.html#static-variable-from",
-    "<span>from</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/api/from.js</span>",
+    "@problem-solving/sat/src/api/from.js~from_",
+    "variable/index.html#static-variable-from_",
+    "<span>from_</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/api/from.js</span>",
     "variable"
   ],
   [
-    "@aureooms/js-sat/src/core/setup_assignment.js~setup_assignment",
+    "@problem-solving/sat/src/core/setup_assignment.js~setup_assignment",
     "function/index.html#static-function-setup_assignment",
-    "<span>setup_assignment</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/setup_assignment.js</span>",
+    "<span>setup_assignment</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/setup_assignment.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/sat0w/setup_watchlist.js~setup_watchlist",
+    "@problem-solving/sat/src/core/sat0w/setup_watchlist.js~setup_watchlist",
     "function/index.html#static-function-setup_watchlist",
-    "<span>setup_watchlist</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/SAT0W/setup_watchlist.js</span>",
+    "<span>setup_watchlist</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/SAT0W/setup_watchlist.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/api/solve.js~solve",
+    "@problem-solving/sat/src/api/solve.js~solve",
     "function/index.html#static-function-solve",
-    "<span>solve</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/api/solve.js</span>",
+    "<span>solve</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/api/solve.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/core/sat0w/update_watchlist.js~update_watchlist",
+    "@problem-solving/sat/src/core/sat0w/update_watchlist.js~update_watchlist",
     "function/index.html#static-function-update_watchlist",
-    "<span>update_watchlist</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/core/SAT0W/update_watchlist.js</span>",
+    "<span>update_watchlist</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/core/SAT0W/update_watchlist.js</span>",
     "function"
   ],
   [
-    "@aureooms/js-sat/src/api/verify.js~verify",
+    "@problem-solving/sat/src/api/verify.js~verify",
     "function/index.html#static-function-verify",
-    "<span>verify</span> <span class=\"search-result-import-path\">@aureooms/js-sat/src/api/verify.js</span>",
+    "<span>verify</span> <span class=\"search-result-import-path\">@problem-solving/sat/src/api/verify.js</span>",
     "function"
   ],
   [

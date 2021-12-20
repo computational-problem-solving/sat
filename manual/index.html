@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../">
-  <title data-ice="title">Manual | @aureooms/js-sat</title>
+  <title data-ice="title">Manual | @problem-solving/sat</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
   <script src="script/manual.js"></script>
-<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Boolean formula satisfiability algorithms for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@aureooms/js-sat"><meta property="twitter:description" content="Boolean formula satisfiability algorithms for JavaScript"></head>
+<link rel="stylesheet" href="./inject/css/0-style.css"><script src="./inject/script/0-header.js"></script><meta name="description" content="Boolean formula satisfiability algorithms for JavaScript"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@problem-solving/sat"><meta property="twitter:description" content="Boolean formula satisfiability algorithms for JavaScript"></head>
 <body class="layout-container manual-root manual-index" data-ice="rootContainer">
 
 <header>
@@ -24,7 +24,7 @@
   </span>
     <ul class="search-result"></ul>
   </div>
-<a style="position:relative; top:3px;" href="https://github.com/aureooms/js-sat"><img width="20px" src="./image/github.png"></a></header>
+<a style="position:relative; top:3px;" href="https://github.com/computational-problem-solving/sat"><img width="20px" src="./image/github.png"></a></header>
 
 <nav class="navigation" data-ice="nav"><div class="manual-toc-root">
   
@@ -74,8 +74,8 @@
       <div class="manual-card">
         <div data-ice="card"><h1>Installation</h1><p>Can be managed using
 <a href="http://jspm.io">jspm</a>
-or <a href="https://github.com/npm/npm">npm</a>.</p><h3>jspm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">jspm install npm:@aureooms/js-sat</code>
-</code></pre><h3>npm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">npm install @aureooms/js-sat --save</code>
+or <a href="https://github.com/npm/npm">npm</a>.</p><h3>jspm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">jspm install npm:@problem-solving/sat</code>
+</code></pre><h3>npm</h3><pre><code class="lang-terminal"><code class="source-code prettyprint">npm install @problem-solving/sat --save</code>
 </code></pre></div>
         <a data-ice="link" href="manual/installation.html"></a>
       </div>
@@ -83,12 +83,12 @@ or <a href="https://github.com/npm/npm">npm</a>.</p><h3>jspm</h3><pre><code clas
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
         <div data-ice="card"><h1>Usage</h1><p>The code needs a ES2015+ polyfill to work, for example
-<a href="https://babeljs.io/docs/usage/polyfill">regenerator-runtime/runtime</a>.</p><pre><code class="lang-js"><code class="source-code prettyprint">require( &apos;regenerator-runtime/runtime&apos; ) ;
+<a href="https://babeljs.io/docs/usage/polyfill">regenerator-runtime/runtime</a>.</p><pre><code class="lang-js"><code class="source-code prettyprint">await import( &apos;regenerator-runtime/runtime.js&apos; ) ;
 // or
 import &apos;regenerator-runtime/runtime.js&apos; ;</code>
-</code></pre><p>Then</p><pre><code class="lang-js"><code class="source-code prettyprint">const sat = require( &apos;@aureooms/js-sat&apos; ) ;
+</code></pre><p>Then</p><pre><code class="lang-js"><code class="source-code prettyprint">const sat = await import( &apos;@problem-solving/sat&apos; ) ;
 // or
-import * as sat from &apos;@aureooms/js-sat&apos; ;</code>
+import * as sat from &apos;@problem-solving/sat&apos; ;</code>
 </code></pre></div>
         <a data-ice="link" href="manual/usage.html"></a>
       </div>
@@ -96,8 +96,9 @@ import * as sat from &apos;@aureooms/js-sat&apos; ;</code>
 <div class="manual-card-wrap" data-ice="cards">
       <div class="manual-card">
         <div data-ice="card"><h1>Example</h1><pre><code class="lang-js"><code class="source-code prettyprint">
-import { lexicographical , increasing } from &apos;@aureooms/js-compare&apos; ;
-import { list } from &apos;@aureooms/js-itertools&apos; ;
+import { lexicographical } from &apos;@total-order/lex&apos; ;
+import { increasing } from &apos;@total-order/primitive&apos; ;
+import { list } from &apos;@iterable-iterator/list&apos; ;
 
 const lex = lexicographical( increasing ) ;
 

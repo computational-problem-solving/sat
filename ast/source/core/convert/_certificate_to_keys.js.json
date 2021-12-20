@@ -108,10 +108,10 @@
             }
           },
           "extra": {
-            "rawValue": "@aureooms/js-itertools",
-            "raw": "'@aureooms/js-itertools'"
+            "rawValue": "@iterable-iterator/zip",
+            "raw": "'@iterable-iterator/zip'"
           },
-          "value": "@aureooms/js-itertools"
+          "value": "@iterable-iterator/zip"
         },
         "trailingComments": [
           {
@@ -556,7 +556,7 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "@aureooms/js-itertools",
+      "value": "@iterable-iterator/zip",
       "start": 20,
       "end": 44,
       "loc": {
