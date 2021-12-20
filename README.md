@@ -3,7 +3,7 @@
 
 <p align="center">
 <a href="https://xkcd.com/1801">
-<img src="https://imgs.xkcd.com/comics/decision_paralysis.png" width="600">
+<img src="https://imgs.xkcd.com/comics/decision_paralysis.png" width="300">
 </a><br/>
 © <a href="https://xkcd.com">xkcd.com</a>
 </p>
