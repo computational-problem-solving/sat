@@ -75,7 +75,7 @@
     "@babel/core": "7.18.13",
     "@babel/preset-env": "7.18.10",
     "@babel/register": "7.18.9",
-    "@commitlint/cli": "17.1.1",
+    "@commitlint/cli": "17.1.2",
     "@js-library/commitlint-config": "0.0.4",
     "@total-order/lex": "1.0.0",
     "@total-order/primitive": "1.0.1",
