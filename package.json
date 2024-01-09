@@ -73,7 +73,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.23.7",
-    "@babel/preset-env": "7.23.7",
+    "@babel/preset-env": "7.23.8",
     "@babel/register": "7.23.7",
     "@commitlint/cli": "18.4.4",
     "@js-library/commitlint-config": "0.0.4",
