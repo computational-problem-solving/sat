@@ -91,7 +91,7 @@
     "fixpack": "4.0.0",
     "fs": "0.0.1-security",
     "husky": "9.0.10",
-    "lint-staged": "15.2.1",
+    "lint-staged": "15.2.2",
     "microbundle": "0.15.1",
     "np": "9.2.0",
     "pinst": "3.0.0",
