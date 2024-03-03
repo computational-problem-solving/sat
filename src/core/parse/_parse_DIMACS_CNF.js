@@ -1,5 +1,5 @@
-import _skip_blanks from './_skip_blanks.js';
 import _parse_int from './_parse_int.js';
+import _skip_blanks from './_skip_blanks.js';
 
 /**
  * _parse_DIMACS_CNF.

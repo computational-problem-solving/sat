@@ -1,6 +1,6 @@
-import setup_assignment from '../core/setup_assignment.js';
-import setup_watchlist from '../core/SAT0W/setup_watchlist.js';
 import SAT0W from '../core/SAT0W/SAT0W.js';
+import setup_watchlist from '../core/SAT0W/setup_watchlist.js';
+import setup_assignment from '../core/setup_assignment.js';
 
 /**
  * Yields all satisfying assignments for the input instance.

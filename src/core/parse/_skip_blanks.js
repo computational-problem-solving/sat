@@ -12,13 +12,18 @@ export default function _skip_blanks(iterator) {
 		switch (current.value) {
 			case ' ':
 			case '\t':
-			case '\n':
+			case '\n': {
 				continue;
+			}
+
 			// HANDLE CUSTOM DELIMITER OF SATLIB
-			case '%':
+			case '%': {
 				return [true, null];
-			default:
+			}
+
+			default: {
 				return [false, current.value];
+			}
 		}
 	}
 }

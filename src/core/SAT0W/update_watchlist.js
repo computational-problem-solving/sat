@@ -10,8 +10,7 @@
  */
 export default function update_watchlist(watchlist, false_literal, assignment) {
 	while (watchlist[false_literal].length > 0) {
-		const clause =
-			watchlist[false_literal][watchlist[false_literal].length - 1];
+		const clause = watchlist[false_literal].at(-1);
 		let found_alternative = false;
 
 		for (const alternative of clause) {

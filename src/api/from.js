@@ -1,6 +1,6 @@
 import ParitiesInstance from '../core/convert/ParitiesInstance.js';
-import _sign_to_parity from '../core/convert/_sign_to_parity.js';
 import _keys_to_parity from '../core/convert/_keys_to_parity.js';
+import _sign_to_parity from '../core/convert/_sign_to_parity.js';
 import _parse_DIMACS_CNF from '../core/parse/_parse_DIMACS_CNF.js';
 
 /**

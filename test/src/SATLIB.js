@@ -1,5 +1,7 @@
 import fs from 'fs';
+
 import test from 'ava';
+
 import * as sat from '#module';
 
 const macro = (t, name, satisfiable) => {
@@ -8,13 +10,16 @@ const macro = (t, name, satisfiable) => {
 
 	const instance = sat.from.dcnf(iterable);
 
-	if (!satisfiable) {
-		t.false(sat.decide(instance));
-	} else {
+	if (satisfiable) {
 		t.true(sat.decide(instance));
 		const certificate = sat.solve(instance).next().value;
-		if (!certificate) t.fail('missing certificate');
-		else t.true(sat.verify(instance, certificate));
+		if (certificate) {
+			t.true(sat.verify(instance, certificate));
+		} else {
+			t.fail('missing certificate');
+		}
+	} else {
+		t.false(sat.decide(instance));
 	}
 };
 

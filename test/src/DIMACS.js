@@ -1,4 +1,5 @@
 import test from 'ava';
+
 import * as sat from '#module';
 
 function text(lines) {

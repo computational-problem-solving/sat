@@ -1,7 +1,9 @@
 import assert from 'assert';
+
+import KeysInstance from '../core/convert/KeysInstance.js';
 import ParitiesInstance from '../core/convert/ParitiesInstance.js';
 import SignsInstance from '../core/convert/SignsInstance.js';
-import KeysInstance from '../core/convert/KeysInstance.js';
+
 import solve from './solve.js';
 
 /**

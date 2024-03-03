@@ -1,9 +1,10 @@
 import test from 'ava';
 
-import {increasing} from '@total-order/primitive';
-import {lexicographical} from '@total-order/lex';
 import {list} from '@iterable-iterator/list';
 import {map} from '@iterable-iterator/map';
+import {lexicographical} from '@total-order/lex';
+import {increasing} from '@total-order/primitive';
+
 import * as sat from '#module';
 
 const lex = lexicographical(increasing);
