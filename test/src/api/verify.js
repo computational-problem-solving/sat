@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import * as sat from '../../../src/index.js';
+import * as sat from '#module';
 
 test('check some certificates', (t) => {
 	const instance = sat.from.signs([

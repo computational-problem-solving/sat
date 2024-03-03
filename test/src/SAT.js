@@ -4,7 +4,7 @@ import {increasing} from '@total-order/primitive';
 import {lexicographical} from '@total-order/lex';
 import {list} from '@iterable-iterator/list';
 import {map} from '@iterable-iterator/map';
-import * as sat from '../../src/index.js';
+import * as sat from '#module';
 
 const lex = lexicographical(increasing);
 

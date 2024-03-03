@@ -1,6 +1,6 @@
 import fs from 'fs';
 import test from 'ava';
-import * as sat from '../../src/index.js';
+import * as sat from '#module';
 
 const macro = (t, name, satisfiable) => {
 	const filename = './test/data/' + name + '.cnf';

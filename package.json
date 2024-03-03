@@ -50,8 +50,6 @@
     "build": "NODE_ENV=production microbundle",
     "build-docs": "esdoc",
     "build-gh-pages": "npm run build-docs",
-    "ci:build": "npm run build",
-    "ci:test": "npm run lint-config && npm run lint && npm run cover",
     "commit-msg": "commitlint --edit",
     "cover": "NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test",
     "debug": "NODE_ENV=debug npm run test -- -st --fail-fast",
@@ -67,7 +65,13 @@
     "prepare": "npm run build",
     "prepublishOnly": "pinst --disable",
     "release": "np --message ':hatching_chick: release: Bumping to v%s.'",
-    "test": "ava"
+    "test": "npm run test:src",
+    "test-cmd": "NODE_LOADER_CONFIG=test/loader/config.js ava",
+    "test:cjs": "IMPORT_MAP_PATH=test/import-maps/dist/index.json npm run test-cmd",
+    "test:dist": "npm run test:modern && npm run test:module && npm run test:cjs",
+    "test:modern": "IMPORT_MAP_PATH=test/import-maps/dist/index.modern.json npm run test-cmd",
+    "test:module": "IMPORT_MAP_PATH=test/import-maps/dist/index.module.json npm run test-cmd",
+    "test:src": "IMPORT_MAP_PATH=test/import-maps/src/index.json npm run test-cmd"
   },
   "dependencies": {
     "@iterable-iterator/list": "^1.0.1",
@@ -80,6 +84,8 @@
     "@commitlint/cli": "19.0.3",
     "@js-library/commitlint-config": "0.0.4",
     "@node-loader/babel": "2.0.1",
+    "@node-loader/core": "2.0.0",
+    "@node-loader/import-maps": "1.1.0",
     "@total-order/lex": "1.0.0",
     "@total-order/primitive": "1.0.1",
     "ava": "6.1.2",
@@ -107,7 +113,7 @@
       "test/src/**/*"
     ],
     "nodeArguments": [
-      "--experimental-loader=@node-loader/babel"
+      "--experimental-loader=@node-loader/core"
     ],
     "require": [
       "regenerator-runtime/runtime.js"
