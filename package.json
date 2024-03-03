@@ -82,7 +82,7 @@
     "@node-loader/babel": "2.0.1",
     "@total-order/lex": "1.0.0",
     "@total-order/primitive": "1.0.1",
-    "ava": "5.3.1",
+    "ava": "6.1.2",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.2.0",
     "babel-preset-power-assert": "3.0.0",
@@ -110,7 +110,7 @@
       "--experimental-loader=@node-loader/babel"
     ],
     "require": [
-      "regenerator-runtime/runtime"
+      "regenerator-runtime/runtime.js"
     ],
     "timeout": "1m",
     "concurrency": 8
