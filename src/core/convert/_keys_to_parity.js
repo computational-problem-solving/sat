@@ -27,7 +27,7 @@ export default function _keys_to_parity(clauses) {
 			new_clause.add(literal);
 		}
 
-		instance.push([...new_clause]);
+		instance.push(Array.from(new_clause));
 	}
 
 	return new KeysInstance(variables, instance);
