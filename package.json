@@ -79,8 +79,8 @@
     "@iterable-iterator/zip": "^1.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.26.7",
-    "@babel/preset-env": "7.26.7",
+    "@babel/core": "7.26.8",
+    "@babel/preset-env": "7.26.8",
     "@commitlint/cli": "19.7.1",
     "@js-library/commitlint-config": "0.0.4",
     "@node-loader/babel": "2.1.0",
