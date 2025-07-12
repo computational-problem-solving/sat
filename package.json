@@ -88,7 +88,7 @@
     "@node-loader/import-maps": "1.1.0",
     "@total-order/lex": "1.0.0",
     "@total-order/primitive": "1.0.1",
-    "ava": "6.4.0",
+    "ava": "6.4.1",
     "babel-plugin-transform-remove-console": "6.9.4",
     "babel-plugin-unassert": "3.2.0",
     "babel-preset-power-assert": "3.0.0",
